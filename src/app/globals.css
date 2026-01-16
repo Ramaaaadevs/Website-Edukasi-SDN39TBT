@@ -1,50 +1,240 @@
-/* src/app/globals.css */
 @import "tailwindcss";
 
+/* Di v4, kita menggunakan @layer components untuk membuat custom class
+   agar tetap bisa menggunakan @apply dan menjaga JSX tetap bersih.
+*/
 
 @layer components {
-  .card-container {
-    @apply flex flex-col items-center justify-center min-h-[80vh] p-4;
+  /* --- LAYOUT GLOBAL --- */
+  .page-container {
+    @apply min-h-screen bg-blue-50 font-sans flex flex-col;
   }
 
-  .quiz-wrapper {
-    @apply w-full max-w-4xl;
+  /* --- HALAMAN DEPAN (HERO SECTION) --- */
+  .hero-wrapper {
+    @apply flex-grow flex items-center justify-center p-6 md:p-12;
   }
 
-  .question-card {
-    @apply bg-white rounded-2xl shadow-xl p-6 md:p-8 mb-6 text-center border-b-4 border-gray-300;
+  .hero-grid {
+    @apply max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center;
   }
 
-  .question-label {
-    @apply text-gray-500 font-bold tracking-widest text-sm uppercase block mb-4;
+  /* Teks Judul */
+  .hero-title-primary {
+    @apply text-5xl md:text-7xl font-extrabold text-blue-900 mb-2 tracking-tight leading-tight;
   }
 
-  .question-text {
-    @apply text-xl md:text-3xl font-bold text-gray-800 mt-4;
+  .hero-title-secondary {
+    @apply text-4xl md:text-6xl font-extrabold text-yellow-400 drop-shadow-sm mb-6 block;
   }
 
-  .answer-grid {
-    @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+  .hero-desc {
+    @apply text-blue-800 text-lg md:text-xl font-medium leading-relaxed max-w-lg mb-8;
   }
 
-  /* --- STYLE TOMBOL --- */
-  .btn-base {
-    @apply text-white p-6 rounded-xl shadow-lg transition-transform transform hover:scale-[1.02] font-bold text-lg text-left w-full;
+  /* Tombol Kuning Besar */
+  .btn-hero {
+    @apply inline-flex items-center gap-3 bg-yellow-400 hover:bg-yellow-500 text-blue-900 
+    text-xl font-extrabold py-4 px-10 rounded-full shadow-lg transform transition 
+    hover:scale-105 border-b-8 border-yellow-600 active:border-b-0 active:translate-y-2 cursor-pointer;
   }
 
-  .btn-red {
-    @apply bg-red-500 hover:bg-red-600;
+  /* Gambar Ilustrasi Kanan */
+  .hero-image-container {
+    @apply relative w-full h-full flex justify-center md:justify-end items-center;
+  }
+  
+  .hero-image {
+    /* animate-pulse dihapus dulu biar gak pusing liatnya, opsional */
+    @apply w-full max-w-md h-auto object-contain drop-shadow-2xl; 
   }
 
-  .btn-blue {
-    @apply bg-blue-500 hover:bg-blue-600;
+  /* --- FOOTER (CREDIT) --- */
+  .footer-base {
+    @apply bg-white py-4 px-6 md:px-12 border-t-4 border-blue-100 mt-auto w-full;
   }
 
-  .btn-yellow {
-    @apply bg-yellow-400 hover:bg-yellow-500 text-yellow-900;
+  .footer-content {
+    @apply max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4;
   }
 
-  .btn-green {
-    @apply bg-green-500 hover:bg-green-600;
+  .footer-text {
+    @apply flex items-center gap-2 text-blue-900 font-bold text-sm md:text-base text-center md:text-left;
+  }
+
+  .footer-logos {
+    @apply flex gap-4 items-center opacity-90 hover:opacity-100 transition cursor-pointer;
+  }
+
+  /* --- HALAMAN MODUL (DAFTAR MAPEL) --- */
+  
+  /* Header Putih di atas */
+  .modul-header-box {
+    @apply bg-white rounded-3xl p-6 md:p-10 shadow-sm border-b-4 border-blue-100 flex items-center justify-between mb-10 max-w-7xl w-full mx-auto;
+  }
+  
+  .modul-title {
+    @apply text-3xl md:text-5xl font-extrabold text-blue-900 tracking-tight;
+  }
+
+  .modul-subtitle {
+    @apply text-blue-600 mt-2 font-medium text-lg;
+  }
+
+  /* Grid Container untuk Kartu */
+  .modul-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-7xl w-full mx-auto;
+  }
+
+  /* Kartu Mata Pelajaran */
+  .card-mapel {
+    @apply bg-white p-8 rounded-2xl shadow-sm border-2 border-transparent hover:border-yellow-400
+    hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer
+    flex flex-col items-center justify-center gap-4 text-center h-64;
+  }
+
+  /* Icon Bulat di tengah kartu */
+  .card-mapel-icon {
+    @apply w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-2 shadow-inner;
+  }
+
+  .card-mapel-title {
+    @apply font-bold text-xl text-blue-900;
+  }
+
+  /* --- NAVBAR (MENU ATAS) --- */
+  .navbar-container {
+    /* Sticky: Nempel di atas layar */
+    @apply sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b-4 border-blue-100 shadow-sm;
+  }
+
+  .navbar-content {
+    @apply max-w-7xl mx-auto px-6 md:px-12 py-4 flex justify-between items-center;
+  }
+
+  .nav-logo {
+    /* Logo Teks */
+    @apply text-2xl font-extrabold text-blue-600 tracking-tighter hover:scale-105 transition cursor-pointer flex items-center gap-2;
+  }
+
+  .nav-menu {
+    /* Container Link Kanan */
+    @apply flex items-center gap-4 md:gap-8;
+  }
+
+  .nav-link {
+    /* Link Menu (Beranda, Belajar, dll) */
+    @apply font-bold text-gray-500 hover:text-yellow-500 hover:scale-135 transition text-sm md:text-base cursor-pointer;
+  }
+
+  .nav-btn-highlight {
+    /* Tombol Spesial (Misal: Masuk/Evaluasi) */
+    @apply bg-yellow-400 text-blue-900 px-5 py-2 rounded-full font-bold shadow-md hover:bg-yellow-500 hover:scale-135 transition cursor-pointer border-b-4 border-yellow-600 active:border-b-0 active:translate-y-1;
+  }
+
+  /* --- LAYOUT UTAMA --- */
+  .page-container {
+    @apply min-h-screen bg-blue-50 font-sans;
+  }
+
+  /* --- HEADER BANNER --- */
+  .modul-header-wrapper {
+    @apply px-6 pt-8 md:pt-12;
+  }
+  
+  .modul-header-box {
+    @apply bg-white rounded-3xl shadow-sm border border-blue-100 p-8 md:p-12 flex flex-col md:flex-row justify-between items-center relative overflow-hidden;
+  }
+
+  .modul-title {
+    @apply text-3xl md:text-5xl font-extrabold text-blue-900 mb-2 tracking-tight;
+  }
+
+  .modul-subtitle {
+    @apply text-gray-500 text-lg md:text-xl font-medium;
+  }
+
+  /* --- BAGIAN FILTER & JUDUL --- */
+  .section-header-row {
+    @apply flex flex-row justify-between items-end mb-8 border-b-2 border-gray-200 pb-4 mt-10;
+  }
+
+  .section-title {
+    @apply text-2xl md:text-3xl font-extrabold text-blue-900 border-b-4 border-yellow-400 inline-block pb-1;
+  }
+
+  /* --- DROPDOWN CUSTOM (FIXED) --- */
+  .dropdown-wrapper {
+    @apply relative inline-block w-40 md:w-48;
+  }
+
+  .dropdown-select {
+    @apply appearance-none w-full bg-blue-600 text-white font-bold 
+    py-3 pl-5 pr-10 rounded-xl shadow-md text-sm md:text-base
+    focus:outline-none focus:ring-4 focus:ring-blue-200
+    cursor-pointer hover:bg-blue-700 transition-colors border-none;
+  }
+
+  .dropdown-icon {
+    @apply pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-white;
+  }
+
+  /* --- GRID MATA PELAJARAN --- */
+  .modul-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6;
+  }
+
+  .card-mapel {
+    @apply bg-white p-6 rounded-2xl shadow-sm border-2 border-transparent hover:border-blue-300 
+    hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col items-center text-center h-full;
+  }
+
+  .card-mapel-icon {
+    @apply w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-4 shadow-sm;
+  }
+
+  .card-mapel-title {
+    @apply text-lg font-bold text-gray-800 mb-1;
+  }
+
+  .card-chip {
+    @apply mt-auto text-xs font-bold bg-gray-100 text-gray-600 px-3 py-1 rounded-full;
+  }
+
+  /* --- STYLE SUB-MODUL PAGE --- */
+  
+  /* Banner Atas (Gradient Background) */
+  .sub-header-banner {
+    @apply rounded-3xl p-8 md:p-10 relative overflow-hidden shadow-sm mb-10 text-white flex flex-col md:flex-row items-start md:items-center justify-between;
+  }
+  
+  .back-button {
+    @apply flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full font-bold transition-all backdrop-blur-sm text-sm mb-4 md:mb-0 cursor-pointer;
+  }
+
+  /* Grid Topik */
+  .topic-grid {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-6;
+  }
+
+  /* Card Topik Materi */
+  .card-topic {
+    @apply bg-white rounded-2xl p-6 shadow-sm border-2 border-blue-50 hover:border-blue-300 hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center h-full relative overflow-hidden;
+  }
+
+  .card-topic-icon {
+    @apply w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-4 bg-gray-50;
+  }
+
+  .card-topic-title {
+    @apply text-xl font-extrabold text-blue-900 mb-2;
+  }
+
+  .card-topic-desc {
+    @apply text-gray-500 text-sm mb-6 leading-relaxed px-2;
+  }
+
+  .btn-mulai {
+    @apply mt-auto w-full bg-yellow-400 hover:bg-yellow-500 text-yellow-900 font-extrabold py-3 rounded-xl transition-colors shadow-sm;
   }
 }

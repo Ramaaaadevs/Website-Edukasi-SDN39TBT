@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "tipe": "materi",
+    "judul": "Pengenalan Pecahan",
+    "isi": "<p>Pecahan adalah bagian dari keseluruhan...</p>" 
+  },
+  {
+    "id": 2,
+    "tipe": "materi",
+    "judul": "Penjumlahan Pecahan",
+    "isi": "<p>Untuk menjumlahkan pecahan dengan penyebut sama...</p>"
+  },
+  {
+    "id": 3,
+    "tipe": "kuis",
+    "judul": "Latihan Penjumlahan",
+    "deskripsi": "Mari cek pemahamanmu tentang bentuk pecahan.",
+    "soal_index": [0, 1, 2] 
+  },
+  {
+    "id": 4,
+    "tipe": "materi",
+    "judul": "Pengurangan Pecahan",
+    "isi": "<p>Untuk mengurangkan pecahan dengan penyebut sama...</p>"
+  },
+  {
+    "id": 5,
+    "tipe": "kuis",
+    "judul": "Latihan Pengurangan",
+    "deskripsi": "Ayo coba hitung pengurangan ini!",
+    "soal_index": [3, 4, 5]
+  },
+  {
+    "id": 6,
+    "tipe": "materi",
+    "judul": "Perkalian Pecahan",
+    "isi": "<p>Untuk mengalikan pecahan dengan penyebut sama...</p>"
+  },
+  {
+    "id": 7,
+    "tipe": "kuis",
+    "judul": "Latihan Perkalian",
+    "deskripsi": "Ayo coba hitung perkalian ini!",
+    "soal_index": [3, 4, 5]
+  },
+    {
+    "id": 8,
+    "tipe": "materi",
+    "judul": "Pembagian Pecahan",
+    "isi": "<p>Untuk membagi pecahan dengan penyebut sama...</p>"
+  },
+  {
+    "id": 9,
+    "tipe": "kuis",
+    "judul": "Latihan Pembagian",
+    "deskripsi": "Ayo coba hitung pembagian ini!",
+    "soal_index": [3, 4, 5]
+  },
+  {
+    "id": 10,
+    "tipe": "evaluasi",
+    "judul": "Evaluasi Akhir Bab",
+    "deskripsi": "Ujian akhir untuk materi Pecahan."
+  }
+]
