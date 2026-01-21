@@ -14,8 +14,8 @@ const databaseMapel = [
     warna: "bg-red-100 text-red-500", 
     // Data spesifik per kelas
     infoKelas: {
-      "5": { jumlahBab: 4, deskripsi: "Pecahan & Bangun Datar" },
-      "6": { jumlahBab: 8, deskripsi: "Statistika & Operasi Hitung" }
+      "5": { jumlahBab: 3},
+      "6": { jumlahBab: 8}
     }
   },
   { 
@@ -25,7 +25,7 @@ const databaseMapel = [
     icon: "🌱", 
     warna: "bg-green-100 text-green-600", 
     infoKelas: {
-      "5": { jumlahBab: 5, deskripsi: "Ekosistem & Manusia" },
+      "5": { jumlahBab: 3, deskripsi: "Ekosistem & Manusia" },
       "6": { jumlahBab: 9, deskripsi: "Tata Surya & Listrik" }
     }
   },
