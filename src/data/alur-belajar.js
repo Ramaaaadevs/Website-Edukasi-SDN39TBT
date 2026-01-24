@@ -1,12 +1,15 @@
 // src/data/alur-belajar.js
 import Image from "next/image";
-// Import JSON Soal yang sudah kamu punya
+// Import JSON Soal
 import soalPecahan from "@/data/mtk-kelas5-pecahan.json";
 import soalBingGreeting from "@/data/bing-kelas5-greeting.json";
-// import soalBangunRuang from "@/data/mtk-kelas5-bangunruang.json"; // (Contoh kalau sudah ada)
 
 export const databaseAlurBelajar = {
-  // --- MATEMATIKA: PECAHAN ---
+  // =========================================
+  // MATEMATIKA
+  // =========================================
+  
+  // --- PECAHAN ---
   "pecahan": [
     {
       tipe: "materi",
@@ -21,7 +24,7 @@ export const databaseAlurBelajar = {
     {
       tipe: "kuis",
       judul: "Latihan Konsep Dasar",
-      soal: soalPecahan.slice(0, 3), // Ambil soal no 1-3
+      soal: soalPecahan.slice(0, 3), 
     },
     {
       tipe: "materi",
@@ -35,49 +38,49 @@ export const databaseAlurBelajar = {
     {
       tipe: "kuis",
       judul: "Cek Pemahaman Penjumlahan",
-      soal: soalPecahan.slice(3, 6), // Ambil soal no 4-6
+      soal: soalPecahan.slice(3, 6), 
     },
-        {
+    {
       tipe: "materi",
       judul: "Pengurangan Pecahan",
       isi: (
         <div className="space-y-4 text-gray-700 text-lg">
-          <p>Kalau penyebutnya sama, tinggal jumlahkan atasnya saja. Contoh: 1/5 + 2/5 = <strong>3/5</strong>.</p>
+          <p>Prinsipnya sama dengan penjumlahan. Jika penyebut sudah sama, kurangi pembilangnya saja.</p>
         </div>
       ),
     },
     {
       tipe: "kuis",
       judul: "Cek Pemahaman Pengurangan",
-      soal: soalPecahan.slice(3, 6), // Ambil soal no 4-6
+      soal: soalPecahan.slice(3, 6), // (Sesuaikan index slice jika soalnya beda)
     },
-        {
+    {
       tipe: "materi",
       judul: "Perkalian Pecahan",
       isi: (
         <div className="space-y-4 text-gray-700 text-lg">
-          <p>Kalau penyebutnya sama, tinggal jumlahkan atasnya saja. Contoh: 1/5 + 2/5 = <strong>3/5</strong>.</p>
+          <p>Atas kali atas, bawah kali bawah. Mudah kan?</p>
         </div>
       ),
     },
     {
       tipe: "kuis",
       judul: "Cek Pemahaman Perkalian",
-      soal: soalPecahan.slice(3, 6), // Ambil soal no 4-6
+      soal: soalPecahan.slice(3, 6),
     },
     {
       tipe: "materi",
       judul: "Pembagian Pecahan",
       isi: (
         <div className="space-y-4 text-gray-700 text-lg">
-          <p>Kalau penyebutnya sama, tinggal jumlahkan atasnya saja. Contoh: 1/5 + 2/5 = <strong>3/5</strong>.</p>
+          <p>Ubah tanda bagi (:) jadi kali (x), lalu balik pecahan keduanya.</p>
         </div>
       ),
     },
     {
       tipe: "kuis",
       judul: "Cek Pemahaman Pembagian",
-      soal: soalPecahan.slice(3, 6), // Ambil soal no 4-6
+      soal: soalPecahan.slice(3, 6),
     },
     {
       tipe: "selesai",
@@ -86,7 +89,7 @@ export const databaseAlurBelajar = {
     }
   ],
 
-  // --- MATEMATIKA: PERBANDINGAN (Contoh Struktur) ---
+  // --- PERBANDINGAN ---
   "perbandingan": [
     {
       tipe: "materi",
@@ -100,35 +103,33 @@ export const databaseAlurBelajar = {
     },
     {
       tipe: "materi",
-      judul: "Perbandingan Dua Besaran dengan Satuan yang Berbeda",
+      judul: "Satuan Berbeda",
       isi: (
         <div className="space-y-4 text-gray-700 text-lg">
-          <p>Perbandingan dua besaran dengan satuan berbeda harus disamakan terlebih dahulu satuannya. Setelah satuannya sama, barulah perbandingan dapat ditentukan dengan benar.</p>
-          <p>Contoh: 1 meter dan 50 cm harus diubah ke satuan yang sama sebelum dibandingkan.</p>
+          <p>Jika satuannya beda, samakan dulu! Contoh: 1 meter dan 50 cm diubah meter jadi 100 cm dulu.</p>
         </div>
       ),
     },
     {
       tipe: "kuis",
-      judul: "Cek Pemahaman Pembagian",
-      soal: soalPecahan.slice(3, 6), // Ambil soal no 4-6
+      judul: "Cek Pemahaman",
+      soal: soalPecahan.slice(0, 3), // (Ganti dengan soalPerbandingan jika sudah ada)
     },
     {
       tipe: "materi",
       judul: "Skala",
       isi: (
         <div className="space-y-4 text-gray-700 text-lg">
-          <p>Skala adalah perbandingan antara jarak pada gambar atau peta dengan jarak sebenarnya. Skala digunakan untuk memperkecil atau memperbesar suatu objek agar dapat digambar pada bidang yang terbatas.</p>
-            <p>Contoh: skala 1 : 100.000 artinya 1 cm pada peta mewakili 100.000 cm jarak sebenarnya.</p>
+          <p>Skala = Jarak Peta : Jarak Sebenarnya.</p>
+          <p>Contoh: 1 : 100.000 artinya 1 cm di peta = 1 km jarak asli.</p>
         </div>
       ),
     },
     {
       tipe: "kuis",
-      judul: "Cek Pemahaman Pembagian",
-      soal: soalPecahan.slice(3, 6), // Ambil soal no 4-6
+      judul: "Latihan Skala",
+      soal: soalPecahan.slice(0, 3), 
     },
-    // Jika belum ada soal JSON-nya, bisa dikosongkan dulu atau pakai dummy
     {
       tipe: "selesai",
       judul: "Materi Selesai",
@@ -136,7 +137,7 @@ export const databaseAlurBelajar = {
     }
   ],
 
-  // --- MATEMATIKA: BANGUN RUANG ---
+  // --- BANGUN RUANG ---
   "bangun-ruang": [
     {
       tipe: "materi",
@@ -149,68 +150,45 @@ export const databaseAlurBelajar = {
       isi: "Lanjut ke evaluasi bangun ruang.",
     }
   ],
+
   // =========================================
   // IPA (ILMU PENGETAHUAN ALAM)
   // =========================================
 
-  // 1. MAKHLUK HIDUP
   "makhluk-hidup": [
     {
       tipe: "materi",
       judul: "Ekosistem",
       isi: (
         <div className="space-y-4 text-gray-700 text-lg">
-          <p>
-            Ekosistem adalah hubungan timbal balik antara makhluk hidup dengan lingkungannya. Ada komponen biotik (hidup) dan abiotik (tak hidup).
-          </p>
-          
-          {/* Gambar Rantai Makanan / Ekosistem */}
+          <p>Ekosistem adalah hubungan timbal balik antara makhluk hidup dengan lingkungannya.</p>
           <div className="flex justify-center my-6">
-            <Image 
-              src="/img-ipa/MHL.jpeg" 
-              alt="Rantai Makanan Ekosistem"
-              width={500} 
-              height={300} 
-              className="rounded-xl shadow-lg border border-gray-200"
-            />
+            <Image src="/img-ipa/MHL.jpeg" alt="Ekosistem" width={500} height={300} className="rounded-xl shadow-lg border border-gray-200"/>
           </div>
-
         </div>
       ),
     },
     {
       tipe: "selesai",
-      judul: "Bab Makhluk Hidup Selesai",
+      judul: "Selesai",
       isi: "Hebat! Kamu makin paham tentang alam sekitar.",
     }
   ],
 
-  // 2. BENDA & SIFATNYA
   "benda-sifat": [
     {
       tipe: "materi",
       judul: "Wujud Benda",
       isi: (
         <div className="space-y-4 text-gray-700 text-lg">
-          <p>
-            Benda di sekitar kita dikelompokkan menjadi 3 wujud: <strong>Padat, Cair, dan Gas</strong>.
-          </p>
-          
-          {/* Gambar Susunan Molekul */}
+          <p>Benda dikelompokkan menjadi 3: <strong>Padat, Cair, Gas</strong>.</p>
           <div className="flex justify-center my-6">
-            <Image 
-              src="/img-ipa/wujud-benda.jpg" 
-              alt="Perbedaan Padat Cair Gas"
-              width={500} 
-              height={300} 
-              className="rounded-xl shadow-lg border border-gray-200"
-            />
+            <Image src="/img-ipa/wujud-benda.jpg" alt="Wujud Benda" width={500} height={300} className="rounded-xl shadow-lg border border-gray-200"/>
           </div>
-
           <ul className="list-disc pl-8 space-y-2">
-            <li><strong>Padat:</strong> Bentuk tetap (contoh: Batu).</li>
-            <li><strong>Cair:</strong> Mengikuti wadah (contoh: Air).</li>
-            <li><strong>Gas:</strong> Mengisi seluruh ruangan (contoh: Udara).</li>
+            <li>Padat: Bentuk tetap.</li>
+            <li>Cair: Mengikuti wadah.</li>
+            <li>Gas: Mengisi ruangan.</li>
           </ul>
         </div>
       ),
@@ -227,28 +205,16 @@ export const databaseAlurBelajar = {
     }
   ],
 
-  // 3. GAYA & ENERGI
   "gaya-energi": [
     {
       tipe: "materi",
       judul: "Gaya Magnet",
       isi: (
         <div className="space-y-4 text-gray-700 text-lg">
-          <p>
-            Magnet memiliki dua kutub: Utara (U) dan Selatan (S). Kutub yang senama akan tolak-menolak, kutub berbeda akan tarik-menarik.
-          </p>
-          
-          {/* Gambar Medan Magnet */}
+          <p>Magnet punya kutub Utara (U) dan Selatan (S).</p>
           <div className="flex justify-center my-6">
-            <Image 
-              src="/img-ipa/magnet.jpg" 
-              alt="Gaya Magnet"
-              width={500} 
-              height={300} 
-              className="rounded-xl shadow-lg border border-gray-200"
-            />
+            <Image src="/img-ipa/magnet.jpg" alt="Magnet" width={500} height={300} className="rounded-xl shadow-lg border border-gray-200"/>
           </div>
-
         </div>
       ),
     },
@@ -258,65 +224,93 @@ export const databaseAlurBelajar = {
       isi: "Kamu sudah belajar dasar gaya magnet.",
     }
   ],
-  "greeting": [ 
+
+  // =========================================
+  // BAHASA INGGRIS (DIPERBAIKI)
+  // =========================================
+  
+  "vocab": [ 
+    // --- SESI 1: GREETING & TIME (Tips -> Latihan 1-3) ---
     {
       tipe: "materi",
-      judul: "Hello & Good Morning!",
+      judul: "1. Greeting & Time",
       isi: (
         <div className="space-y-4 text-gray-700 text-lg">
-          <p>
-            Greeting adalah cara kita menyapa orang lain. Sapaan bisa dilakukan saat bertemu (meeting) atau berpisah (parting).
-          </p>
-          <ul className="list-disc pl-6 space-y-2 bg-blue-50 p-4 rounded-xl border border-blue-200">
-            <li><strong>Good Morning:</strong> Selamat Pagi (06.00 - 12.00)</li>
-            <li><strong>Good Afternoon:</strong> Selamat Siang/Sore (12.00 - 18.00)</li>
-            <li><strong>Good Evening:</strong> Selamat Malam (Saat bertemu malam hari)</li>
-            <li><strong>Good Night:</strong> Selamat Tidur (Diucapkan saat berpisah tidur)</li>
+          <p><strong>Greeting</strong> adalah sapaan. Ucapkan sesuai waktunya ya:</p>
+          <ul className="space-y-2 bg-blue-50 p-4 rounded-xl border border-blue-200">
+            <li>🌅 <strong>Good Morning</strong>: Pagi (06.00 - 12.00)</li>
+            <li>☀️ <strong>Good Afternoon</strong>: Siang/Sore (12.00 - 18.00)</li>
+            <li>🌙 <strong>Good Evening</strong>: Malam (saat bertemu)</li>
+            <li>😴 <strong>Good Night</strong>: Malam (saat mau tidur/pisah)</li>
           </ul>
         </div>
       ),
     },
     {
       tipe: "kuis",
-      judul: "Latihan Greetings",
-      // Mengambil soal dari file JSON yang sudah di-import di atas
-      soal: soalBingGreeting, 
+      judul: "Latihan 1: Sapaan Dasar",
+      soal: soalBingGreeting.slice(0, 3), // Mengambil soal no 1-3
     },
+
+    // --- SESI 2: INTRODUCTION (Tips -> Latihan 4-6) ---
     {
       tipe: "materi",
-      judul: "Introduction (Perkenalan)",
+      judul: "2. Introduction (Perkenalan)",
       isi: (
         <div className="space-y-4 text-gray-700 text-lg">
-          <p>Setelah menyapa, biasanya kita memperkenalkan diri.</p>
-          <div className="bg-yellow-50 p-4 rounded-xl border border-yellow-200 font-medium text-yellow-800">
-            <p>"Hello, my name is Budi." (Halo, nama saya Budi)</p>
-            <p>"I am 10 years old." (Umur saya 10 tahun)</p>
-            <p>"Nice to meet you." (Senang bertemu denganmu)</p>
+          <p>Cara memperkenalkan diri dalam Bahasa Inggris:</p>
+          <div className="bg-yellow-50 p-4 rounded-xl border border-yellow-200 text-yellow-900">
+            <p><strong>"Hello, my name is Budi."</strong> (Halo, nama saya Budi)</p>
+            <p><strong>"I am 10 years old."</strong> (Saya umur 10 tahun)</p>
+            <p><strong>"I like playing football."</strong> (Saya suka main bola)</p>
           </div>
         </div>
       ),
     },
     {
+      tipe: "kuis",
+      judul: "Latihan 2: Perkenalan Diri",
+      soal: soalBingGreeting.slice(3, 6), // Mengambil soal no 4-6
+    },
+
+    // --- SESI 3: PARTING (Tips -> Latihan 7-9) ---
+    {
+      tipe: "materi",
+      judul: "3. Parting (Perpisahan)",
+      isi: (
+        <div className="space-y-4 text-gray-700 text-lg">
+          <p>Jika ingin berpisah, ucapkan:</p>
+          <ul className="grid grid-cols-2 gap-2 font-semibold text-center">
+            <li className="bg-red-50 p-2 rounded border border-red-100">Good Bye 👋</li>
+            <li className="bg-red-50 p-2 rounded border border-red-100">See you later 🔜</li>
+            <li className="bg-red-50 p-2 rounded border border-red-100">Take care ❤️</li>
+            <li className="bg-red-50 p-2 rounded border border-red-100">Nice to meet you 🤝</li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      tipe: "kuis",
+      judul: "Latihan 3: Salam Perpisahan",
+      soal: soalBingGreeting.slice(6, 9), // Mengambil soal no 7-9
+    },
+
+    // --- SELESAI ---
+    {
       tipe: "selesai",
-      judul: "Good Job!",
-      isi: "Kamu sudah bisa menyapa dalam Bahasa Inggris. Let's go to the next topic!",
+      judul: "Materi Greeting Selesai!",
+      isi: "Good job! Kamu sudah siap untuk ujian akhir.",
     }
   ],
 
-  // Contoh Topik Kedua (Misal: Vocab / Classroom)
-  "vocab": [
+  // --- MATERI CADANGAN (Supaya tidak error ID ganda) ---
+  "classroom-objects": [ 
     {
       tipe: "materi",
       judul: "Things in the Classroom",
       isi: (
         <div className="space-y-4 text-gray-700 text-lg">
           <p>Ayo belajar benda-benda di dalam kelas!</p>
-          <ul className="grid grid-cols-2 gap-2 text-center font-bold">
-            <li className="bg-white p-2 border rounded">Book 📘 (Buku)</li>
-            <li className="bg-white p-2 border rounded">Pen 🖊️ (Pulpen)</li>
-            <li className="bg-white p-2 border rounded">Table 🪑 (Meja)</li>
-            <li className="bg-white p-2 border rounded">Whiteboard ⬜ (Papan Tulis)</li>
-          </ul>
         </div>
       ),
     },
@@ -326,7 +320,8 @@ export const databaseAlurBelajar = {
       isi: "Hafalkan kosa katanya ya!",
     }
   ],
-  // --- DEFAULT (Jika bab tidak ditemukan) ---
+
+  // --- DEFAULT ---
   "default": [
     {
       tipe: "materi",

@@ -4,23 +4,66 @@ import { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { ChevronLeft } from "lucide-react"; 
 
-// IMPORT DATA SOAL
+// 1. IMPORT DATA SOAL
 import soalMtkPecahan from "@/data/mtk-kelas5-pecahan.json";
+import soalBingGreeting from "@/data/bing-kelas5-greeting.json"; 
 
 export default function HalamanEvaluasi() {
   const { mapelSlug, babSlug } = useParams();
   const router = useRouter();
-// 2. LOGIC PILIH SOAL BERDASARKAN URL (SLUG)
-  let dataSoal = [];
 
-  if (mapelSlug === 'bahasa-inggris') {
-     // Bisa ditambah logic babSlug juga kalau bab-nya banyak
-     dataSoal = soalBingGreeting;
-  } else if (mapelSlug === 'matematika') {
-     dataSoal = soalMtkPecahan;
-  } else {
-     dataSoal = soalMtkPecahan; // Default fallback
-  }
+  // Ubah 'let dataSoal' menjadi State agar hasil random tersimpan
+  const [soalUjian, setSoalUjian] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  // LOGIC: LOAD & NORMALISASI DATA (Agar format Bing & MTK jadi sama)
+  useEffect(() => {
+    let rawData = [];
+
+    // Pilih Source Data
+    if (mapelSlug === 'bahasa-inggris' || mapelSlug === 'vocab') {
+       rawData = soalBingGreeting;
+    } else if (mapelSlug === 'matematika') {
+       rawData = soalMtkPecahan;
+    } else {
+       rawData = soalMtkPecahan; // Default
+    }
+
+    if (rawData.length > 0) {
+      // NORMALISASI: Ubah semua format menjadi format huruf besar (PERTANYAAN, A, B, C, D)
+      // Ini agar UI kamu di bawah tidak perlu diubah-ubah lagi.
+      const dataRapih = rawData.map((item, index) => {
+        // Cek apakah formatnya Array (biasanya Bing) atau Object (MTK)
+        const isArrayPilihan = Array.isArray(item.pilihan);
+        
+        // Deteksi Kunci Jawaban
+        let kunci = item["JAWABAN BENAR"] || item.kunciJawaban;
+        // Jika kunci jawabannya teks panjang (misal: "Good Morning"), kita ubah jadi huruf (A/B/C/D)
+        if (isArrayPilihan && kunci.length > 1) {
+           const indexJawaban = item.pilihan.indexOf(kunci);
+           if (indexJawaban !== -1) kunci = ["A", "B", "C", "D"][indexJawaban];
+        }
+
+        return {
+          id: item.id || index,
+          // Ambil pertanyaan (support huruf besar/kecil)
+          PERTANYAAN: item.PERTANYAAN || item.pertanyaan,
+          // Mapping Pilihan A, B, C, D
+          A: isArrayPilihan ? item.pilihan[0] : (item.A || item.a),
+          B: isArrayPilihan ? item.pilihan[1] : (item.B || item.b),
+          C: isArrayPilihan ? item.pilihan[2] : (item.C || item.c),
+          D: isArrayPilihan ? item.pilihan[3] : (item.D || item.d),
+          "JAWABAN BENAR": kunci
+        };
+      });
+
+      // ACAK & AMBIL 25 SOAL
+      const acak = [...dataRapih].sort(() => 0.5 - Math.random());
+      setSoalUjian(acak.slice(0, 25));
+    }
+    setLoading(false);
+  }, [mapelSlug, babSlug]);
+
 
   const [indexSoal, setIndexSoal] = useState(0);
   const [jawabanUser, setJawabanUser] = useState({}); 
@@ -28,11 +71,12 @@ export default function HalamanEvaluasi() {
 
   // --- TIMER ---
   useEffect(() => {
+    if (loading) return;
     const timer = setInterval(() => {
       setWaktuBerjalan((prev) => prev + 1);
     }, 1000);
     return () => clearInterval(timer);
-  }, []);
+  }, [loading]);
 
   const formatWaktu = (seconds) => {
     const min = Math.floor(seconds / 60);
@@ -45,7 +89,7 @@ export default function HalamanEvaluasi() {
   };
 
   const handleNext = () => {
-    if (indexSoal < dataSoal.length - 1) setIndexSoal(indexSoal + 1);
+    if (indexSoal < soalUjian.length - 1) setIndexSoal(indexSoal + 1);
   };
 
   const handlePrev = () => {
@@ -56,37 +100,44 @@ export default function HalamanEvaluasi() {
   const handleSelesai = () => {
     // 1. Hitung Nilai
     let benar = 0;
-    dataSoal.forEach((soal, idx) => {
+    soalUjian.forEach((soal, idx) => {
       if (jawabanUser[idx] === soal["JAWABAN BENAR"]) benar++;
     });
-    const skorAkhir = Math.round((benar / dataSoal.length) * 100);
+    const skorAkhir = Math.round((benar / soalUjian.length) * 100);
 
-    // 2. Simpan Data ke LocalStorage agar bisa dibaca di halaman Result & Pembahasan
+    // 2. Simpan Data
     const hasilUjian = {
       skor: skorAkhir,
       benar: benar,
-      totalSoal: dataSoal.length,
+      totalSoal: soalUjian.length,
       waktu: waktuBerjalan,
       jawabanUser: jawabanUser,
       mapelSlug: mapelSlug,
-      babSlug: babSlug
+      babSlug: babSlug,
+      // Simpan soal yg sudah dinormalisasi agar pembahasan aman
+      soalUjian: soalUjian 
     };
     
-    localStorage.setItem("hasilUjianTerbaru", JSON.stringify(hasilUjian));
+    localStorage.setItem("hasilUjianTerbaru", JSON.stringify(hasilUjian)); // Simpan ke key terbaru
+    localStorage.setItem("hasilUjian", JSON.stringify(hasilUjian)); // Backup ke key lama jika ada logic lain yg pakai
 
     // 3. Pindah Halaman
     router.push("/result");
   };
 
-  const soalAktif = dataSoal[indexSoal];
-  const progress = ((indexSoal + 1) / dataSoal.length) * 100;
+  // Loading State (PENTING: Mencegah error 'undefined' saat data belum siap)
+  if (loading) return <div className="min-h-screen flex items-center justify-center font-bold text-gray-500">Memuat Soal...</div>;
+  if (soalUjian.length === 0) return <div className="min-h-screen flex items-center justify-center font-bold text-gray-500">Soal tidak ditemukan.</div>;
+
+  const soalAktif = soalUjian[indexSoal];
+  const progress = ((indexSoal + 1) / soalUjian.length) * 100;
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans flex flex-col">
       {/* HEADER */}
       <div className="bg-white px-6 py-4 shadow-sm flex items-center justify-between sticky top-0 z-20">
          <div className="bg-blue-100 text-blue-600 px-3 py-1 rounded-lg text-sm font-bold">
-            Soal {indexSoal + 1} / {dataSoal.length}
+            Soal {indexSoal + 1} / {soalUjian.length}
          </div>
          <div className="text-gray-500 font-mono font-medium bg-gray-100 px-3 py-1 rounded-md">
             {formatWaktu(waktuBerjalan)}
@@ -121,6 +172,7 @@ export default function HalamanEvaluasi() {
               `}>
                 {opsi}
               </span>
+              {/* Data sudah dinormalisasi, jadi aman panggil soalAktif["A"] dst */}
               <span className="text-xl">{soalAktif[opsi]}</span>
             </button>
           ))}
@@ -138,7 +190,7 @@ export default function HalamanEvaluasi() {
               <ChevronLeft size={20}/> Sebelumnya
             </button>
 
-            {indexSoal === dataSoal.length - 1 ? (
+            {indexSoal === soalUjian.length - 1 ? (
               <button 
                 onClick={handleSelesai}
                 className="bg-[#00CBB8] text-white px-8 py-3 rounded-xl font-bold shadow-lg shadow-teal-100 hover:bg-teal-500 hover:scale-105 transition"
