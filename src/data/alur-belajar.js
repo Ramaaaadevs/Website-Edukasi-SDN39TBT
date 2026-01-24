@@ -2,6 +2,7 @@
 import Image from "next/image";
 // Import JSON Soal yang sudah kamu punya
 import soalPecahan from "@/data/mtk-kelas5-pecahan.json";
+import soalBingGreeting from "@/data/bing-kelas5-greeting.json";
 // import soalBangunRuang from "@/data/mtk-kelas5-bangunruang.json"; // (Contoh kalau sudah ada)
 
 export const databaseAlurBelajar = {
@@ -255,6 +256,74 @@ export const databaseAlurBelajar = {
       tipe: "selesai",
       judul: "Selesai",
       isi: "Kamu sudah belajar dasar gaya magnet.",
+    }
+  ],
+  "greeting": [ 
+    {
+      tipe: "materi",
+      judul: "Hello & Good Morning!",
+      isi: (
+        <div className="space-y-4 text-gray-700 text-lg">
+          <p>
+            Greeting adalah cara kita menyapa orang lain. Sapaan bisa dilakukan saat bertemu (meeting) atau berpisah (parting).
+          </p>
+          <ul className="list-disc pl-6 space-y-2 bg-blue-50 p-4 rounded-xl border border-blue-200">
+            <li><strong>Good Morning:</strong> Selamat Pagi (06.00 - 12.00)</li>
+            <li><strong>Good Afternoon:</strong> Selamat Siang/Sore (12.00 - 18.00)</li>
+            <li><strong>Good Evening:</strong> Selamat Malam (Saat bertemu malam hari)</li>
+            <li><strong>Good Night:</strong> Selamat Tidur (Diucapkan saat berpisah tidur)</li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      tipe: "kuis",
+      judul: "Latihan Greetings",
+      // Mengambil soal dari file JSON yang sudah di-import di atas
+      soal: soalBingGreeting, 
+    },
+    {
+      tipe: "materi",
+      judul: "Introduction (Perkenalan)",
+      isi: (
+        <div className="space-y-4 text-gray-700 text-lg">
+          <p>Setelah menyapa, biasanya kita memperkenalkan diri.</p>
+          <div className="bg-yellow-50 p-4 rounded-xl border border-yellow-200 font-medium text-yellow-800">
+            <p>"Hello, my name is Budi." (Halo, nama saya Budi)</p>
+            <p>"I am 10 years old." (Umur saya 10 tahun)</p>
+            <p>"Nice to meet you." (Senang bertemu denganmu)</p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      tipe: "selesai",
+      judul: "Good Job!",
+      isi: "Kamu sudah bisa menyapa dalam Bahasa Inggris. Let's go to the next topic!",
+    }
+  ],
+
+  // Contoh Topik Kedua (Misal: Vocab / Classroom)
+  "vocab": [
+    {
+      tipe: "materi",
+      judul: "Things in the Classroom",
+      isi: (
+        <div className="space-y-4 text-gray-700 text-lg">
+          <p>Ayo belajar benda-benda di dalam kelas!</p>
+          <ul className="grid grid-cols-2 gap-2 text-center font-bold">
+            <li className="bg-white p-2 border rounded">Book 📘 (Buku)</li>
+            <li className="bg-white p-2 border rounded">Pen 🖊️ (Pulpen)</li>
+            <li className="bg-white p-2 border rounded">Table 🪑 (Meja)</li>
+            <li className="bg-white p-2 border rounded">Whiteboard ⬜ (Papan Tulis)</li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      tipe: "selesai",
+      judul: "Excellent!",
+      isi: "Hafalkan kosa katanya ya!",
     }
   ],
   // --- DEFAULT (Jika bab tidak ditemukan) ---

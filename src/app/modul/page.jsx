@@ -89,23 +89,6 @@ export default function HalamanModul() {
           <div>
             <h2 className="section-title">Pilih Pelajaran</h2>
           </div>
-
-          <div className="dropdown-wrapper">
-             <select 
-                value={kelasTerpilih} 
-                onChange={handleGantiKelas}
-                className="dropdown-select"
-             >
-                <option value="5">Kelas 5 SD</option>
-                <option value="6">Kelas 6 SD</option>
-             </select>
-             
-             <div className="dropdown-icon">
-               <svg className="fill-current h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
-               </svg>
-             </div>
-          </div>
         </div>
 
         {/* 3. GRID MATA PELAJARAN */}
