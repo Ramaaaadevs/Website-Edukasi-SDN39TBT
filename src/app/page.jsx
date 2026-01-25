@@ -36,7 +36,7 @@ export default function Beranda() {
 
           {/* KOLOM KANAN: Tempat Gambar */}
           <div className="hero-img-col" >
-                <Image src="/images/anak juara.png" width={600} height={600} alt="Hero" />     
+                <Image src="/images/anak juara 1_1.png" width={600} height={600} alt="Hero" />     
           </div>
 
         </div>
