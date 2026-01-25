@@ -24,7 +24,7 @@ export default function Navbar() {
           </Link>
           
           {/* Tombol yang lebih menonjol buat Ujian */}
-          <Link href="/evaluasi" className="nav-btn-highlight">
+          <Link href="/ujian" className="nav-btn-highlight">
             Ujian Akhir
           </Link>
         </div>

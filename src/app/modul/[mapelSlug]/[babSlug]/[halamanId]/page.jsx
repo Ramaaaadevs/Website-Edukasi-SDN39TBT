@@ -142,7 +142,7 @@ export default function HalamanBelajar() {
                   <h1 className="text-3xl font-black text-gray-900 mb-2">Materi Selesai!</h1>
                   <p className="text-gray-500 mb-8">Kamu sudah siap untuk ujian akhir?</p>
                    
-                   <Link href={`/modul/${mapelSlug}/${babSlug}/evaluasi`}>
+                   <Link href={`/modul/${mapelSlug}/${babSlug}/ujian`}>
                     <button className="w-full bg-blue-600 text-white py-4 rounded-xl font-black text-xl shadow-lg hover:bg-blue-700 hover:scale-105 transition-transform">
                         MULAI UJIAN 🚀
                     </button>

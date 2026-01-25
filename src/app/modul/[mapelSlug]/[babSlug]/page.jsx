@@ -194,7 +194,7 @@ export default function HalamanBelajarInteraktif() {
               
               {/* Cek apakah ini default (kosong) atau beneran selesai */}
               {babSlug in databaseAlurBelajar ? (
-                <Link href={`/modul/${mapelSlug}/${babSlug}/evaluasi`}>
+                <Link href={`/modul/${mapelSlug}/${babSlug}/ujian`}>
                   <button className="w-full bg-yellow-400 text-yellow-900 text-xl font-black py-5 rounded-2xl shadow-yellow-200 shadow-xl hover:bg-yellow-300 hover:scale-105 transition-transform">
                     MULAI EVALUASI AKHIR 🚀
                   </button>
