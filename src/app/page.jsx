@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Credit from "@/components/Credit"; 
+import Image from "next/image";
 // Nanti import Image dari next/image kalau gambar sudah ada
 
 export default function Beranda() {
@@ -34,17 +35,8 @@ export default function Beranda() {
           </div>
 
           {/* KOLOM KANAN: Tempat Gambar */}
-          <div className="hero-img-col">
-            {/* Nanti ganti <img> dibawah:
-                <Image src="/images/anak-juara.png" width={500} height={500} alt="Hero" />
-            */}
-            <div className="hero-img-placeholder">
-                <img 
-                  src="https://placehold.co/600x600/png?text=Gambar+Anak+Juara" 
-                  alt="Ilustrasi"
-                  className="w-full h-auto object-contain drop-shadow-2xl"
-                />
-            </div>
+          <div className="hero-img-col" >
+                <Image src="/images/anak juara.png" width={600} height={600} alt="Hero" />     
           </div>
 
         </div>

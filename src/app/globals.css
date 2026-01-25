@@ -7,7 +7,7 @@
 @layer components {
   /* --- LAYOUT GLOBAL --- */
   .page-container {
-    @apply min-h-screen bg-blue-50 font-sans flex flex-col;
+    @apply h-screen bg-blue-50 font-sans flex flex-col;
   }
 
   /* --- HALAMAN DEPAN (HERO SECTION) --- */
