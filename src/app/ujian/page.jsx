@@ -24,7 +24,7 @@ export default function HalamanPilihMapelUjian() {
             <ChevronLeft size={20}/> Kembali ke Home
           </Link>
           <h1 className="text-3xl md:text-4xl font-black text-[#2E2856]">
-            Ujian Akhir Semester 🎓
+            Ujian Akhir 
           </h1>
           <p className="text-gray-500 mt-2 text-lg">
             Pilih mata pelajaran yang ingin diujikan.

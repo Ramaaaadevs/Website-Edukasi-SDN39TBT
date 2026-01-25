@@ -2,44 +2,42 @@
 
 import { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
-import { ChevronLeft } from "lucide-react";
+import { ChevronLeft, Clock, FileText, AlertCircle } from "lucide-react";
 
 // IMPORT DATA SOAL
 import soalMtkPecahan from "@/data/mtk-kelas5-pecahan.json";
 import soalBingGreeting from "@/data/bing-kelas5-greeting.json";
-// Import soalIpa jika sudah ada
+// Import soalIpa...
 
 export default function HalamanUjianAkhir() {
   const { mapelSlug, kelasId } = useParams();
   const router = useRouter();
 
+  // STATE UTAMA
   const [soalUjian, setSoalUjian] = useState([]);
   const [indexSoal, setIndexSoal] = useState(0);
   const [jawabanUser, setJawabanUser] = useState({});
   const [waktuSisa, setWaktuSisa] = useState(1200); // 20 Menit
   const [loading, setLoading] = useState(true);
+  
+  // STATE BARU: STATUS UJIAN (belum-mulai | sedang-jalan)
+  const [ujianDimulai, setUjianDimulai] = useState(false);
 
-  // LOGIC PILIH BANK SOAL
+  // LOGIC PILIH SOAL (Sama seperti sebelumnya)
   useEffect(() => {
     let rawData = [];
     const kelas = parseInt(kelasId);
 
-    // LOGIC: Pilih soal berdasarkan Mapel DAN Kelas
-    // Saat ini kamu baru punya materi kelas 5, jadi kita validasi kelasnya
     if (kelas === 5) {
       if (mapelSlug === "matematika") rawData = soalMtkPecahan;
       else if (mapelSlug === "bahasa-inggris") rawData = soalBingGreeting;
-      // else if (mapelSlug === "ipa") rawData = soalIpa;
     } 
-    // Jika nanti ada kelas 4 atau 6, tambahkan: else if (kelas === 4) { ... }
     
-    // NORMALISASI DATA (Agar format A/B/C/D terbaca semua)
     if (rawData.length > 0) {
       const dataRapih = rawData.map((item, idx) => {
         const isArrayPilihan = Array.isArray(item.pilihan);
         let kunci = item["JAWABAN BENAR"] || item.kunciJawaban;
         
-        // Konversi kunci teks panjang ke A/B/C/D
         if (isArrayPilihan && kunci.length > 1) {
            const indexJawaban = item.pilihan.indexOf(kunci);
            if (indexJawaban !== -1) kunci = ["A", "B", "C", "D"][indexJawaban];
@@ -56,7 +54,6 @@ export default function HalamanUjianAkhir() {
         };
       });
 
-      // ACAK & AMBIL 25 SOAL
       const acak = [...dataRapih].sort(() => 0.5 - Math.random());
       setSoalUjian(acak.slice(0, 25));
     }
@@ -64,9 +61,10 @@ export default function HalamanUjianAkhir() {
     setLoading(false);
   }, [mapelSlug, kelasId]);
 
-  // TIMER
+  // TIMER (Hanya jalan kalau ujianDimulai = true)
   useEffect(() => {
-    if (loading) return;
+    if (loading || !ujianDimulai) return; // Stop timer kalau belum mulai
+
     const timer = setInterval(() => {
       setWaktuSisa((prev) => {
         if (prev <= 1) {
@@ -78,9 +76,11 @@ export default function HalamanUjianAkhir() {
       });
     }, 1000);
     return () => clearInterval(timer);
-  }, [loading]);
+  }, [loading, ujianDimulai]); // Dependency ditambah ujianDimulai
 
   const formatWaktu = (s) => `${Math.floor(s/60).toString().padStart(2,'0')}:${(s%60).toString().padStart(2,'0')}`;
+  
+  const formatJudul = (s) => s ? s.replace(/-/g, " ").toUpperCase() : "";
 
   const handlePilihJawaban = (opsi) => {
     setJawabanUser({ ...jawabanUser, [indexSoal]: opsi });
@@ -110,27 +110,92 @@ export default function HalamanUjianAkhir() {
     router.push("/result");
   };
 
-  if (loading) return <div className="min-h-screen flex items-center justify-center font-bold text-gray-400">Menyiapkan Ujian...</div>;
+  // 1. TAMPILAN LOADING
+  if (loading) return <div className="h-screen flex items-center justify-center font-bold text-gray-400">Menyiapkan Ujian...</div>;
   
-  // Tampilan Jika Data Kosong (Misal buka Kelas 1 Matematika yg belum ada JSON-nya)
+  // 2. TAMPILAN DATA KOSONG
   if (soalUjian.length === 0) return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6 text-center">
+    <div className="h-screen flex flex-col items-center justify-center p-6 text-center">
        <div className="text-6xl mb-4 grayscale opacity-30">📂</div>
        <h2 className="text-2xl font-bold text-gray-700 mb-2">Soal Belum Tersedia</h2>
-       <p className="text-gray-500 mb-6">Materi untuk Kelas {kelasId} {mapelSlug} belum diupload.</p>
-       <button onClick={() => router.back()} className="bg-blue-600 text-white px-6 py-2 rounded-xl font-bold hover:bg-blue-700 transition">
-         Kembali Pilih Kelas
-       </button>
+       <button onClick={() => router.back()} className="bg-blue-600 text-white px-6 py-2 rounded-xl font-bold hover:bg-blue-700 transition">Kembali</button>
     </div>
   );
 
+  // ==========================================
+  // 3. TAMPILAN HALAMAN "READY" (LOBBY)
+  // ==========================================
+  if (!ujianDimulai) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-6 font-sans">
+        <div className="max-w-md w-full bg-white rounded-[2.5rem] shadow-2xl p-8 md:p-10 text-center border-4 border-white ring-4 ring-blue-50 relative overflow-hidden">
+          
+          {/* Hiasan Background */}
+          <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 to-indigo-500"></div>
+          
+          <div className="mb-6">
+             <div className="w-20 h-20 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto text-4xl mb-4 shadow-inner">
+               🚀
+             </div>
+             <h1 className="text-3xl font-black text-[#2E2856] mb-1">
+               SIAP UJIAN?
+             </h1>
+             <p className="text-gray-400 font-bold uppercase tracking-wider text-sm">
+               Kelas {kelasId} • {formatJudul(mapelSlug)}
+             </p>
+          </div>
+
+          {/* Info Box */}
+          <div className="bg-gray-50 rounded-2xl p-5 mb-8 border border-gray-100 text-left space-y-3">
+             <div className="flex items-center gap-3 text-gray-700">
+                <FileText className="text-blue-500" size={20} />
+                <span className="font-bold">Total Soal:</span>
+                <span className="ml-auto font-mono bg-white px-2 py-0.5 rounded border text-sm">25 Butir</span>
+             </div>
+             <div className="flex items-center gap-3 text-gray-700">
+                <Clock className="text-orange-500" size={20} />
+                <span className="font-bold">Waktu:</span>
+                <span className="ml-auto font-mono bg-white px-2 py-0.5 rounded border text-sm">20 Menit</span>
+             </div>
+             <div className="flex items-start gap-3 text-gray-700 pt-2 border-t border-gray-200 mt-2">
+                <AlertCircle className="text-red-500 flex-shrink-0" size={20} />
+                <p className="text-xs text-gray-500 leading-relaxed">
+                  Dilarang menyontek atau membuka buku. Kerjakan dengan jujur ya!
+                </p>
+             </div>
+          </div>
+
+          {/* Tombol Start */}
+          <button 
+            onClick={() => setUjianDimulai(true)}
+            className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 rounded-xl font-black text-xl shadow-lg shadow-blue-200 hover:scale-105 hover:shadow-xl transition-all active:scale-95"
+          >
+            MULAI SEKARANG ➔
+          </button>
+          
+          <button 
+             onClick={() => router.back()}
+             className="mt-4 text-gray-400 text-sm font-bold hover:text-gray-600 transition"
+          >
+             Batal / Kembali
+          </button>
+
+        </div>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // 4. TAMPILAN UJIAN (SOAL BERJALAN)
+  // ==========================================
   const soalAktif = soalUjian[indexSoal];
   const progress = ((indexSoal + 1) / soalUjian.length) * 100;
 
   return (
-    <div className="min-h-screen bg-gray-50 font-sans flex flex-col">
-      {/* Header Ujian */}
-      <div className="bg-white px-6 py-4 shadow-sm flex items-center justify-between sticky top-0 z-20">
+    <div className="h-screen bg-gray-50 font-sans flex flex-col overflow-hidden">
+      
+      {/* HEADER */}
+      <div className="bg-white px-6 py-4 shadow-sm flex items-center justify-between shrink-0 z-20">
          <div>
             <span className="text-xs text-gray-400 font-bold uppercase tracking-wider block">Ujian Kelas {kelasId}</span>
             <span className="text-lg font-bold text-blue-900 capitalize">{mapelSlug.replace("-", " ")}</span>
@@ -140,47 +205,54 @@ export default function HalamanUjianAkhir() {
          </div>
       </div>
 
-      {/* Progress Bar */}
-      <div className="w-full bg-gray-200 h-1.5">
+      {/* PROGRESS BAR */}
+      <div className="w-full bg-gray-200 h-1.5 shrink-0">
         <div className="bg-blue-600 h-1.5 transition-all duration-300" style={{ width: `${progress}%` }}></div>
       </div>
 
-      <main className="flex-1 max-w-4xl mx-auto w-full p-6 pb-32 flex flex-col justify-center">
-        <div className="mb-8 text-center">
-           <span className="inline-block bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs font-bold mb-4">
-              Soal {indexSoal + 1} / {soalUjian.length}
-           </span>
-           <h2 className="text-2xl md:text-3xl font-bold text-[#2E2856] leading-relaxed">
-             {soalAktif.PERTANYAAN}
-           </h2>
-        </div>
+      {/* MAIN CONTENT */}
+      <main className="flex-1 w-full flex flex-col justify-center items-center p-4 overflow-y-auto">
+        <div className="w-full max-w-4xl">
+            
+            {/* Pertanyaan */}
+            <div className="mb-8 text-center">
+               <span className="inline-block bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs font-bold mb-4">
+                  Soal {indexSoal + 1} / {soalUjian.length}
+               </span>
+               <h2 className="text-2xl md:text-3xl font-bold text-[#2E2856] leading-relaxed">
+                 {soalAktif.PERTANYAAN}
+               </h2>
+            </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {["A", "B", "C", "D"].map((opsi) => (
-            <button
-              key={opsi}
-              onClick={() => handlePilihJawaban(opsi)}
-              className={`p-5 rounded-2xl border-2 text-left font-bold transition-all flex items-center gap-4 group h-full
-                ${jawabanUser[indexSoal] === opsi 
-                  ? "border-blue-500 bg-blue-50 text-blue-700 shadow-md ring-2 ring-blue-200" 
-                  : "border-gray-200 bg-white hover:bg-gray-50 hover:border-blue-300 text-gray-600"
-                }
-              `}
-            >
-              <span className={`w-10 h-10 min-w-[2.5rem] rounded-full flex items-center justify-center text-sm font-bold border transition-colors
-                 ${jawabanUser[indexSoal] === opsi ? "bg-blue-600 text-white border-blue-600" : "bg-gray-100 border-gray-200 text-gray-500 group-hover:bg-blue-100 group-hover:text-blue-600"}
-              `}>
-                {opsi}
-              </span>
-              <span className="text-lg">{soalAktif[opsi]}</span>
-            </button>
-          ))}
+            {/* Pilihan Jawaban */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {["A", "B", "C", "D"].map((opsi) => (
+                <button
+                  key={opsi}
+                  onClick={() => handlePilihJawaban(opsi)}
+                  className={`p-5 rounded-2xl border-2 text-left font-bold transition-all flex items-center gap-4 group w-full
+                    ${jawabanUser[indexSoal] === opsi 
+                      ? "border-blue-500 bg-blue-50 text-blue-700 shadow-md ring-2 ring-blue-200" 
+                      : "border-gray-200 bg-white hover:bg-gray-50 hover:border-blue-300 text-gray-600"
+                    }
+                  `}
+                >
+                  <span className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold border transition-colors
+                     ${jawabanUser[indexSoal] === opsi ? "bg-blue-600 text-white border-blue-600" : "bg-gray-100 border-gray-200 text-gray-500 group-hover:bg-blue-100 group-hover:text-blue-600"}
+                  `}>
+                    {opsi}
+                  </span>
+                  <span className="text-lg">{soalAktif[opsi]}</span>
+                </button>
+              ))}
+            </div>
+
         </div>
       </main>
 
-      {/* Navigasi Bawah */}
-      <div className="fixed bottom-0 w-full bg-white p-4 border-t border-gray-100 flex justify-center z-20">
-         <div className="max-w-4xl w-full flex justify-between items-center gap-4">
+      {/* FOOTER */}
+      <div className="bg-white p-4 border-t border-gray-100 shrink-0 z-20">
+         <div className="max-w-4xl mx-auto flex justify-between items-center gap-4">
             <button 
               onClick={handlePrev}
               disabled={indexSoal === 0}
@@ -200,6 +272,7 @@ export default function HalamanUjianAkhir() {
             )}
          </div>
       </div>
+      
     </div>
   );
 }
