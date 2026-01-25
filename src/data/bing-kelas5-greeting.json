@@ -23,17 +23,6 @@
   },
   {
     "ID SOAL": 3,
-    "PERTANYAAN": "Why is it important to keep our environment clean?",
-    "A": "To make it messy",
-    "B": "To get sick",
-    "C": "To make it healthy",
-    "D": "To break the rules",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Lingkungan bersih membuat kita sehat.",
-    "": ""
-  },
-  {
-    "ID SOAL": 4,
     "PERTANYAAN": "Which object helps keep the environment clean?",
     "A": "Tree",
     "B": "Chair",
@@ -44,249 +33,7 @@
     "": ""
   },
   {
-    "ID SOAL": 5,
-    "PERTANYAAN": "Natural resources are things that come from...",
-    "A": "factories",
-    "B": "nature",
-    "C": "schools",
-    "D": "animals only",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "SDA berasal dari alam (Nature).",
-    "": ""
-  },
-  {
-    "ID SOAL": 6,
-    "PERTANYAAN": "Which of the following is a renewable natural resource?",
-    "A": "Coal",
-    "B": "Oil",
-    "C": "Trees",
-    "D": "Gold",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Pohon (Trees) bisa ditanam kembali.",
-    "": ""
-  },
-  {
-    "ID SOAL": 7,
-    "PERTANYAAN": "We should save water because...",
-    "A": "water is important for life",
-    "B": "water is dirty",
-    "C": "water is unlimited",
-    "D": "water is not useful",
-    "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Air penting untuk kehidupan.",
-    "": ""
-  },
-  {
-    "ID SOAL": 8,
-    "PERTANYAAN": "The sun gives us...",
-    "A": "heat and light",
-    "B": "water",
-    "C": "food",
-    "D": "oil",
-    "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Matahari memberikan panas dan cahaya.",
-    "": ""
-  },
-  {
-    "ID SOAL": 9,
-    "PERTANYAAN": "What is the main source of energy for life on Earth?",
-    "A": "Wind",
-    "B": "Water",
-    "C": "The Sun",
-    "D": "Electricity",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Matahari adalah sumber energi utama.",
-    "": ""
-  },
-  {
-    "ID SOAL": 10,
-    "PERTANYAAN": "Which of the following is an example of potential energy?",
-    "A": "Moving bicycle",
-    "B": "Stretched rubber band",
-    "C": "Burning candle",
-    "D": "Running fan",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Karet yang ditarik menyimpan energi potensial.",
-    "": ""
-  },
-  {
-    "ID SOAL": 11,
-    "PERTANYAAN": "Kinetic energy is the energy of...",
-    "A": "Light",
-    "B": "Heat",
-    "C": "Motion",
-    "D": "Sound",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Kinetik adalah energi gerak (Motion).",
-    "": ""
-  },
-  {
-    "ID SOAL": 12,
-    "PERTANYAAN": "Which device changes solar energy into electrical energy?",
-    "A": "Wind turbine",
-    "B": "Solar panel",
-    "C": "Battery",
-    "D": "Generator",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Panel surya mengubah cahaya jadi listrik.",
-    "": ""
-  },
-  {
-    "ID SOAL": 13,
-    "PERTANYAAN": "Characteristic of all living things is...",
-    "A": "Move from place to place",
-    "B": "Need food or energy",
-    "C": "Always big",
-    "D": "Can fly",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Semua makhluk hidup butuh makan/energi.",
-    "": ""
-  },
-  {
-    "ID SOAL": 14,
-    "PERTANYAAN": "Which is NOT a living thing?",
-    "A": "Cat",
-    "B": "Tree",
-    "C": "Rock",
-    "D": "Bird",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Batu (Rock) adalah benda mati.",
-    "": ""
-  },
-  {
-    "ID SOAL": 15,
-    "PERTANYAAN": "What does 'grow' mean?",
-    "A": "Become smaller",
-    "B": "Stay the same",
-    "C": "Become bigger",
-    "D": "Turn into water",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Tumbuh artinya menjadi lebih besar.",
-    "": ""
-  },
-  {
-    "ID SOAL": 16,
-    "PERTANYAAN": "Animals are different from plants because animals...",
-    "A": "make food",
-    "B": "do not need air",
-    "C": "can move",
-    "D": "do not grow",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Hewan bisa berpindah tempat (move).",
-    "": ""
-  },
-  {
-    "ID SOAL": 17,
-    "PERTANYAAN": "What is a food chain?",
-    "A": "Place where animals live",
-    "B": "Type of plant",
-    "C": "Energy movement",
-    "D": "Group of animals",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Rantai makanan adalah perpindahan energi.",
-    "": ""
-  },
-  {
-    "ID SOAL": 18,
-    "PERTANYAAN": "Which organism is a producer?",
-    "A": "Grass",
-    "B": "Snake",
-    "C": "Lion",
-    "D": "Mushroom",
-    "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Rumput (Grass) adalah produsen.",
-    "": ""
-  },
-  {
-    "ID SOAL": 19,
-    "PERTANYAAN": "Role of decomposers is to...",
-    "A": "hunt animals",
-    "B": "protect ecosystems",
-    "C": "make food",
-    "D": "break down dead organisms",
-    "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Pengurai menguraikan sisa makhluk hidup.",
-    "": ""
-  },
-  {
-    "ID SOAL": 20,
-    "PERTANYAAN": "A farmer grows rice. This activity is...",
-    "A": "Distribution",
-    "B": "Consumption",
-    "C": "Exchange",
-    "D": "Production",
-    "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Menanam padi adalah kegiatan Produksi.",
-    "": ""
-  },
-  {
-    "ID SOAL": 21,
-    "PERTANYAAN": "Example of distribution is...",
-    "A": "Eating lunch",
-    "B": "Making shoes",
-    "C": "Delivering milk",
-    "D": "Baking cake",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Mengantar barang = Distribusi.",
-    "": ""
-  },
-  {
-    "ID SOAL": 22,
-    "PERTANYAAN": "People buy food at a restaurant. This is...",
-    "A": "Production",
-    "B": "Consumption",
-    "C": "Distribution",
-    "D": "Transportation",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Membeli/memakan = Konsumsi.",
-    "": ""
-  },
-  {
-    "ID SOAL": 23,
-    "PERTANYAAN": "Living in harmony means living...",
-    "A": "alone",
-    "B": "happily with others",
-    "C": "angrily",
-    "D": "loudly",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Harmony artinya hidup rukun.",
-    "": ""
-  },
-  {
-    "ID SOAL": 24,
-    "PERTANYAAN": "Which action shows responsibility?",
-    "A": "Doing homework",
-    "B": "Throwing trash anywhere",
-    "C": "Breaking rules",
-    "D": "Being lazy",
-    "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Mengerjakan PR adalah tanggung jawab.",
-    "": ""
-  },
-  {
-    "ID SOAL": 25,
-    "PERTANYAAN": "We should say 'sorry' when we...",
-    "A": "help friends",
-    "B": "do something wrong",
-    "C": "feel happy",
-    "D": "play together",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Salah harus minta maaf.",
-    "": ""
-  },
-  {
-    "ID SOAL": 26,
-    "PERTANYAAN": "Dika meets his teacher at 7 AM. He says...",
-    "A": "Good night",
-    "B": "Good evening",
-    "C": "Good morning",
-    "D": "Good afternoon",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Jam 7 pagi = Good morning.",
-    "": ""
-  },
-  {
-    "ID SOAL": 27,
+    "ID SOAL": 4,
     "PERTANYAAN": "Number after twenty-four is...",
     "A": "Thirty-five",
     "B": "Twenty-six",
@@ -297,7 +44,7 @@
     "": ""
   },
   {
-    "ID SOAL": 28,
+    "ID SOAL": 5,
     "PERTANYAAN": "My father's brother is my...",
     "A": "Cousin",
     "B": "Grandfather",
@@ -308,7 +55,7 @@
     "": ""
   },
   {
-    "ID SOAL": 29,
+    "ID SOAL": 6,
     "PERTANYAAN": "An elephant is a ... animal.",
     "A": "Thin",
     "B": "Big",
@@ -319,7 +66,7 @@
     "": ""
   },
   {
-    "ID SOAL": 30,
+    "ID SOAL": 7,
     "PERTANYAAN": "We use ... for smelling.",
     "A": "Mouth",
     "B": "Ears",
@@ -330,7 +77,7 @@
     "": ""
   },
   {
-    "ID SOAL": 31,
+    "ID SOAL": 8,
     "PERTANYAAN": "Translate: 'Saya mempunyai dua apel'.",
     "A": "I am two apples",
     "B": "I has two apples",
@@ -341,7 +88,7 @@
     "": ""
   },
   {
-    "ID SOAL": 32,
+    "ID SOAL": 9,
     "PERTANYAAN": "Where do people usually cook?",
     "A": "Bedroom",
     "B": "Kitchen",
@@ -352,7 +99,7 @@
     "": ""
   },
   {
-    "ID SOAL": 33,
+    "ID SOAL": 10,
     "PERTANYAAN": "A rabbit likes to eat...",
     "A": "Fish",
     "B": "Carrots",
@@ -363,7 +110,7 @@
     "": ""
   },
   {
-    "ID SOAL": 34,
+    "ID SOAL": 11,
     "PERTANYAAN": "Choose the correct spelling:",
     "A": "Librarey",
     "B": "Library",
@@ -374,7 +121,7 @@
     "": ""
   },
   {
-    "ID SOAL": 35,
+    "ID SOAL": 12,
     "PERTANYAAN": "English for 'Senin' is...",
     "A": "Monday",
     "B": "Tuesday",
@@ -385,18 +132,7 @@
     "": ""
   },
   {
-    "ID SOAL": 36,
-    "PERTANYAAN": "She ... to school every day.",
-    "A": "Going",
-    "B": "Goes",
-    "C": "Went",
-    "D": "Go",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Simple Present (She) pakai Goes.",
-    "": ""
-  },
-  {
-    "ID SOAL": 37,
+    "ID SOAL": 13,
     "PERTANYAAN": "We have ten ... on our hands.",
     "A": "Fingers",
     "B": "Toes",
@@ -407,7 +143,7 @@
     "": ""
   },
   {
-    "ID SOAL": 38,
+    "ID SOAL": 14,
     "PERTANYAAN": "The color of a banana is...",
     "A": "Green",
     "B": "Blue",
@@ -418,18 +154,7 @@
     "": ""
   },
   {
-    "ID SOAL": 39,
-    "PERTANYAAN": "How are you?",
-    "A": "You are welcome",
-    "B": "I am ten years old",
-    "C": "I am fine thank you",
-    "D": "My name is Budi",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Menanyakan kabar.",
-    "": ""
-  },
-  {
-    "ID SOAL": 40,
+    "ID SOAL": 15,
     "PERTANYAAN": "Which animal can fly?",
     "A": "Bird",
     "B": "Fish",
@@ -440,7 +165,7 @@
     "": ""
   },
   {
-    "ID SOAL": 41,
+    "ID SOAL": 16,
     "PERTANYAAN": "English for 'Rautan' is...",
     "A": "Eraser",
     "B": "Ruler",
@@ -451,18 +176,7 @@
     "": ""
   },
   {
-    "ID SOAL": 42,
-    "PERTANYAAN": "Ten plus five is...",
-    "A": "Twenty",
-    "B": "Fifteen",
-    "C": "Twelve",
-    "D": "Fifty",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "10 + 5 = 15.",
-    "": ""
-  },
-  {
-    "ID SOAL": 43,
+    "ID SOAL": 17,
     "PERTANYAAN": "We use our ... to see.",
     "A": "Tongue",
     "B": "Eyes",
@@ -473,7 +187,7 @@
     "": ""
   },
   {
-    "ID SOAL": 44,
+    "ID SOAL": 18,
     "PERTANYAAN": "A student studies at...",
     "A": "Market",
     "B": "Hospital",
@@ -484,7 +198,7 @@
     "": ""
   },
   {
-    "ID SOAL": 45,
+    "ID SOAL": 19,
     "PERTANYAAN": "My mother's mother is my...",
     "A": "Grandmother",
     "B": "Mother",
@@ -495,7 +209,7 @@
     "": ""
   },
   {
-    "ID SOAL": 46,
+    "ID SOAL": 20,
     "PERTANYAAN": "Opposite of 'Small' is...",
     "A": "Little",
     "B": "Short",
@@ -506,7 +220,7 @@
     "": ""
   },
   {
-    "ID SOAL": 47,
+    "ID SOAL": 21,
     "PERTANYAAN": "We use an ... when it rains.",
     "A": "Uniform",
     "B": "Hat",
@@ -517,7 +231,7 @@
     "": ""
   },
   {
-    "ID SOAL": 48,
+    "ID SOAL": 22,
     "PERTANYAAN": "English for 'Hidung' is...",
     "A": "Cheek",
     "B": "Hand",
@@ -528,7 +242,7 @@
     "": ""
   },
   {
-    "ID SOAL": 49,
+    "ID SOAL": 23,
     "PERTANYAAN": "I have breakfast in the...",
     "A": "Morning",
     "B": "Afternoon",
@@ -539,29 +253,7 @@
     "": ""
   },
   {
-    "ID SOAL": 50,
-    "PERTANYAAN": "Saying 'Selamat tinggal' in English...",
-    "A": "Hello",
-    "B": "Thank you",
-    "C": "I am sorry",
-    "D": "Goodbye",
-    "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Selamat tinggal = Goodbye.",
-    "": ""
-  },
-  {
-    "ID SOAL": 51,
-    "PERTANYAAN": "What does 'I have many friends' mean?",
-    "A": "I have one friend",
-    "B": "I have a lot of friends",
-    "C": "I like my friend",
-    "D": "I play with my friend",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Many artinya banyak.",
-    "": ""
-  },
-  {
-    "ID SOAL": 52,
+    "ID SOAL": 24,
     "PERTANYAAN": "The word 'friend' means...",
     "A": "Teacher",
     "B": "Brother",
@@ -572,18 +264,7 @@
     "": ""
   },
   {
-    "ID SOAL": 53,
-    "PERTANYAAN": "They are kind. 'They' refers to...",
-    "A": "I",
-    "B": "Friends",
-    "C": "Teacher",
-    "D": "Family",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "They merujuk ke Friends (jamak).",
-    "": ""
-  },
-  {
-    "ID SOAL": 54,
+    "ID SOAL": 25,
     "PERTANYAAN": "My friend shares food. 'Share' means...",
     "A": "Eat alone",
     "B": "Give part to others",
@@ -594,260 +275,18 @@
     "": ""
   },
   {
-    "ID SOAL": 55,
-    "PERTANYAAN": "Picture: Boy playing football. He is...",
-    "A": "reading a book",
-    "B": "playing football",
-    "C": "swimming",
-    "D": "riding a bike",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Sedang bermain bola.",
-    "": ""
-  },
-  {
-    "ID SOAL": 56,
-    "PERTANYAAN": "Picture: Girl riding bicycle. She is...",
-    "A": "walking",
-    "B": "running",
-    "C": "riding a bicycle",
-    "D": "playing basketball",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Sedang naik sepeda.",
-    "": ""
-  },
-  {
-    "ID SOAL": 57,
-    "PERTANYAAN": "Picture: Flying kite outside. Location?",
-    "A": "Outside",
-    "B": "In the library",
-    "C": "In the classroom",
-    "D": "In the kitchen",
-    "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Layangan main di luar (Outside).",
-    "": ""
-  },
-  {
-    "ID SOAL": 58,
-    "PERTANYAAN": "Where do people buy clothes and food?",
-    "A": "Library",
-    "B": "Shopping mall",
-    "C": "School",
-    "D": "Hospital",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Belanja di Mall.",
-    "": ""
-  },
-  {
-    "ID SOAL": 59,
-    "PERTANYAAN": "Where can you watch a movie in the mall?",
-    "A": "Supermarket",
-    "B": "Parking area",
-    "C": "Restroom",
-    "D": "Cinema",
-    "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Nonton film di Bioskop (Cinema).",
-    "": ""
-  },
-  {
-    "ID SOAL": 60,
-    "PERTANYAAN": "Place to eat in the mall is...",
-    "A": "Toy store",
-    "B": "Bookstore",
-    "C": "Food court",
-    "D": "Shoe store",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Tempat makan = Food court.",
-    "": ""
-  },
-  {
-    "ID SOAL": 61,
-    "PERTANYAAN": "Asking for price",
-    "A": "we say...",
-    "B": "How much is this?",
-    "C": "How are you?",
-    "D": "Where are from?",
-    "JAWABAN BENAR": "What is your name?",
-    "PEMBAHASAN": "C",
-    "": "Tanya harga = How much."
-  },
-  {
-    "ID SOAL": 62,
-    "PERTANYAAN": "Picture: Houses school market. This is a...",
-    "A": "zoo",
-    "B": "hometown",
-    "C": "beach",
-    "D": "mountain",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Kota tempat tinggal (Hometown).",
-    "": ""
-  },
-  {
-    "ID SOAL": 63,
-    "PERTANYAAN": "Children playing in a park near houses.",
-    "A": "They play in park",
-    "B": "They study in hospital",
-    "C": "They swim in sea",
-    "D": "They climb mountain",
-    "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Main di taman.",
-    "": ""
-  },
-  {
-    "ID SOAL": 64,
-    "PERTANYAAN": "Picture shows a river near houses.",
-    "A": "It has a river",
-    "B": "It is in desert",
-    "C": "It has airport",
-    "D": "It is crowded",
-    "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Ada sungainya.",
-    "": ""
-  },
-  {
-    "ID SOAL": 65,
-    "PERTANYAAN": "Greeting on birthday?",
-    "A": "Good morning",
-    "B": "Thank you",
-    "C": "Excuse me",
-    "D": "Happy Birthday",
-    "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Ucapkan Happy Birthday.",
-    "": ""
-  },
-  {
-    "ID SOAL": 66,
-    "PERTANYAAN": "Found at birthday party?",
-    "A": "Birthday cake",
-    "B": "School bag",
-    "C": "Notebook",
-    "D": "Blackboard",
-    "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Ada kue ulang tahun.",
-    "": ""
-  },
-  {
-    "ID SOAL": 67,
-    "PERTANYAAN": "Before eating cake people usually...",
-    "A": "Read book",
-    "B": "Do homework",
-    "C": "Sleep",
-    "D": "Sing birthday song",
-    "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Nyanyi dulu baru makan.",
-    "": ""
-  },
-  {
-    "ID SOAL": 68,
-    "PERTANYAAN": "Giving a birthday wish sentence?",
-    "A": "How old are you?",
-    "B": "Where are you going?",
-    "C": "Happy Birthday to you!",
-    "D": "What is your name?",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Ucapan selamat ulang tahun.",
-    "": ""
-  },
-  {
-    "ID SOAL": 69,
-    "PERTANYAAN": "Teacher is ... in front of class.",
-    "A": "Sitting",
-    "B": "Standing",
-    "C": "Writing",
-    "D": "Playing",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Guru berdiri (Standing).",
-    "": ""
-  },
-  {
-    "ID SOAL": 70,
-    "PERTANYAAN": "Where is the whiteboard?",
-    "A": "Behind the teacher",
-    "B": "On the desk",
-    "C": "Under the table",
-    "D": "Next to the door",
-    "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Papan tulis di belakang guru.",
-    "": ""
-  },
-  {
-    "ID SOAL": 71,
-    "PERTANYAAN": "Objects on student desks?",
-    "A": "Toys",
-    "B": "Books and pencils",
-    "C": "Food",
-    "D": "Shoes",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Buku dan alat tulis.",
-    "": ""
-  },
-  {
-    "ID SOAL": 72,
-    "PERTANYAAN": "Text about 'My Favorite Show'.",
-    "A": "My school",
-    "B": "My favorite food",
-    "C": "My favorite show",
-    "D": "My hobby",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Topik tentang acara TV.",
-    "": ""
-  },
-  {
-    "ID SOAL": 73,
-    "PERTANYAAN": "Where do we watch a show?",
-    "A": "Kitchen",
-    "B": "Bathroom",
-    "C": "Television",
-    "D": "Closet",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Nonton di TV.",
-    "": ""
-  },
-  {
-    "ID SOAL": 74,
-    "PERTANYAAN": "Why like the show?",
-    "A": "It is fun",
-    "B": "It is scary",
-    "C": "It is boring",
-    "D": "It is long",
-    "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Karena seru (Fun).",
-    "": ""
-  },
-  {
-    "ID SOAL": 75,
-    "PERTANYAAN": "When watching the show?",
-    "A": "Morning",
-    "B": "At night before sleeping",
-    "C": "During exam",
-    "D": "Library",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Biasanya malam hari.",
-    "": ""
-  },
-  {
-    "ID SOAL": 76,
+    "ID SOAL": 26,
     "PERTANYAAN": "English for 'buku'?",
     "A": "Pen",
     "B": "Book",
     "C": "Bag",
     "D": "Chair",
-    "JAWABAN BENAR": "C",
+    "JAWABAN BENAR": "B",
     "PEMBAHASAN": "Buku = Book.",
     "": ""
   },
   {
-    "ID SOAL": 77,
-    "PERTANYAAN": "She ... a cat at home.",
-    "A": "have",
-    "B": "has",
-    "C": "had",
-    "D": "having",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "She pakai Has.",
-    "": ""
-  },
-  {
-    "ID SOAL": 78,
+    "ID SOAL": 27,
     "PERTANYAAN": "Which one is a fruit?",
     "A": "Carrot",
     "B": "Apple",
@@ -858,18 +297,7 @@
     "": ""
   },
   {
-    "ID SOAL": 79,
-    "PERTANYAAN": "I go to school ... Monday.",
-    "A": "in",
-    "B": "at",
-    "C": "on",
-    "D": "to",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Hari pakai On.",
-    "": ""
-  },
-  {
-    "ID SOAL": 80,
+    "ID SOAL": 28,
     "PERTANYAAN": "Color of the sky?",
     "A": "Green",
     "B": "Blue",
@@ -880,7 +308,7 @@
     "": ""
   },
   {
-    "ID SOAL": 81,
+    "ID SOAL": 29,
     "PERTANYAAN": "Cooking in the ...",
     "A": "bedroom",
     "B": "bathroom",
@@ -891,18 +319,7 @@
     "": ""
   },
   {
-    "ID SOAL": 82,
-    "PERTANYAAN": "He ... football every Sunday.",
-    "A": "play",
-    "B": "plays",
-    "C": "playing",
-    "D": "played",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "He pakai verb+s (Plays).",
-    "": ""
-  },
-  {
-    "ID SOAL": 83,
+    "ID SOAL": 30,
     "PERTANYAAN": "Opposite of big?",
     "A": "Tall",
     "B": "Small",
@@ -913,18 +330,7 @@
     "": ""
   },
   {
-    "ID SOAL": 84,
-    "PERTANYAAN": "I have ... umbrella.",
-    "A": "a",
-    "B": "an",
-    "C": "the",
-    "D": "is",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Huruf vokal pakai An.",
-    "": ""
-  },
-  {
-    "ID SOAL": 85,
+    "ID SOAL": 31,
     "PERTANYAAN": "Which one is animal?",
     "A": "Table",
     "B": "Dog",
@@ -935,29 +341,7 @@
     "": ""
   },
   {
-    "ID SOAL": 86,
-    "PERTANYAAN": "We ... happy today.",
-    "A": "am",
-    "B": "is",
-    "C": "are",
-    "D": "be",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "We pakai Are.",
-    "": ""
-  },
-  {
-    "ID SOAL": 87,
-    "PERTANYAAN": "She is my ... sister.",
-    "A": "young",
-    "B": "younger",
-    "C": "youngest",
-    "D": "youth",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Lebih muda = Younger.",
-    "": ""
-  },
-  {
-    "ID SOAL": 88,
+    "ID SOAL": 32,
     "PERTANYAAN": "Time shown 07:00?",
     "A": "Seven o'clock",
     "B": "Six o'clock",
@@ -968,51 +352,7 @@
     "": ""
   },
   {
-    "ID SOAL": 89,
-    "PERTANYAAN": "I ... milk every morning.",
-    "A": "drink",
-    "B": "drinks",
-    "C": "drank",
-    "D": "drinking",
-    "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "I pakai verb 1 (Drink).",
-    "": ""
-  },
-  {
-    "ID SOAL": 90,
-    "PERTANYAAN": "Which one is a verb?",
-    "A": "Run",
-    "B": "Cat",
-    "C": "Chair",
-    "D": "Bag",
-    "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Lari (Run) kata kerja.",
-    "": ""
-  },
-  {
-    "ID SOAL": 91,
-    "PERTANYAAN": "Sun rises in the ...",
-    "A": "west",
-    "B": "north",
-    "C": "east",
-    "D": "south",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Terbit di Timur (East).",
-    "": ""
-  },
-  {
-    "ID SOAL": 92,
-    "PERTANYAAN": "She ... not like coffee.",
-    "A": "do",
-    "B": "does",
-    "C": "is",
-    "D": "are",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "She pakai Does not.",
-    "": ""
-  },
-  {
-    "ID SOAL": 93,
+    "ID SOAL": 33,
     "PERTANYAAN": "Drives a bus is a ...",
     "A": "teacher",
     "B": "driver",
@@ -1023,29 +363,7 @@
     "": ""
   },
   {
-    "ID SOAL": 94,
-    "PERTANYAAN": "Two ... (anak-anak).",
-    "A": "childs",
-    "B": "child",
-    "C": "children",
-    "D": "childrens",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Jamak Child = Children.",
-    "": ""
-  },
-  {
-    "ID SOAL": 95,
-    "PERTANYAAN": "There ... three apples.",
-    "A": "is",
-    "B": "am",
-    "C": "are",
-    "D": "be",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Jamak pakai Are.",
-    "": ""
-  },
-  {
-    "ID SOAL": 96,
+    "ID SOAL": 34,
     "PERTANYAAN": "After Monday is ...",
     "A": "Sunday",
     "B": "Tuesday",
@@ -1056,18 +374,7 @@
     "": ""
   },
   {
-    "ID SOAL": 97,
-    "PERTANYAAN": "She ... TV now.",
-    "A": "watch",
-    "B": "watches",
-    "C": "is watching",
-    "D": "watched",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Now = Sedang (Is watching).",
-    "": ""
-  },
-  {
-    "ID SOAL": 98,
+    "ID SOAL": 35,
     "PERTANYAAN": "Which one is a drink?",
     "A": "Rice",
     "B": "Bread",
@@ -1078,7 +385,7 @@
     "": ""
   },
   {
-    "ID SOAL": 99,
+    "ID SOAL": 36,
     "PERTANYAAN": "Opposite of happy?",
     "A": "glad",
     "B": "sad",
@@ -1089,51 +396,326 @@
     "": ""
   },
   {
-    "ID SOAL": 100,
-    "PERTANYAAN": "I am ... student.",
-    "A": "-",
-    "B": "a",
-    "C": "the",
-    "D": "an",
+    "ID SOAL": 37,
+    "PERTANYAAN": "Future job 'Doctor' is...",
+    "A": "Farmer",
+    "B": "Doctor",
+    "C": "Singer",
+    "D": "Pilot",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Seorang siswa (A student).",
+    "PEMBAHASAN": "Dokter.",
     "": ""
   },
   {
-    "ID SOAL": 101,
-    "PERTANYAAN": "Which activity shows production?",
-    "A": "Buying",
-    "B": "Selling",
-    "C": "Making bread",
-    "D": "Paying",
+    "ID SOAL": 38,
+    "PERTANYAAN": "Living in harmony means living...",
+    "A": "alone",
+    "B": "happily with others",
+    "C": "angrily",
+    "D": "loudly",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Harmony artinya hidup rukun.",
+    "": ""
+  },
+  {
+    "ID SOAL": 39,
+    "PERTANYAAN": "Which action shows responsibility?",
+    "A": "Doing homework",
+    "B": "Throwing trash anywhere",
+    "C": "Breaking rules",
+    "D": "Being lazy",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Mengerjakan PR adalah tanggung jawab.",
+    "": ""
+  },
+  {
+    "ID SOAL": 40,
+    "PERTANYAAN": "We should say 'sorry' when we...",
+    "A": "help friends",
+    "B": "do something wrong",
+    "C": "feel happy",
+    "D": "play together",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Salah harus minta maaf.",
+    "": ""
+  },
+  {
+    "ID SOAL": 41,
+    "PERTANYAAN": "Dika meets his teacher at 7 AM. He says...",
+    "A": "Good night",
+    "B": "Good evening",
+    "C": "Good morning",
+    "D": "Good afternoon",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Produksi = Membuat barang.",
+    "PEMBAHASAN": "Jam 7 pagi = Good morning.",
     "": ""
   },
   {
-    "ID SOAL": 102,
-    "PERTANYAAN": "Farmer grows rice. This is...",
-    "A": "Distribution",
-    "B": "Consumption",
-    "C": "Exchange",
-    "D": "Production",
+    "ID SOAL": 42,
+    "PERTANYAAN": "How are you?",
+    "A": "You are welcome",
+    "B": "I am ten years old",
+    "C": "I am fine thank you",
+    "D": "My name is Budi",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Menanyakan kabar.",
+    "": ""
+  },
+  {
+    "ID SOAL": 43,
+    "PERTANYAAN": "Saying 'Selamat tinggal' in English...",
+    "A": "Hello",
+    "B": "Thank you",
+    "C": "I am sorry",
+    "D": "Goodbye",
     "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Menanam = Produksi.",
+    "PEMBAHASAN": "Selamat tinggal = Goodbye.",
     "": ""
   },
   {
-    "ID SOAL": 103,
-    "PERTANYAAN": "Example of distribution?",
-    "A": "Eating",
-    "B": "Making shoes",
-    "C": "Truck delivers milk",
-    "D": "Baking",
+    "ID SOAL": 44,
+    "PERTANYAAN": "What does 'I have many friends' mean?",
+    "A": "I have one friend",
+    "B": "I have a lot of friends",
+    "C": "I like my friend",
+    "D": "I play with my friend",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Many artinya banyak.",
+    "": ""
+  },
+  {
+    "ID SOAL": 45,
+    "PERTANYAAN": "Picture: Boy playing football. He is...",
+    "A": "reading a book",
+    "B": "playing football",
+    "C": "swimming",
+    "D": "riding a bike",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Sedang bermain bola.",
+    "": ""
+  },
+  {
+    "ID SOAL": 46,
+    "PERTANYAAN": "Picture: Girl riding bicycle. She is...",
+    "A": "walking",
+    "B": "running",
+    "C": "riding a bicycle",
+    "D": "playing basketball",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Mengirim barang = Distribusi.",
+    "PEMBAHASAN": "Sedang naik sepeda.",
     "": ""
   },
   {
-    "ID SOAL": 104,
+    "ID SOAL": 47,
+    "PERTANYAAN": "Picture: Flying kite outside. Location?",
+    "A": "Outside",
+    "B": "In the library",
+    "C": "In the classroom",
+    "D": "In the kitchen",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Layangan main di luar (Outside).",
+    "": ""
+  },
+  {
+    "ID SOAL": 48,
+    "PERTANYAAN": "Where do people buy clothes and food?",
+    "A": "Library",
+    "B": "Shopping mall",
+    "C": "School",
+    "D": "Hospital",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Belanja di Mall.",
+    "": ""
+  },
+  {
+    "ID SOAL": 49,
+    "PERTANYAAN": "Where can you watch a movie in the mall?",
+    "A": "Supermarket",
+    "B": "Parking area",
+    "C": "Restroom",
+    "D": "Cinema",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Nonton film di Bioskop (Cinema).",
+    "": ""
+  },
+  {
+    "ID SOAL": 50,
+    "PERTANYAAN": "Place to eat in the mall is...",
+    "A": "Toy store",
+    "B": "Bookstore",
+    "C": "Food court",
+    "D": "Shoe store",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Tempat makan = Food court.",
+    "": ""
+  },
+  {
+    "ID SOAL": 51,
+    "PERTANYAAN": "Asking for price",
+    "A": "we say...",
+    "B": "How much is this?",
+    "C": "How are you?",
+    "D": "Where are from?",
+    "JAWABAN BENAR": "What is your name?",
+    "PEMBAHASAN": "C",
+    "": "Tanya harga = How much."
+  },
+  {
+    "ID SOAL": 52,
+    "PERTANYAAN": "Picture: Houses school market. This is a...",
+    "A": "zoo",
+    "B": "hometown",
+    "C": "beach",
+    "D": "mountain",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Kota tempat tinggal (Hometown).",
+    "": ""
+  },
+  {
+    "ID SOAL": 53,
+    "PERTANYAAN": "Children playing in a park near houses.",
+    "A": "They play in park",
+    "B": "They study in hospital",
+    "C": "They swim in sea",
+    "D": "They climb mountain",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Main di taman.",
+    "": ""
+  },
+  {
+    "ID SOAL": 54,
+    "PERTANYAAN": "Picture shows a river near houses.",
+    "A": "It has a river",
+    "B": "It is in desert",
+    "C": "It has airport",
+    "D": "It is crowded",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Ada sungainya.",
+    "": ""
+  },
+  {
+    "ID SOAL": 55,
+    "PERTANYAAN": "Greeting on birthday?",
+    "A": "Good morning",
+    "B": "Thank you",
+    "C": "Excuse me",
+    "D": "Happy Birthday",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Ucapkan Happy Birthday.",
+    "": ""
+  },
+  {
+    "ID SOAL": 56,
+    "PERTANYAAN": "Found at birthday party?",
+    "A": "Birthday cake",
+    "B": "School bag",
+    "C": "Notebook",
+    "D": "Blackboard",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Ada kue ulang tahun.",
+    "": ""
+  },
+  {
+    "ID SOAL": 57,
+    "PERTANYAAN": "Before eating cake people usually...",
+    "A": "Read book",
+    "B": "Do homework",
+    "C": "Sleep",
+    "D": "Sing birthday song",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Nyanyi dulu baru makan.",
+    "": ""
+  },
+  {
+    "ID SOAL": 58,
+    "PERTANYAAN": "Giving a birthday wish sentence?",
+    "A": "How old are you?",
+    "B": "Where are you going?",
+    "C": "Happy Birthday to you!",
+    "D": "What is your name?",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Ucapan selamat ulang tahun.",
+    "": ""
+  },
+  {
+    "ID SOAL": 59,
+    "PERTANYAAN": "Teacher is ... in front of class.",
+    "A": "Sitting",
+    "B": "Standing",
+    "C": "Writing",
+    "D": "Playing",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Guru berdiri (Standing).",
+    "": ""
+  },
+  {
+    "ID SOAL": 60,
+    "PERTANYAAN": "Where is the whiteboard?",
+    "A": "Behind the teacher",
+    "B": "On the desk",
+    "C": "Under the table",
+    "D": "Next to the door",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Papan tulis di belakang guru.",
+    "": ""
+  },
+  {
+    "ID SOAL": 61,
+    "PERTANYAAN": "Objects on student desks?",
+    "A": "Toys",
+    "B": "Books and pencils",
+    "C": "Food",
+    "D": "Shoes",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Buku dan alat tulis.",
+    "": ""
+  },
+  {
+    "ID SOAL": 62,
+    "PERTANYAAN": "Text about 'My Favorite Show'.",
+    "A": "My school",
+    "B": "My favorite food",
+    "C": "My favorite show",
+    "D": "My hobby",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Topik tentang acara TV.",
+    "": ""
+  },
+  {
+    "ID SOAL": 63,
+    "PERTANYAAN": "Where do we watch a show?",
+    "A": "Kitchen",
+    "B": "Bathroom",
+    "C": "Television",
+    "D": "Closet",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Nonton di TV.",
+    "": ""
+  },
+  {
+    "ID SOAL": 64,
+    "PERTANYAAN": "Why like the show?",
+    "A": "It is fun",
+    "B": "It is scary",
+    "C": "It is boring",
+    "D": "It is long",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Karena seru (Fun).",
+    "": ""
+  },
+  {
+    "ID SOAL": 65,
+    "PERTANYAAN": "When watching the show?",
+    "A": "Morning",
+    "B": "At night before sleeping",
+    "C": "During exam",
+    "D": "Library",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Biasanya malam hari.",
+    "": ""
+  },
+  {
+    "ID SOAL": 66,
     "PERTANYAAN": "Live peacefully means...",
     "A": "Ignore others",
     "B": "Help and respect",
@@ -1144,7 +726,7 @@
     "": ""
   },
   {
-    "ID SOAL": 105,
+    "ID SOAL": 67,
     "PERTANYAAN": "Good cooperation example?",
     "A": "Playing alone",
     "B": "Littering",
@@ -1155,7 +737,7 @@
     "": ""
   },
   {
-    "ID SOAL": 106,
+    "ID SOAL": 68,
     "PERTANYAAN": "Why rules important?",
     "A": "Order and safety",
     "B": "Make angry",
@@ -1166,73 +748,7 @@
     "": ""
   },
   {
-    "ID SOAL": 107,
-    "PERTANYAAN": "Keep environment clean by...",
-    "A": "Littering",
-    "B": "Burning plastic",
-    "C": "Throw trash in bin",
-    "D": "Cut trees",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Buang sampah di tempatnya.",
-    "": ""
-  },
-  {
-    "ID SOAL": 108,
-    "PERTANYAAN": "Action protects nature?",
-    "A": "Wasting water",
-    "B": "Electricity",
-    "C": "Polluting",
-    "D": "Planting trees",
-    "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Menanam pohon.",
-    "": ""
-  },
-  {
-    "ID SOAL": 109,
-    "PERTANYAAN": "Save water because...",
-    "A": "Needed for life",
-    "B": "Unlimited",
-    "C": "Not important",
-    "D": "Dirty",
-    "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Air vital untuk hidup.",
-    "": ""
-  },
-  {
-    "ID SOAL": 110,
-    "PERTANYAAN": "Use resources wisely example?",
-    "A": "Cutting trees",
-    "B": "Lights on",
-    "C": "Use water needed",
-    "D": "Throw paper",
-    "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Hemat air.",
-    "": ""
-  },
-  {
-    "ID SOAL": 111,
-    "PERTANYAAN": "If use too much resources?",
-    "A": "Grow faster",
-    "B": "Run out",
-    "C": "Stronger",
-    "D": "Replaced",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Bisa habis (Run out).",
-    "": ""
-  },
-  {
-    "ID SOAL": 112,
-    "PERTANYAAN": "Renewable energy?",
-    "A": "Coal",
-    "B": "Oil",
-    "C": "Gas",
-    "D": "Sunlight",
-    "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Sinar matahari.",
-    "": ""
-  },
-  {
-    "ID SOAL": 113,
+    "ID SOAL": 69,
     "PERTANYAAN": "Healthy habit in picture?",
     "A": "Sleeping",
     "B": "Watching TV",
@@ -1243,40 +759,7 @@
     "": ""
   },
   {
-    "ID SOAL": 114,
-    "PERTANYAAN": "Water bottle for?",
-    "A": "Play",
-    "B": "Stay hydrated",
-    "C": "Clean",
-    "D": "Water plants",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Agar tidak dehidrasi.",
-    "": ""
-  },
-  {
-    "ID SOAL": 115,
-    "PERTANYAAN": "Best time to exercise?",
-    "A": "Morning",
-    "B": "Midnight",
-    "C": "Night",
-    "D": "Storm",
-    "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Pagi hari.",
-    "": ""
-  },
-  {
-    "ID SOAL": 116,
-    "PERTANYAAN": "Lesson from picture?",
-    "A": "Games healthy",
-    "B": "Drink water important",
-    "C": "Stay indoors",
-    "D": "Eat sweets",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Minum air itu penting.",
-    "": ""
-  },
-  {
-    "ID SOAL": 117,
+    "ID SOAL": 70,
     "PERTANYAAN": "Using laptop for?",
     "A": "Playing",
     "B": "Cooking",
@@ -1287,40 +770,7 @@
     "": ""
   },
   {
-    "ID SOAL": 118,
-    "PERTANYAAN": "Tech for messages/calls?",
-    "A": "TV",
-    "B": "Smartwatch",
-    "C": "Laptop",
-    "D": "Smartphone",
-    "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "HP (Smartphone).",
-    "": ""
-  },
-  {
-    "ID SOAL": 119,
-    "PERTANYAAN": "Smartwatch helps to?",
-    "A": "Check health/steps",
-    "B": "Movies",
-    "C": "Homework",
-    "D": "Draw",
-    "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Cek kesehatan.",
-    "": ""
-  },
-  {
-    "ID SOAL": 120,
-    "PERTANYAAN": "TV function?",
-    "A": "Entertainment/Info",
-    "B": "Exercise",
-    "C": "Cooking",
-    "D": "Study",
-    "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Hiburan & Info.",
-    "": ""
-  },
-  {
-    "ID SOAL": 121,
+    "ID SOAL": 71,
     "PERTANYAAN": "Student doing?",
     "A": "Playing",
     "B": "Studying for future",
@@ -1331,7 +781,7 @@
     "": ""
   },
   {
-    "ID SOAL": 122,
+    "ID SOAL": 72,
     "PERTANYAAN": "Writing dreams on board for?",
     "A": "Decorate",
     "B": "Forget",
@@ -1342,18 +792,7 @@
     "": ""
   },
   {
-    "ID SOAL": 123,
-    "PERTANYAAN": "Item helps learn new things?",
-    "A": "Laptop",
-    "B": "Pillow",
-    "C": "TV",
-    "D": "Toy",
-    "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Laptop.",
-    "": ""
-  },
-  {
-    "ID SOAL": 124,
+    "ID SOAL": 73,
     "PERTANYAAN": "Lesson learned?",
     "A": "Resting better",
     "B": "Preparing early helps",
@@ -1364,14 +803,575 @@
     "": ""
   },
   {
-    "ID SOAL": 125,
-    "PERTANYAAN": "Future job 'Doctor' is...",
-    "A": "Farmer",
-    "B": "Doctor",
-    "C": "Singer",
-    "D": "Pilot",
+    "ID SOAL": 74,
+    "PERTANYAAN": "Why is it important to keep our environment clean?",
+    "A": "To make it messy",
+    "B": "To get sick",
+    "C": "To make it healthy",
+    "D": "To break the rules",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Lingkungan bersih membuat kita sehat.",
+    "": ""
+  },
+  {
+    "ID SOAL": 75,
+    "PERTANYAAN": "Natural resources are things that come from...",
+    "A": "factories",
+    "B": "nature",
+    "C": "schools",
+    "D": "animals only",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Dokter.",
+    "PEMBAHASAN": "SDA berasal dari alam (Nature).",
+    "": ""
+  },
+  {
+    "ID SOAL": 76,
+    "PERTANYAAN": "Which of the following is a renewable natural resource?",
+    "A": "Coal",
+    "B": "Oil",
+    "C": "Trees",
+    "D": "Gold",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Pohon (Trees) bisa ditanam kembali.",
+    "": ""
+  },
+  {
+    "ID SOAL": 77,
+    "PERTANYAAN": "We should save water because...",
+    "A": "water is important for life",
+    "B": "water is dirty",
+    "C": "water is unlimited",
+    "D": "water is not useful",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Air penting untuk kehidupan.",
+    "": ""
+  },
+  {
+    "ID SOAL": 78,
+    "PERTANYAAN": "The sun gives us...",
+    "A": "heat and light",
+    "B": "water",
+    "C": "food",
+    "D": "oil",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Matahari memberikan panas dan cahaya.",
+    "": ""
+  },
+  {
+    "ID SOAL": 79,
+    "PERTANYAAN": "What is the main source of energy for life on Earth?",
+    "A": "Wind",
+    "B": "Water",
+    "C": "The Sun",
+    "D": "Electricity",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Matahari adalah sumber energi utama.",
+    "": ""
+  },
+  {
+    "ID SOAL": 80,
+    "PERTANYAAN": "Which of the following is an example of potential energy?",
+    "A": "Moving bicycle",
+    "B": "Stretched rubber band",
+    "C": "Burning candle",
+    "D": "Running fan",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Karet yang ditarik menyimpan energi potensial.",
+    "": ""
+  },
+  {
+    "ID SOAL": 81,
+    "PERTANYAAN": "Kinetic energy is the energy of...",
+    "A": "Light",
+    "B": "Heat",
+    "C": "Motion",
+    "D": "Sound",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Kinetik adalah energi gerak (Motion).",
+    "": ""
+  },
+  {
+    "ID SOAL": 82,
+    "PERTANYAAN": "Which device changes solar energy into electrical energy?",
+    "A": "Wind turbine",
+    "B": "Solar panel",
+    "C": "Battery",
+    "D": "Generator",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Panel surya mengubah cahaya jadi listrik.",
+    "": ""
+  },
+  {
+    "ID SOAL": 83,
+    "PERTANYAAN": "Characteristic of all living things is...",
+    "A": "Move from place to place",
+    "B": "Need food or energy",
+    "C": "Always big",
+    "D": "Can fly",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Semua makhluk hidup butuh makan/energi.",
+    "": ""
+  },
+  {
+    "ID SOAL": 84,
+    "PERTANYAAN": "Which is NOT a living thing?",
+    "A": "Cat",
+    "B": "Tree",
+    "C": "Rock",
+    "D": "Bird",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Batu (Rock) adalah benda mati.",
+    "": ""
+  },
+  {
+    "ID SOAL": 85,
+    "PERTANYAAN": "What does 'grow' mean?",
+    "A": "Become smaller",
+    "B": "Stay the same",
+    "C": "Become bigger",
+    "D": "Turn into water",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Tumbuh artinya menjadi lebih besar.",
+    "": ""
+  },
+  {
+    "ID SOAL": 86,
+    "PERTANYAAN": "Animals are different from plants because animals...",
+    "A": "make food",
+    "B": "do not need air",
+    "C": "can move",
+    "D": "do not grow",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Hewan bisa berpindah tempat (move).",
+    "": ""
+  },
+  {
+    "ID SOAL": 87,
+    "PERTANYAAN": "What is a food chain?",
+    "A": "Place where animals live",
+    "B": "Type of plant",
+    "C": "Energy movement",
+    "D": "Group of animals",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Rantai makanan adalah perpindahan energi.",
+    "": ""
+  },
+  {
+    "ID SOAL": 88,
+    "PERTANYAAN": "Which organism is a producer?",
+    "A": "Grass",
+    "B": "Snake",
+    "C": "Lion",
+    "D": "Mushroom",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Rumput (Grass) adalah produsen.",
+    "": ""
+  },
+  {
+    "ID SOAL": 89,
+    "PERTANYAAN": "Role of decomposers is to...",
+    "A": "hunt animals",
+    "B": "protect ecosystems",
+    "C": "make food",
+    "D": "break down dead organisms",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Pengurai menguraikan sisa makhluk hidup.",
+    "": ""
+  },
+  {
+    "ID SOAL": 90,
+    "PERTANYAAN": "A farmer grows rice. This activity is...",
+    "A": "Distribution",
+    "B": "Consumption",
+    "C": "Exchange",
+    "D": "Production",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Menanam padi adalah kegiatan Produksi.",
+    "": ""
+  },
+  {
+    "ID SOAL": 91,
+    "PERTANYAAN": "Example of distribution is...",
+    "A": "Eating lunch",
+    "B": "Making shoes",
+    "C": "Delivering milk",
+    "D": "Baking cake",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Mengantar barang = Distribusi.",
+    "": ""
+  },
+  {
+    "ID SOAL": 92,
+    "PERTANYAAN": "People buy food at a restaurant. This is...",
+    "A": "Production",
+    "B": "Consumption",
+    "C": "Distribution",
+    "D": "Transportation",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Membeli/memakan = Konsumsi.",
+    "": ""
+  },
+  {
+    "ID SOAL": 93,
+    "PERTANYAAN": "She ... to school every day.",
+    "A": "Going",
+    "B": "Goes",
+    "C": "Went",
+    "D": "Go",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Simple Present (She) pakai Goes.",
+    "": ""
+  },
+  {
+    "ID SOAL": 94,
+    "PERTANYAAN": "Ten plus five is...",
+    "A": "Twenty",
+    "B": "Fifteen",
+    "C": "Twelve",
+    "D": "Fifty",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "10 + 5 = 15.",
+    "": ""
+  },
+  {
+    "ID SOAL": 95,
+    "PERTANYAAN": "They are kind. 'They' refers to...",
+    "A": "I",
+    "B": "Friends",
+    "C": "Teacher",
+    "D": "Family",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "They merujuk ke Friends (jamak).",
+    "": ""
+  },
+  {
+    "ID SOAL": 96,
+    "PERTANYAAN": "She ... a cat at home.",
+    "A": "have",
+    "B": "has",
+    "C": "had",
+    "D": "having",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "She pakai Has.",
+    "": ""
+  },
+  {
+    "ID SOAL": 97,
+    "PERTANYAAN": "I go to school ... Monday.",
+    "A": "in",
+    "B": "at",
+    "C": "on",
+    "D": "to",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Hari pakai On.",
+    "": ""
+  },
+  {
+    "ID SOAL": 98,
+    "PERTANYAAN": "He ... football every Sunday.",
+    "A": "play",
+    "B": "plays",
+    "C": "playing",
+    "D": "played",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "He pakai verb+s (Plays).",
+    "": ""
+  },
+  {
+    "ID SOAL": 99,
+    "PERTANYAAN": "I have ... umbrella.",
+    "A": "a",
+    "B": "an",
+    "C": "the",
+    "D": "is",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Huruf vokal pakai An.",
+    "": ""
+  },
+  {
+    "ID SOAL": 100,
+    "PERTANYAAN": "We ... happy today.",
+    "A": "am",
+    "B": "is",
+    "C": "are",
+    "D": "be",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "We pakai Are.",
+    "": ""
+  },
+  {
+    "ID SOAL": 101,
+    "PERTANYAAN": "She is my ... sister.",
+    "A": "young",
+    "B": "younger",
+    "C": "youngest",
+    "D": "youth",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Lebih muda = Younger.",
+    "": ""
+  },
+  {
+    "ID SOAL": 102,
+    "PERTANYAAN": "I ... milk every morning.",
+    "A": "drink",
+    "B": "drinks",
+    "C": "drank",
+    "D": "drinking",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "I pakai verb 1 (Drink).",
+    "": ""
+  },
+  {
+    "ID SOAL": 103,
+    "PERTANYAAN": "Which one is a verb?",
+    "A": "Run",
+    "B": "Cat",
+    "C": "Chair",
+    "D": "Bag",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Lari (Run) kata kerja.",
+    "": ""
+  },
+  {
+    "ID SOAL": 104,
+    "PERTANYAAN": "Sun rises in the ...",
+    "A": "west",
+    "B": "north",
+    "C": "east",
+    "D": "south",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Terbit di Timur (East).",
+    "": ""
+  },
+  {
+    "ID SOAL": 105,
+    "PERTANYAAN": "She ... not like coffee.",
+    "A": "do",
+    "B": "does",
+    "C": "is",
+    "D": "are",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "She pakai Does not.",
+    "": ""
+  },
+  {
+    "ID SOAL": 106,
+    "PERTANYAAN": "Two ... (anak-anak).",
+    "A": "childs",
+    "B": "child",
+    "C": "children",
+    "D": "childrens",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Jamak Child = Children.",
+    "": ""
+  },
+  {
+    "ID SOAL": 107,
+    "PERTANYAAN": "There ... three apples.",
+    "A": "is",
+    "B": "am",
+    "C": "are",
+    "D": "be",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Jamak pakai Are.",
+    "": ""
+  },
+  {
+    "ID SOAL": 108,
+    "PERTANYAAN": "She ... TV now.",
+    "A": "watch",
+    "B": "watches",
+    "C": "is watching",
+    "D": "watched",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Now = Sedang (Is watching).",
+    "": ""
+  },
+  {
+    "ID SOAL": 109,
+    "PERTANYAAN": "I am ... student.",
+    "A": "-",
+    "B": "a",
+    "C": "the",
+    "D": "an",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Seorang siswa (A student).",
+    "": ""
+  },
+  {
+    "ID SOAL": 110,
+    "PERTANYAAN": "Which activity shows production?",
+    "A": "Buying",
+    "B": "Selling",
+    "C": "Making bread",
+    "D": "Paying",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Produksi = Membuat barang.",
+    "": ""
+  },
+  {
+    "ID SOAL": 111,
+    "PERTANYAAN": "Farmer grows rice. This is...",
+    "A": "Distribution",
+    "B": "Consumption",
+    "C": "Exchange",
+    "D": "Production",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Menanam = Produksi.",
+    "": ""
+  },
+  {
+    "ID SOAL": 112,
+    "PERTANYAAN": "Example of distribution?",
+    "A": "Eating",
+    "B": "Making shoes",
+    "C": "Truck delivers milk",
+    "D": "Baking",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Mengirim barang = Distribusi.",
+    "": ""
+  },
+  {
+    "ID SOAL": 113,
+    "PERTANYAAN": "Keep environment clean by...",
+    "A": "Littering",
+    "B": "Burning plastic",
+    "C": "Throw trash in bin",
+    "D": "Cut trees",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Buang sampah di tempatnya.",
+    "": ""
+  },
+  {
+    "ID SOAL": 114,
+    "PERTANYAAN": "Action protects nature?",
+    "A": "Wasting water",
+    "B": "Electricity",
+    "C": "Polluting",
+    "D": "Planting trees",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Menanam pohon.",
+    "": ""
+  },
+  {
+    "ID SOAL": 115,
+    "PERTANYAAN": "Save water because...",
+    "A": "Needed for life",
+    "B": "Unlimited",
+    "C": "Not important",
+    "D": "Dirty",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Air vital untuk hidup.",
+    "": ""
+  },
+  {
+    "ID SOAL": 116,
+    "PERTANYAAN": "Use resources wisely example?",
+    "A": "Cutting trees",
+    "B": "Lights on",
+    "C": "Use water needed",
+    "D": "Throw paper",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Hemat air.",
+    "": ""
+  },
+  {
+    "ID SOAL": 117,
+    "PERTANYAAN": "If use too much resources?",
+    "A": "Grow faster",
+    "B": "Run out",
+    "C": "Stronger",
+    "D": "Replaced",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Bisa habis (Run out).",
+    "": ""
+  },
+  {
+    "ID SOAL": 118,
+    "PERTANYAAN": "Renewable energy?",
+    "A": "Coal",
+    "B": "Oil",
+    "C": "Gas",
+    "D": "Sunlight",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Sinar matahari.",
+    "": ""
+  },
+  {
+    "ID SOAL": 119,
+    "PERTANYAAN": "Water bottle for?",
+    "A": "Play",
+    "B": "Stay hydrated",
+    "C": "Clean",
+    "D": "Water plants",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Agar tidak dehidrasi.",
+    "": ""
+  },
+  {
+    "ID SOAL": 120,
+    "PERTANYAAN": "Best time to exercise?",
+    "A": "Morning",
+    "B": "Midnight",
+    "C": "Night",
+    "D": "Storm",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Pagi hari.",
+    "": ""
+  },
+  {
+    "ID SOAL": 121,
+    "PERTANYAAN": "Lesson from picture?",
+    "A": "Games healthy",
+    "B": "Drink water important",
+    "C": "Stay indoors",
+    "D": "Eat sweets",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Minum air itu penting.",
+    "": ""
+  },
+  {
+    "ID SOAL": 122,
+    "PERTANYAAN": "Tech for messages/calls?",
+    "A": "TV",
+    "B": "Smartwatch",
+    "C": "Laptop",
+    "D": "Smartphone",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "HP (Smartphone).",
+    "": ""
+  },
+  {
+    "ID SOAL": 123,
+    "PERTANYAAN": "Smartwatch helps to?",
+    "A": "Check health/steps",
+    "B": "Movies",
+    "C": "Homework",
+    "D": "Draw",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Cek kesehatan.",
+    "": ""
+  },
+  {
+    "ID SOAL": 124,
+    "PERTANYAAN": "TV function?",
+    "A": "Entertainment/Info",
+    "B": "Exercise",
+    "C": "Cooking",
+    "D": "Study",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Hiburan & Info.",
+    "": ""
+  },
+  {
+    "ID SOAL": 125,
+    "PERTANYAAN": "Item helps learn new things?",
+    "A": "Laptop",
+    "B": "Pillow",
+    "C": "TV",
+    "D": "Toy",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Laptop.",
     "": ""
   },
   {

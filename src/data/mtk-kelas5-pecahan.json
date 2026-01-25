@@ -248,5 +248,105 @@
     "D": "400 km",
     "JAWABAN BENAR": "B",
     "PEMBAHASAN": "Skala 1 : 100.000, jarak peta 4 cm, Artinya 1 cm = 100.000 cm, 4x100.000 = 400.000 cm lalu ubah ke km yaitu 400.000 cm = 4.000 m = 4 km"
+  },
+  {
+    "ID SOAL": 26,
+    "PERTANYAAN": "Bangun ruang yang memiliki 6 sisi berbentuk persegi yang sama luas adalah ...",
+    "A": "Balok",
+    "B": "Kubus",
+    "C": "Prisma",
+    "D": "Limas",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Ciri utama kubus adalah memiliki 6 sisi berbentuk persegi yang kongruen (sama besar)."
+  },
+  {
+    "ID SOAL": 27,
+    "PERTANYAAN": "Jumlah rusuk pada bangun ruang kubus adalah ...",
+    "A": "8",
+    "B": "10",
+    "C": "12",
+    "D": "6",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Kubus memiliki 12 rusuk yang sama panjang."
+  },
+  {
+    "ID SOAL": 28,
+    "PERTANYAAN": "Rumus untuk mencari volume balok adalah ...",
+    "A": "s x s x s",
+    "B": "p x l",
+    "C": "p x l x t",
+    "D": "p + l + t",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Volume Balok = Panjang x Lebar x Tinggi (p x l x t)."
+  },
+  {
+    "ID SOAL": 29,
+    "PERTANYAAN": "Sebuah kubus mempunyai panjang rusuk 8 cm. Volume kubus tersebut adalah ...",
+    "A": "64 cm³",
+    "B": "256 cm³",
+    "C": "512 cm³",
+    "D": "729 cm³",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Volume = s x s x s = 8 x 8 x 8 = 512 cm³."
+  },
+  {
+    "ID SOAL": 30,
+    "PERTANYAAN": "Balok mempunyai jumlah titik sudut sebanyak ...",
+    "A": "6",
+    "B": "8",
+    "C": "10",
+    "D": "12",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Baik kubus maupun balok memiliki 8 titik sudut."
+  },
+  {
+    "ID SOAL": 31,
+    "PERTANYAAN": "Sebuah balok memiliki panjang 10 cm, lebar 6 cm, dan tinggi 5 cm. Volumenya adalah ...",
+    "A": "300 cm³",
+    "B": "60 cm³",
+    "C": "210 cm³",
+    "D": "110 cm³",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Volume = 10 x 6 x 5 = 300 cm³."
+  },
+  {
+    "ID SOAL": 32,
+    "PERTANYAAN": "Volume sebuah kubus adalah 1.000 cm³. Panjang rusuk kubus tersebut adalah ...",
+    "A": "10 cm",
+    "B": "20 cm",
+    "C": "30 cm",
+    "D": "100 cm",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Rusuk = ³√Volume. ³√1000 = 10 cm."
+  },
+  {
+    "ID SOAL": 33,
+    "PERTANYAAN": "Sebuah akuarium berbentuk balok dengan panjang 20 dm, lebar 5 dm, dan tinggi 6 dm. Berapa liter air yang dapat ditampung?",
+    "A": "60 liter",
+    "B": "100 liter",
+    "C": "600 liter",
+    "D": "1200 liter",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Volume = 20 x 5 x 6 = 600 dm³. (1 dm³ = 1 liter)."
+  },
+  {
+    "ID SOAL": 34,
+    "PERTANYAAN": "Diketahui volume balok 3.600 cm³. Jika panjang 24 cm dan tinggi 10 cm, maka lebarnya adalah ...",
+    "A": "12 cm",
+    "B": "14 cm",
+    "C": "15 cm",
+    "D": "18 cm",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Lebar = Volume : (p x t) = 3600 : (24 x 10) = 3600 : 240 = 15 cm."
+  },
+  {
+    "ID SOAL": 35,
+    "PERTANYAAN": "Jaring-jaring balok terdiri dari ...",
+    "A": "6 persegi sama besar",
+    "B": "4 persegi panjang dan 2 persegi",
+    "C": "4 segitiga dan 1 persegi",
+    "D": "2 lingkaran",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Balok umumnya terbentuk dari 3 pasang sisi, yang bisa berupa 4 persegi panjang dan 2 persegi (sisi penutup)."
   }
 ]

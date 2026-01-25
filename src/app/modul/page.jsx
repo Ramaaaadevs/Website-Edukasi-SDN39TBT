@@ -36,8 +36,8 @@ const databaseMapel = [
     icon: "💻", 
     warna: "bg-blue-100 text-blue-500", 
     infoKelas: {
-      "5": { jumlahBab: 12, deskripsi: "Dasar Ketik & Paint" },
-      "6": { jumlahBab: 12, deskripsi: "Microsoft Office Dasar" }
+      "5": { jumlahBab: 3, deskripsi: "Dasar Ketik & Paint" },
+      "6": { jumlahBab: 3, deskripsi: "Microsoft Office Dasar" }
     }
   },
   { 

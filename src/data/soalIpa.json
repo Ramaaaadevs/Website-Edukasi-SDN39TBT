@@ -1,0 +1,502 @@
+[
+  {
+    "ID SOAL": 1,
+    "PERTANYAAN": "Bagian organ tubuh untuk bernafas",
+    "A": "paru-paru",
+    "B": "kucing",
+    "C": "mulut",
+    "D": "idung",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "PARU-PARU ORGAN, SEDANGKAN IDUNG ALAT PERNAFASAN"
+  },
+  {
+    "ID SOAL": 2,
+    "PERTANYAAN": "Alat pernapasan utama pada manusia adalah …",
+    "A": "jantung",
+    "B": "paru paru",
+    "C": "hati",
+    "D": "ginjal",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Paru-paru berfungsi sebagai tempat pertukaran oksigen dan karbon dioksida."
+  },
+  {
+    "ID SOAL": 3,
+    "PERTANYAAN": "Proses tumbuhan membuat makanan sendiri disebut",
+    "A": "respirasi",
+    "B": "fotosintesis",
+    "C": "transpirasi",
+    "D": "adaptasi",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Fotosintesis adalah proses pembuatan makanan oleh tumbuhan dengan bantuan cahaya matahari."
+  },
+  {
+    "ID SOAL": 4,
+    "PERTANYAAN": "Sumber energi terbesar bagi kehidupan di bumi adalah",
+    "A": "air",
+    "B": "angin",
+    "C": "matahari",
+    "D": "batubara",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Matahari merupakan sumber energi utama bagi makhluk hidup di bumi."
+  },
+  {
+    "ID SOAL": 5,
+    "PERTANYAAN": "Hewan pemakan tumbuhan disebut",
+    "A": "Karnivora",
+    "B": "omnivora",
+    "C": "herbivora",
+    "D": "insektivora",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Herbivora hanya memakan tumbuhan"
+  },
+  {
+    "ID SOAL": 6,
+    "PERTANYAAN": "Perubahan wujud dari air menjadi es disebut",
+    "A": "menguap",
+    "B": "mengembun",
+    "C": "membeku",
+    "D": "mencair",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Membeku adalah perubahan dari cair ke padat"
+  },
+  {
+    "ID SOAL": 7,
+    "PERTANYAAN": "Gaya yang menyebabkan benda jatuh ke bumi adalah",
+    "A": "gaya magnet",
+    "B": "gaya gesek",
+    "C": "gaya otot",
+    "D": "gaya gravitasi",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Gaya gravitasi menarik benda ke pusat bumi"
+  },
+  {
+    "ID SOAL": 8,
+    "PERTANYAAN": "Contoh hewan yang berkembang biak dengan bertelur adalah",
+    "A": "kucing",
+    "B": "sapi",
+    "C": "ayam",
+    "D": "kambing",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Ayam termasuk hewan ovipar (bertelur)"
+  },
+  {
+    "ID SOAL": 9,
+    "PERTANYAAN": "Rantai makanan selalu diawali oleh",
+    "A": "konsumen",
+    "B": "pengurai",
+    "C": "karnivora",
+    "D": "produsen",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Produsen adalah tumbuhan hijau"
+  },
+  {
+    "ID SOAL": 10,
+    "PERTANYAAN": "Alat indera yang berfungsi untuk melihat adalah",
+    "A": "hidung",
+    "B": "telinga",
+    "C": "mata",
+    "D": "lidah",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Mata berfungsi sebagai alat penglihatan"
+  },
+  {
+    "ID SOAL": 11,
+    "PERTANYAAN": "Hubungan antara makhluk hidup dan lingkungannya disebut",
+    "A": "adaptasi",
+    "B": "habitat",
+    "C": "ekosistem",
+    "D": "populasi",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Ekosistem terdiri dari biotik dan abiotik."
+  },
+  {
+    "ID SOAL": 12,
+    "PERTANYAAN": "air hujan berasal dari",
+    "A": "pembakaran",
+    "B": "penguapan",
+    "C": "pembekuan",
+    "D": "pelapukan",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "air menguap lalu turun sebagai hujan"
+  },
+  {
+    "ID SOAL": 13,
+    "PERTANYAAN": "Contoh hewan karnivora",
+    "A": "sapi",
+    "B": "kambing",
+    "C": "singa",
+    "D": "kerbau",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "karnivora pemakan daging"
+  },
+  {
+    "ID SOAL": 14,
+    "PERTANYAAN": "Fungsi jantung pada manusia adalah",
+    "A": "menyaring darah",
+    "B": "memompa darah",
+    "C": "mengatur nafas",
+    "D": "mencerna makanan",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "jantung memompa darah ke seluruh tubuh"
+  },
+  {
+    "ID SOAL": 15,
+    "PERTANYAAN": "Bagian tumbuhan yang berfungsi mengangkut air adalah",
+    "A": "daun",
+    "B": "batang",
+    "C": "akar",
+    "D": "bunga",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "batang mengangkut air ke seluruh bagian tumbuhan"
+  },
+  {
+    "ID SOAL": 16,
+    "PERTANYAAN": "Contoh komponen abiotik adalah",
+    "A": "hewan",
+    "B": "tumbuhan",
+    "C": "manusia",
+    "D": "air",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Abiotik adalah benda yang tidak hidup"
+  },
+  {
+    "ID SOAL": 17,
+    "PERTANYAAN": "Alat gerak aktif pada manusia adalah",
+    "A": "tulang",
+    "B": "sendi",
+    "C": "otot",
+    "D": "kulit",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "otot dapat berkontraksi dan bergerak"
+  },
+  {
+    "ID SOAL": 18,
+    "PERTANYAAN": "Perubahan wujud gas menjadi cair disebut",
+    "A": "menguap",
+    "B": "mengembun",
+    "C": "membeku",
+    "D": "mencair",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "contohnya embun di pagi hari"
+  },
+  {
+    "ID SOAL": 19,
+    "PERTANYAAN": "Benda yang dapat ditarik magnet terbuat dari",
+    "A": "plastik",
+    "B": "kayu",
+    "C": "kaca",
+    "D": "besi",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "besi bersifat magnetik"
+  },
+  {
+    "ID SOAL": 20,
+    "PERTANYAAN": "Hewan pemakan tumbuhan dan daging disebut",
+    "A": "herbivora",
+    "B": "karnivora",
+    "C": "omnivora",
+    "D": "ovipar",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "omnivora memakan segala jenis makanan"
+  },
+  {
+    "ID SOAL": 21,
+    "PERTANYAAN": "Contoh sumber energi alternatif adalah",
+    "A": "minyak bumi",
+    "B": "batu bara",
+    "C": "matahari",
+    "D": "gas alam",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "energi matahari dapat diperbarui"
+  },
+  {
+    "ID SOAL": 22,
+    "PERTANYAAN": "Bagian daun yang mengandung zat hijau daun disebut",
+    "A": "klorofil",
+    "B": "karbon",
+    "C": "oksigen",
+    "D": "protein",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Klorofil membantu proses fotosintesis"
+  },
+  {
+    "ID SOAL": 23,
+    "PERTANYAAN": "Makhluk hidup bernapas untuk",
+    "A": "menghasilkan air",
+    "B": "mendapatkan oksigen",
+    "C": "mengeluarkan keringat",
+    "D": "membuat makanan",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Oksigen diperlukan untuk menghasilkan energi."
+  },
+  {
+    "ID SOAL": 24,
+    "PERTANYAAN": "Contoh perubahan fisika adalah",
+    "A": "kayu dibakar",
+    "B": "besi berkarat",
+    "C": "air membeku",
+    "D": "nasi basi",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "tidak menghasilkan zat baru"
+  },
+  {
+    "ID SOAL": 25,
+    "PERTANYAAN": "Bagian rangka manusia yang berfungsi melindungi otak adalah",
+    "A": "tulang dada",
+    "B": "tulang kaki",
+    "C": "tulang tengkorak",
+    "D": "tulang punggung",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Tulang tengkorak melindungi otak dari benturan."
+  },
+  {
+    "ID SOAL": 26,
+    "PERTANYAAN": "Alat pernapasan pada ikan adalah",
+    "A": "paru paru",
+    "B": "insang",
+    "C": "trakea",
+    "D": "kulit",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Insang berfungsi menyerap oksigen dari air."
+  },
+  {
+    "ID SOAL": 27,
+    "PERTANYAAN": "Tumbuhan yang hidup di air disebut",
+    "A": "Hidrofit",
+    "B": "Xerofit",
+    "C": "Epifit",
+    "D": "Parasit",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Hidrofit adalah tumbuhan yang hidup di lingkungan berair."
+  },
+  {
+    "ID SOAL": 28,
+    "PERTANYAAN": "Contoh tumbuhan hidrofit adalah",
+    "A": "Kaktus",
+    "B": "Teratai",
+    "C": "Anggrek",
+    "D": "Benalu",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Teratai hidup dan tumbuh di air"
+  },
+  {
+    "ID SOAL": 29,
+    "PERTANYAAN": "Perubahan wujud dari padat menjadi cair disebut",
+    "A": "Membeku",
+    "B": "Menguap",
+    "C": "Mengembun",
+    "D": "Mencair",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Mencair terjadi saat benda padat menerima panas"
+  },
+  {
+    "ID SOAL": 30,
+    "PERTANYAAN": "Gaya yang terjadi saat dua benda saling bergesekan disebut",
+    "A": "Gaya magnet",
+    "B": "Gaya otot",
+    "C": "Gaya gesek",
+    "D": "Gaya gravitasi",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Gaya gesek menghambat gerak benda."
+  },
+  {
+    "ID SOAL": 31,
+    "PERTANYAAN": "Contoh penggunaan gaya otot adalah",
+    "A": "magnet menarik paku",
+    "B": "buah jatuh ke tanah",
+    "C": "Mendorong meja",
+    "D": "kompas menunjuk utara",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Mendorong meja menggunakan kekuatan otot"
+  },
+  {
+    "ID SOAL": 32,
+    "PERTANYAAN": "Contoh hewan yang bernapas dengan paru-paru adalah",
+    "A": "ikan",
+    "B": "katak dewasa",
+    "C": "cacing",
+    "D": "serangga",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "katak dewasa bernapas dengan paru paru dan kulit"
+  },
+  {
+    "ID SOAL": 33,
+    "PERTANYAAN": "Bunyi dapat terdengar karena adanya",
+    "A": "cahaya",
+    "B": "getaran",
+    "C": "tekanan",
+    "D": "bayangan",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "bunyi berasal dari benda yang bergetar"
+  },
+  {
+    "ID SOAL": 34,
+    "PERTANYAAN": "Alat indera manusia yang berfungsi mengecap rasa adalah",
+    "A": "Hidung",
+    "B": "kulit",
+    "C": "telinga",
+    "D": "lidah",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "lidah memiliki reseptor rasa"
+  },
+  {
+    "ID SOAL": 35,
+    "PERTANYAAN": "Contoh adaptasi hewan untuk melindungi diri adalah",
+    "A": "kaki panjang pada rusa",
+    "B": "warna tubuh bunglon",
+    "C": "sayap pada burung",
+    "D": "ekor pada kucing",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Bunglon mengubah warna tubuh untuk berkamuflase."
+  },
+  {
+    "ID SOAL": 36,
+    "PERTANYAAN": "Contoh ekosistem alami adalah",
+    "A": "Akuarium",
+    "B": "sawah",
+    "C": "hutan",
+    "D": "kebun",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Hutan terbentuk tanpa campur tangan manusia"
+  },
+  {
+    "ID SOAL": 37,
+    "PERTANYAAN": "Makhluk hidup yang berperan sebagai pengurai adalah",
+    "A": "rumput",
+    "B": "harimau",
+    "C": "jamur",
+    "D": "kelinci",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "jamur mengurai sisa makhluk hidup"
+  },
+  {
+    "ID SOAL": 38,
+    "PERTANYAAN": "Contoh perubahan kimia adalah",
+    "A": "Air menguap",
+    "B": "gula larut",
+    "C": "kertas dibakar",
+    "D": "es mencair",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Pembakaran menghasilkan zat baru"
+  },
+  {
+    "ID SOAL": 39,
+    "PERTANYAAN": "Benda yang dapat memantulkan cahaya dengan baik adalah",
+    "A": "kertas",
+    "B": "kain",
+    "C": "cermin",
+    "D": "kayu",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Cermin memantulkan cahaya secara sempurna"
+  },
+  {
+    "ID SOAL": 40,
+    "PERTANYAAN": "Bagian bunga yang menjadi alat perkembangbiakan adalah",
+    "A": "mahkota",
+    "B": "kelopak",
+    "C": "putik dan benangsari",
+    "D": "tangkai",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Putik dan benang sari berperan dalam pembuahan"
+  },
+  {
+    "ID SOAL": 41,
+    "PERTANYAAN": "Cahaya merambat",
+    "A": "berbelok",
+    "B": "melengkung",
+    "C": "lurus",
+    "D": "memutar",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Cahaya merambat lurus"
+  },
+  {
+    "ID SOAL": 42,
+    "PERTANYAAN": "Contoh kegiatan menjaga lingkungan adalah",
+    "A": "menebang hutan",
+    "B": "membuang sampah sembarangn",
+    "C": "menanam pohon",
+    "D": "membakar sampah",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Menanam pohon menjaga keseimbangan lingkungan"
+  },
+  {
+    "ID SOAL": 43,
+    "PERTANYAAN": "Organ pencernaan yang berfungsi menyerap sari makanan adalah",
+    "A": "lambung",
+    "B": "kerongkongan",
+    "C": "usus halus",
+    "D": "mulut",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Usus halus menyerap nutrisi makanan"
+  },
+  {
+    "ID SOAL": 44,
+    "PERTANYAAN": "Contoh benda padat adalah",
+    "A": "udara",
+    "B": "air",
+    "C": "batu",
+    "D": "minyak",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Batu memiliki bentuk dan volume tetap"
+  },
+  {
+    "ID SOAL": 45,
+    "PERTANYAAN": "Fungsi kulit bagi manusia adalah",
+    "A": "bernapas",
+    "B": "alat gerak",
+    "C": "alat indera peraba",
+    "D": "alat pencernaan",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Kulit merasakan panas, dingin, dan sentuhan"
+  },
+  {
+    "ID SOAL": 46,
+    "PERTANYAAN": "Tempat hidup suatu makhluk hidup disebut",
+    "A": "ekosistem",
+    "B": "populasi",
+    "C": "habitat",
+    "D": "komunitas",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Habitat adalah tempat tinggal makhluk hidup"
+  },
+  {
+    "ID SOAL": 47,
+    "PERTANYAAN": "Alat yang digunakan untuk mengukur suhu disebut",
+    "A": "Barometer",
+    "B": "Termometer",
+    "C": "Stopwatch",
+    "D": "Higrometer",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Termometer digunakan untuk mengukur suhu panas atau dingin suatu benda."
+  },
+  {
+    "ID SOAL": 48,
+    "PERTANYAAN": "Perubahan wujud dari gas langsung menjadi padat disebut",
+    "A": "menguap",
+    "B": "mencair",
+    "C": "mengkristal",
+    "D": "mengembun",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Mengkristal adalah perubahan wujud gas menjadi padat, contohnya uap air menjadi salju."
+  },
+  {
+    "ID SOAL": 49,
+    "PERTANYAAN": "Contoh peristiwa yang menunjukkan sifat cahaya dapat dibiaskan adalah",
+    "A": "Bayangan di cermin",
+    "B": "Pelangi",
+    "C": "Lampu menyala",
+    "D": "Bunyi gema",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Pelangi terjadi karena cahaya dibiaskan dan diuraikan oleh air hujan."
+  },
+  {
+    "ID SOAL": 50,
+    "PERTANYAAN": "Contoh adaptasi tumbuhan untuk mengurangi penguapan air adalah",
+    "A": "daun lebar",
+    "B": "batang berongga",
+    "C": "daun berbentuk duri",
+    "D": "akar serabut",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Daun berbentuk duri (seperti pada kaktus) mengurangi penguapan air"
+  }
+]
