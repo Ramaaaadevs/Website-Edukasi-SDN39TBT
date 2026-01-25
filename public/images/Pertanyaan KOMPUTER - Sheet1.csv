@@ -1,0 +1,98 @@
+ID SOAL,PERTANYAAN,A,B,C,D,JAWABAN BENAR,PEMBAHASAN
+,Berpikir Komputasional (Kelas 5),,,,,,
+1,"Kemampuan berpikir untuk menyelesaikan suatu permasalahan secara menyeluruh, logis, dan teratur disebut dengan",Berpikir Komputasional,Berpikir logis,Berpikir kritis,Efisien,A,
+2,"Bagaimana sistem pada tubuh manusia bekerja?
+Sistem tubuh manusia dibagi menjadi beberapa bagian komponen diantaranya sistem peredaran, saraf, pernafasan, penceernaan, rangka, dan muskular.
+Beradsarkan eprtanyaan dan jawaban di atas, prinsip yang digunakan dalam berpikir komputasional adalah ...",Pengenalan Pola,Abstraksi,Dekomposisi,Algoritma,C,
+3,Ada berapakah metode berpikir komputasional yang bisa kita gunakan ...,1,2,3,4,D,
+4,Manakah yang bukan contoh metode berpikir komputasional ...,Abstraksi,Komposisi,Dekomposisi,Rancangan Algoritma,B,
+5,"Teknik memecah data, proses, atau masalah yang kompleks/rumit menjadi bagian-bagian yang lebih kecil atau menjadi tugas-tugas yang mudah dikelola disebut ...",Dekomposisi,Pengenalan Pola,Abstraksi,Rancangan Algoritma,A,
+6,"Kemampuan untuk melihat persamaan atau babhkan perbedaan pola, tern, dan keteraturan dalam sebuah data yang nantinya akan digunakan dalam membuat prediksi dan penyajian data disebut dengan ...",Dekomposisi,Pengenalan Pola,Abstraksi,Rancangan Algoritma,B,
+7,"Melakukan generalisasi dan mengidentifikasi prinsip-prinsip umum yang menghasilkan pola. tren, dan keteraturan tersebut disebut dengan ...",Dekomposisi,Pengenalan Pola,Abstraksi,Rancangan Algoritma,C,
+8,"Mengembangkan petunjuk pemecahan masalah yang sama secara step by step, lagkah demi langkah, tahapan demi tahapan disebut dengan ...",Dekomposisi,Pengenalan Pola,Abstraksi,Rancangan Algoritma,D,
+9,"Salah satu manfaat dari pemahaman konsep berpikir komputasional adalah, kecuali ...",Mampu menyelesaikan masalah sehari-hari dengan efektif dan efisien,Panik dalam menghadapi masalah,Memiliki logika dan kemampuan berpikir yang kritis,memiliki akhlak yang baik,B,
+10,"Seorang anak mendaapat tugas  belanja mingguan dari orang tuanya, kemudian dia merincikan tugasnya menjadi beberapa bagian : 
+1. Tempat dia belanja
+2. Transportasi yang digunakan
+3. Apa saja yang akan dia beli
+Contoh kasus diatas merupakan penerapan dari metode berpikir komputasional ...",Dekomposisi,Pengenalan Pola,Abstraksi,Rancangan Algoritma,A,
+11,"Seorang siswi SMP mendapat banyak PR dari guru-gurunya, sisaat hendak mengerjakan dia membagi PRnya menjadi beberapa kelomok, dari yang mudah dikerjakan, dan waktu pengumpulannya paling dekat. Contoh kasus diatas merupakan penerapan dari metode berpikir komputasional ...",Dekomposisi,Pengenalan Pola,Abstraksi,Rancangan Algoritma,A,
+12,"Pada siang hari, terlihat langit menjadi gelap (mendung) dan nampak sedikit kilatan petir di iringi dengan sedikit rintikan air yang mulai turun, sehingga para pengendara motor banyak yang melipir untuk menggunakan jas hujan. 
+Contoh kasus diatas merupakan penerapan dari metode berpikir komputasional ...",Dekomposisi,Pengenalan Pola,Abstraksi,Rancangan Algoritma,B,
+13,"Untuk mempercepat rute perjalanan ke sekolah seorang siswa memiliki banyak sekali jalan tikus yang dia hafal. Sehingga dia menggambarkan rute tercepat agar dia lebih cepat sampai dan bisa berbagi rute kepada temannya....
+Contoh kasus diatas merupakan penerapan dari metode berpikir komputasional....",Dekomposisi,Pengenalan Pola,Abstraksi,Rancangan Algoritma,C,
+14,"Dalam pemanfaatan akun belajar id, banyak Siswa yang belum mengerti cara untuk login akun, Sehingga guru Informatika mereka membuat sebuah desain poster untuk menggambarkan alur dari proses login akun belajar id tersebut
+
+Contoh kasus diatas merupakan penerapan dari metode berpikir komputasional....",Dekomposisi,Pengenalan Pola,Abstraksi,Rancangan Algoritma,C,
+15,"Disaat hendak berangkat sekolah, seorang siswi mengurutkan tahapannya dari membuat sarapan, kemudian menyiapkan botol minum, mengecek buku pelajaran dan alat tulis, hingga akhirnya semua termuat dalam Tas dan siap untuk berangkat sekolah
+
+Contoh kasus diatas merupakan penerapan dari metode berpikir komputasional....",Dekomposisi,Pengenalan Pola,Abstraksi,Rancangan Algoritma,D,
+16,"Dekomposisi adalah cara berpikir dengan ""membreak down"" memecahkan masalah besar menjadi beberapa masalah kecil. Contoh yang tepat untuk dekomposisi adalah...","Membuat pesta ulang tahun, maka yang harus dipersiapkan adalah: susunan acara dan menu makanan","mencuci baju, maka yang harus dipersiapkan adalah: menyiapkan baju kotor, mencuci dan menjemur.",memasak mie dengan cara berurutan,prosedur tata cara makan orang Islam sesuai sunnah,A,
+17,"Pengenalan pola akan membantu kita dalam mengerjakan sesuatu menjadi lebih cepat. Apakah cara menggambar kucing siam, kucing BSH, kucing angora sama? Tentu sama, hanya beberapa detil yang berbeda, sehingga menggambar rangka kucingnya semua sama. Berikut ini contoh pengenalan pola adalah...",menyusun pola manik-manik untuk membuat gelang,prosedur menyimpan sepatu,menggunakan tisu untuk membersihkan meja karena tidak ada kain lap,membuat buku tahunan terdiri dari membuat tulisan dan foto,A,
+18,"Sebuah Pizza berukuran Large dibeli oleh Hasan, Sementara itu ada 9 tamu yang sedang bertamu di rumah Hasan. Rencananya Pizza tersebut akan dijadikan sebagai hidangan bagi para tamu, termasuk Hasan sendiri. Bagaimana cara membagi Pizza tesebut?",membiarkan tamu menggigit pizza tersebut satu persatru sampai habis,"membagi Pizza menjadi 10, sama besar",membagi Pizza menjadi 9. sisanya untuk Hasan,membiarkan para tamu mengambil sendiri Pizza di meja,B,
+19,Manakah gambar yang tidak sama ?,A,B,C,D,A,
+20,"1. Mulai
+
+2. Menulis surat 
+
+3. Surat dimasukan amplop
+
+4. Mengantar ke kantor pos
+
+5. Menutup amplop
+
+6. Menempel perangko
+
+7. Selesai
+
+Urutan algoritma yang benar pada masalah persuratan tersebut adalah ...",1-3-2-4-6-5-7,1-2-3-4-5-6-7,1-2-3-5-6-4-7,1-6-2-3-4-5-7,C,
+21,"Disaat hendak berangkat sekolah, seorang siswi mengurutkan tahapannya dari membuat sarapan, kemudian menyiapkan botol minum, mengecek buku pelajaran dan alat tulis, hingga akhirnya semua termuat dalam Tas dan siap untuk berangkat sekolah
+
+Contoh kasus diatas merupakan penerapan dari metode berpikir komputasional....",Dekomposisi,Pengenalan Pola,Abstraksi,Rancangan Algoritma,D,
+22,"pak seno mau membuat pudding mangga, maka pak seno menggunakan metode........",Dekomposisi,Abstraksi,Algoritma,Pengenalan Pola,C,
+23,"Pada siang hari, terlihat langit menjadi gelap (Mendung) dan nampak sedikit kilatan petir di iringi dengan sedikit rintikan air yang mulai turun, sehingga para pengendara motor banyak yang melipir untuk menggunakan Jas Hujan.
+
+Contoh kasus diatas merupakan penerapan dari metode berpikir komputasional....",Dekomposisi,Pengenalan Pola,Abstraksi,Rancangan Algoritma,,
+24,Memecahkan permasalahan yang besar dengan cara membaginya ke dalam bagian-bagian kecil disebut . . .,Abstraksi,Dekomposisi,Pengenalan Pola,Algoritma,B,
+25,"Berikut ini empat fondasi dalam berpikir komputasional, kecuali ...",Abstraksi,Dekomposisi,Pengenalan Pola,Aksioma,D,
+26,Berikut contoh dari abstraksi adalah ...,mengikuti langkah-langkah menelpon di telpon umum,"merakit komputer per bagian, dari motherboard, DVD room, dan harddisk",menggunakan cara yang hampir sama untuk mengecat tembok dan mengecat pagar,"pada saat membeli tiket online, hanya perlu beberapa data seperti nama, email, dan tanggal lahir tanpa perlu mengetahui status hubungan",D,
+27,"
+Permainan pada gambar dapat diselesaikan dengan metode ....",Abstraksi,Pengenalan Pola,Dekomposisi,Algoritma,B,
+28,"Untuk membuat layang-layang dimulai dengan menyiapkan alat dan bahan kemudian dilanjutkan tahap pembuatan mengikuti langkah 1 s.d. 4.
+
+Pada pola pikir komputasi membuat layang-layang berdasarkan uraian di atas terdapat pada tahap proses … .",Dekomposisi,Pengenalan Pola,Abstraksi,Algoritma,D,
+,Aplikasi Pengolah Teks,,,,,,
+29,Berikut ini cara membuka aplikasi/program Ms Word adalah ...,Tekan tombol Enter pada keyboard,"
+Klik 2 kali pada Ikon Ms. Word",Klik 1 Kali pada ikon Ms. Word,Tekan tombol delete pada Keyboard,B,
+30,Berikut ini merupakan Ikon aplikasi/program Ms. Word adalah ...,,,,,C,
+31,Ikon Bold berguna untuk ...,Membuat huruf miring,Membuat huruf bergaris bawah,Membuat huruf bergaris tengah,"
+Membuat huruf tebal",D,
+32,Berikut ini merupakan ikon Italic adalah ..,,,,,C,
+33,Ikon underline berguna untuk ...,Membuat huruf miring,Membuat huruf tebal,Membuat huruf bergaris bawah,Membuat huruf kapital,C,
+34,Ikon yang berguna untuk membuat huruf bergarisbawah adalah ...,Bold,"
+Underline",Italic,Copy,B,
+35,Menu Margins ada di tab ...,Home,Insert,Page Layout,References,C,
+36,"Pada tampilan berikut, tulisan yang menggunakan ikon Underline ditunjukkan nomor ...",1,2,3,4,C,
+37,"Pada tampilan berikut, tulisan yang menggunakan ikon Italic ditunjukkan nomor ...",1,2,3,4,,
+38,Tulisan nomor 1 pada tampilan berilut menggunakan ikon ...,Bold,Italic,Bold dan Italic,Underline,A,
+39,Tulisan nomor 3 pada tampilan berikut menggunakan ikon ...,Bold,Italic,Bold dan Italic,Underline,B,
+40,Fungsi untuk memberi nomor pada halaman adalah ...,Header,Footer,Page Number,Citation,C,
+41,"
+Jika kamu ingin menyimpan dokumen yang sudah diketik, tombol kombinasi keyboard apa yang harus ditekan?",Ctrl + S,Ctrl + V,Ctrl + C,Ctrl + P,A,
+42,Menu apa yang harus dipilih jika ingin memasukkan gambar atau foto ke dalam dokumen?,Insert,View,Home,Layout,A,
+43,"
+Untuk membuat teks berada tepat di tengah halaman (rata tengah), kita menggunakan fitur...",Align Right,Center,Justify,Align Left,B,
+44,Apa fungsi dari perintah 'Undo' (panah melengkung ke kiri) di bagian atas layar?,Keluar dari program,Membatalkan perintah terakhir,Menghapus semua tulisan,Menyimpan dokumen,B,
+45,"Jika ingin mengubah posisi kertas dari berdiri (tegak) menjadi tidur (mendatar), pilihan apa yang digunakan pada menu Orientation?",A4,Margin,Portrait,Landscape,D,
+46,Manakah di bawah ini yang merupakan fungsi utama dari Microsoft Word?,Mengolah kata dan membuat dokumen,Mengolah angka dan hitungan,"Mengedit video
+","Membuat presentasi slide
+",A,
+47,"Untuk mengubah ukuran huruf menjadi lebih besar atau lebih kecil, kita menggunakan fitur...",Line Spacing,Font Size,"Font Style
+",Font Color,B,
+48,Tombol Caps Lock pada keyboard berfungsi untuk...,Membuat semua huruf menjadi kapital (besar),"Menghapus huruf
+","Pindah ke baris baru
+","Membuat spasi
+",A,
+49,Apa nama batang yang berkedip-kedip di layar tempat kita akan mengetik huruf?,Icon,Scroll bar,Pointer,Kursor,D,
+50,"Untuk mengubah model huruf, kita menggunakan fitur",Font Style,Font Color,Alignment,Superscript,A,
+,Aplikasi Pengolah Angka,,,,,,

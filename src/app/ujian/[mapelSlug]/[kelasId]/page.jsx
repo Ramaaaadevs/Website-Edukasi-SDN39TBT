@@ -7,7 +7,7 @@ import { ChevronLeft, Clock, FileText, AlertCircle } from "lucide-react";
 // IMPORT DATA SOAL
 import soalMtkPecahan from "@/data/mtk-kelas5-pecahan.json";
 import soalBingGreeting from "@/data/bing-kelas5-greeting.json";
-// Import soalIpa...
+import soalIpa from "@/data/soalIpa.json"; // IMPORT DATA SOAL IPA
 
 export default function HalamanUjianAkhir() {
   const { mapelSlug, kelasId } = useParams();
@@ -31,6 +31,7 @@ export default function HalamanUjianAkhir() {
     if (kelas === 5) {
       if (mapelSlug === "matematika") rawData = soalMtkPecahan;
       else if (mapelSlug === "bahasa-inggris") rawData = soalBingGreeting;
+      else if (mapelSlug === "ipa") rawData = soalIpa; // LOGIKA BARU: Ambil data IPA
     } 
     
     if (rawData.length > 0) {
@@ -194,7 +195,7 @@ export default function HalamanUjianAkhir() {
   return (
     <div className="h-screen bg-gray-50 font-sans flex flex-col overflow-hidden">
       
-      {/* HEADER */}
+      {/* HEADER & PROGRESS BAR (TETAP SAMA) */}
       <div className="bg-white px-6 py-4 shadow-sm flex items-center justify-between shrink-0 z-20">
          <div>
             <span className="text-xs text-gray-400 font-bold uppercase tracking-wider block">Ujian Kelas {kelasId}</span>
@@ -205,16 +206,16 @@ export default function HalamanUjianAkhir() {
          </div>
       </div>
 
-      {/* PROGRESS BAR */}
       <div className="w-full bg-gray-200 h-1.5 shrink-0">
         <div className="bg-blue-600 h-1.5 transition-all duration-300" style={{ width: `${progress}%` }}></div>
       </div>
 
       {/* MAIN CONTENT */}
-      <main className="flex-1 w-full flex flex-col justify-center items-center p-4 overflow-y-auto">
+      {/* Perhatikan: Footer sekarang ada DI DALAM sini */}
+      <main className="flex-1 w-full flex flex-col justify-start items-center p-4 overflow-y-auto pt-10">
         <div className="w-full max-w-4xl">
             
-            {/* Pertanyaan */}
+            {/* Pertanyaan (TETAP SAMA) */}
             <div className="mb-8 text-center">
                <span className="inline-block bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs font-bold mb-4">
                   Soal {indexSoal + 1} / {soalUjian.length}
@@ -224,7 +225,7 @@ export default function HalamanUjianAkhir() {
                </h2>
             </div>
 
-            {/* Pilihan Jawaban */}
+            {/* Pilihan Jawaban (TETAP SAMA) */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {["A", "B", "C", "D"].map((opsi) => (
                 <button
@@ -247,31 +248,34 @@ export default function HalamanUjianAkhir() {
               ))}
             </div>
 
+            {/* ==================================================== */}
+            {/* PINDAHAN FOOTER KE SINI (Di dalam max-w-4xl)         */}
+            {/* Saya tambahkan 'mt-10' biar ada jarak dari jawaban   */}
+            {/* ==================================================== */}
+            <div className="mt-10 mb-10 flex justify-between items-center gap-4">
+                <button 
+                  onClick={handlePrev}
+                  disabled={indexSoal === 0}
+                  className={`flex-1 md:flex-none flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold transition ${indexSoal === 0 ? "text-gray-300 cursor-not-allowed bg-gray-50" : "text-gray-600 hover:bg-gray-100 border border-gray-200 bg-white"}`}
+                >
+                  <ChevronLeft size={20}/> Prev
+                </button>
+
+                {indexSoal === soalUjian.length - 1 ? (
+                  <button onClick={handleSelesai} className="flex-1 md:flex-none bg-[#00CBB8] text-white px-8 py-3 rounded-xl font-bold shadow-lg hover:bg-teal-500 transition transform hover:scale-105">
+                    Selesai Ujian
+                  </button>
+                ) : (
+                  <button onClick={handleNext} className="flex-1 md:flex-none bg-blue-600 text-white px-8 py-3 rounded-xl font-bold shadow-lg hover:bg-blue-700 transition transform hover:scale-105">
+                    Next Soal
+                  </button>
+                )}
+            </div>
+
         </div>
       </main>
 
-      {/* FOOTER */}
-      <div className="bg-white p-4 border-t border-gray-100 shrink-0 z-20">
-         <div className="max-w-4xl mx-auto flex justify-between items-center gap-4">
-            <button 
-              onClick={handlePrev}
-              disabled={indexSoal === 0}
-              className={`flex-1 md:flex-none flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold transition ${indexSoal === 0 ? "text-gray-300 cursor-not-allowed bg-gray-50" : "text-gray-600 hover:bg-gray-100 border border-gray-200"}`}
-            >
-              <ChevronLeft size={20}/> Prev
-            </button>
-
-            {indexSoal === soalUjian.length - 1 ? (
-              <button onClick={handleSelesai} className="flex-1 md:flex-none bg-[#00CBB8] text-white px-8 py-3 rounded-xl font-bold shadow-lg hover:bg-teal-500 transition transform hover:scale-105">
-                Selesai Ujian
-              </button>
-            ) : (
-              <button onClick={handleNext} className="flex-1 md:flex-none bg-blue-600 text-white px-8 py-3 rounded-xl font-bold shadow-lg hover:bg-blue-700 transition transform hover:scale-105">
-                Next Soal
-              </button>
-            )}
-         </div>
-      </div>
+      {/* FOOTER LAMA YANG DILUAR SUDAH DIHAPUS */}
       
     </div>
   );
