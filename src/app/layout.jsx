@@ -1,22 +1,31 @@
-import Navbar from "@/components/Navbar"; // 1. Import Navbar
+import Navbar from "@/components/Navbar";
+import Credit from "@/components/Credit"; 
 import "./globals.css";
 
-// Metadata (Judul Tab Browser)
 export const metadata = {
-  title: "Web Edukasi SD",
+  title: "60KUIZ",
   description: "Belajar jadi menyenangkan!",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="id">
-      <body>
+      {/* 1. min-h-screen: Tinggi body minimal 100% layar.
+         2. flex flex-col: Susun elemen (Navbar, Main, Footer) secara vertikal.
+      */}
+      <body className="min-h-screen flex flex-col font-sans">
         
-        {/* 2. Pasang Navbar DI ATAS children */}
+        {/* Bagian Atas */}
         <Navbar />
         
-        {/* Ini adalah isi halaman (Beranda, Modul, dll) */}
-        {children}
+        {/* Bagian Tengah (KONTEN) */}
+        {/* flex-1: Inilah kuncinya! 
+           Dia memerintahkan <main> untuk mengisi SEMUA ruang kosong yang tersisa.
+           Akibatnya, Footer akan terdorong mentok ke paling bawah.
+        */}
+        <main className="flex-1 w-full flex flex-col bg-white"> 
+          {children}
+        </main>
         
       </body>
     </html>
