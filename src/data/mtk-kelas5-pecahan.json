@@ -348,5 +348,85 @@
     "D": "2 lingkaran",
     "JAWABAN BENAR": "B",
     "PEMBAHASAN": "Balok umumnya terbentuk dari 3 pasang sisi, yang bisa berupa 4 persegi panjang dan 2 persegi (sisi penutup)."
+  },
+  {
+    "ID SOAL": 36,
+    "PERTANYAAN": "Hasil dari 5² adalah ...",
+    "A": 10,
+    "B": 20,
+    "C": 25,
+    "D": 30,
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "18. 5²\n= 5 × 5\n= 25"
+  },
+  {
+    "ID SOAL": 37,
+    "PERTANYAAN": "Bilangan berpangkat tiga dari 4 adalah ...",
+    "A": 12,
+    "B": 16,
+    "C": 64,
+    "D": 81,
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "4³\n= 4 × 4 × 4\n= 64"
+  },
+  {
+    "ID SOAL": 38,
+    "PERTANYAAN": "Akar pangkat tiga dari 216 adalah ...",
+    "A": 4,
+    "B": 5,
+    "C": 6,
+    "D": 7,
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "∛216\n6 × 6 × 6 = 216"
+  },
+  {
+    "ID SOAL": 39,
+    "PERTANYAAN": "KPK dari 8 dan 12 adalah ...",
+    "A": 12,
+    "B": 16,
+    "C": 24,
+    "D": 48,
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "KPK 8 & 12\nKelipatan 8: 8,16,24\nKelipatan 12: 12,24\nKPK = 24"
+  },
+  {
+    "ID SOAL": 40,
+    "PERTANYAAN": "FPB dari 36 dan 48 adalah ...",
+    "A": 6,
+    "B": 12,
+    "C": 18,
+    "D": 24,
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "FPB 36 & 48\nFaktor 36 = 1,2,3,4,6,9,12,18,36\nFaktor 48 = 1,2,3,4,6,8,12,16,24,48\nFPB = 12"
+  },
+  {
+    "ID SOAL": 41,
+    "PERTANYAAN": "Kelipatan persekutuan terkecil (KPK) dari 6 dan 8 adalah",
+    "A": 12,
+    "B": 16,
+    "C": 24,
+    "D": 48,
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": ""
+  },
+  {
+    "ID SOAL": 42,
+    "PERTANYAAN": "Faktor dari 36 yang terbesar adalah",
+    "A": 18,
+    "B": 12,
+    "C": 9,
+    "D": 36,
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": ""
+  },
+  {
+    "ID SOAL": 43,
+    "PERTANYAAN": "FPB dari 24 dan 40 adalah",
+    "A": 4,
+    "B": 6,
+    "C": 8,
+    "D": 12,
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": ""
   }
 ]

@@ -229,6 +229,106 @@ export const databaseAlurBelajar = {
       tipe: "selesai",
       judul: "Bab Bangun Ruang Selesai!",
       isi: "Kamu sudah menguasai Kubus dan Balok. Siap untuk Evaluasi?",
+    },
+  ],
+    // --- FPB & KPK ---
+  "fpb-kpk": [
+    // --- SESI 1: PERPANGKATAN (DASAR) ---
+    {
+      tipe: "materi",
+      judul: "1. Bilangan Pangkat",
+      isi: (
+        <div className="space-y-4 text-gray-700 text-lg">
+          <p>Sebelum masuk ke FPB & KPK, kita harus paham pangkat.</p>
+          <div className="bg-indigo-50 p-4 rounded-xl border border-indigo-200 text-center">
+            <p className="font-bold text-indigo-900">Apa itu Pangkat?</p>
+            <p>Perkalian berulang dari bilangan yang sama.</p>
+            <p className="text-2xl font-mono mt-2">4² = 4 × 4 = 16</p>
+            <p className="text-2xl font-mono">5² = 5 × 5 = 25</p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      tipe: "kuis",
+      judul: "Latihan Pangkat Dua",
+      // Masukkan ID soal pangkat dari JSON kamu disini
+      soal: ambilSoalById(soalPecahan, [37]), 
+    },
+
+    // --- SESI 2: FAKTOR PRIMA (POHON FAKTOR) ---
+    {
+      tipe: "materi",
+      judul: "2. Pohon Faktor & Bilangan Prima",
+      isi: (
+        <div className="space-y-4 text-gray-700 text-lg">
+          <p>Untuk mencari FPB/KPK, kita gunakan <strong>Pohon Faktor</strong>.</p>
+          <p>Ingat <strong>Bilangan Prima</strong> (hanya bisa dibagi 1 dan dirinya sendiri):</p>
+          <div className="flex gap-2 justify-center font-bold text-white">
+            <span className="bg-red-400 p-2 rounded-full w-10 h-10 flex items-center justify-center">2</span>
+            <span className="bg-red-400 p-2 rounded-full w-10 h-10 flex items-center justify-center">3</span>
+            <span className="bg-red-400 p-2 rounded-full w-10 h-10 flex items-center justify-center">5</span>
+            <span className="bg-red-400 p-2 rounded-full w-10 h-10 flex items-center justify-center">7</span>
+          </div>
+          <p className="text-sm text-gray-500 text-center mt-2">*Bagi terus angka dengan bilangan prima ini sampai habis!</p>
+        </div>
+      ),
+    },
+
+    // --- SESI 3: KPK ---
+    {
+      tipe: "materi",
+      judul: "3. KPK (Si Serakah)",
+      isi: (
+        <div className="space-y-4 text-gray-700 text-lg">
+          <p><strong>KPK (Kelipatan Persekutuan Terkecil)</strong>.</p>
+          <p>Cara Mengingat: <strong>KPK itu SERAKAH!</strong> 
+
+[Image of factor tree]
+</p>
+          <ul className="bg-green-50 p-4 rounded-xl border border-green-200 list-decimal pl-5 space-y-2">
+            <li>Tulis semua faktorisasi prima.</li>
+            <li>Ambil <strong>SEMUA</strong> angka.</li>
+            <li>Jika angkanya sama, ambil pangkat yang <strong>TERBESAR</strong>.</li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      tipe: "kuis",
+      judul: "Latihan Mencari KPK",
+      // Masukkan ID soal KPK disini
+      soal: ambilSoalById(soalPecahan, [39]), 
+    },
+
+    // --- SESI 4: FPB ---
+    {
+      tipe: "materi",
+      judul: "4. FPB (Si Pemilih)",
+      isi: (
+        <div className="space-y-4 text-gray-700 text-lg">
+          <p><strong>FPB (Faktor Persekutuan Terbesar)</strong>.</p>
+          <p>Cara Mengingat: <strong>FPB itu PEMILIH!</strong></p>
+          <ul className="bg-yellow-50 p-4 rounded-xl border border-yellow-200 list-decimal pl-5 space-y-2">
+            <li>Tulis semua faktorisasi prima.</li>
+            <li>Hanya ambil angka yang <strong>SAMA/KEMBAR</strong> saja.</li>
+            <li>Ambil pangkat yang <strong>TERKECIL</strong>.</li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      tipe: "kuis",
+      judul: "Latihan Mencari FPB",
+      // Masukkan ID soal FPB disini
+      soal: ambilSoalById(soalPecahan, [40]), 
+    },
+
+    // --- SELESAI ---
+    {
+      tipe: "selesai",
+      judul: "Bab FPB & KPK Selesai!",
+      isi: "Sekarang kamu sudah jago matematika dasar! Siap ujian?",
     }
   ],
 

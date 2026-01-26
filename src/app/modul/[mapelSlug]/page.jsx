@@ -20,7 +20,7 @@ const databaseMateri = {
         deskripsi: "Belajar operasi hitung pecahan, penyederhanaan, dan pecahan campuran.",
         icon: "🍰", 
         warnaIcon: "text-red-500 bg-red-50",
-        kelas: [5]
+        kelas: [5,6]
       },
       {
         id: 2,
@@ -29,7 +29,7 @@ const databaseMateri = {
         deskripsi: "Memahami rasio, perbandingan senilai, dan cara membaca peta.",
         icon: "⚖️",
         warnaIcon: "text-orange-500 bg-orange-50",
-        kelas: [5]
+        kelas: [5,6]
       },
       {
         id: 3,
@@ -38,7 +38,16 @@ const databaseMateri = {
         deskripsi: "Menghitung volume, luas permukaan, dan jaring-jaring kubus & balok.",
         icon: "📦",
         warnaIcon: "text-blue-500 bg-blue-50",
-        kelas: [5]
+        kelas: [6]
+      },
+      {
+        id: 4,
+        judul: "FPB & KPK",
+        slug: "fpb-kpk",
+        deskripsi: "Belajar faktorisasi prima, pohon faktor, dan menyelesaikan masalah sehari-hari.",
+        icon: "🌳", 
+        warnaIcon: "text-green-500 bg-green-50",
+        kelas: [6]
       }
     ]
   },
