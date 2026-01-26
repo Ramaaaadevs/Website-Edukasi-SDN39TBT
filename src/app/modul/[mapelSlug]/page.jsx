@@ -38,7 +38,7 @@ const databaseMateri = {
         deskripsi: "Menghitung volume, luas permukaan, dan jaring-jaring kubus & balok.",
         icon: "📦",
         warnaIcon: "text-blue-500 bg-blue-50",
-        kelas: [6]
+        kelas: [5,6]
       },
       {
         id: 4,
