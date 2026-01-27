@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useParams, useRouter } from "next/navigation";
-import { ChevronLeft, Clock, FileText, AlertCircle } from "lucide-react";
+import { ChevronLeft, Clock, FileText, AlertCircle, Volume2, VolumeX } from "lucide-react";
 
 // IMPORT DATA SOAL
 import soalMtkPecahan from "@/data/mtk-kelas5-pecahan.json";
@@ -21,8 +21,10 @@ export default function HalamanUjianAkhir() {
   const [waktuSisa, setWaktuSisa] = useState(1200); // Default 20 Menit
   const [loading, setLoading] = useState(true);
   
-  // STATE BARU: STATUS UJIAN (belum-mulai | sedang-jalan)
+  // STATE AUDIO & UJIAN
   const [ujianDimulai, setUjianDimulai] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
+  const audioRef = useRef(null);
 
   // LOGIC PILIH SOAL & ATUR WAKTU
   useEffect(() => {
@@ -77,6 +79,29 @@ export default function HalamanUjianAkhir() {
 
     setLoading(false);
   }, [mapelSlug, kelasId]);
+
+  // LOGIC MUSIK AUTOPLAY
+  useEffect(() => {
+    if (ujianDimulai && audioRef.current) {
+      // Set volume biar gak kaget (0.0 sampai 1.0)
+      audioRef.current.volume = 0.2; 
+      audioRef.current.play().catch((err) => {
+        console.log("Autoplay dicegah browser (normal jika belum interaksi):", err);
+      });
+    }
+  }, [ujianDimulai]);
+
+  const toggleMusic = () => {
+    if (audioRef.current) {
+      if (isMuted) {
+        audioRef.current.play();
+        setIsMuted(false);
+      } else {
+        audioRef.current.pause();
+        setIsMuted(true);
+      }
+    }
+  };
 
   // TIMER
   useEffect(() => {
@@ -163,7 +188,6 @@ export default function HalamanUjianAkhir() {
              <div className="flex items-center gap-3 text-gray-700">
                 <FileText className="text-blue-500" size={20} />
                 <span className="font-bold">Total Soal:</span>
-                {/* TAMPILAN DINAMIS: Mengikuti jumlah data array */}
                 <span className="ml-auto font-mono bg-white px-2 py-0.5 rounded border text-sm">
                     {soalUjian.length} Butir
                 </span>
@@ -171,7 +195,6 @@ export default function HalamanUjianAkhir() {
              <div className="flex items-center gap-3 text-gray-700">
                 <Clock className="text-orange-500" size={20} />
                 <span className="font-bold">Waktu:</span>
-                {/* TAMPILAN DINAMIS: Mengikuti state waktuSisa */}
                 <span className="ml-auto font-mono bg-white px-2 py-0.5 rounded border text-sm">
                     {Math.floor(waktuSisa / 60)} Menit
                 </span>
@@ -212,13 +235,33 @@ export default function HalamanUjianAkhir() {
   return (
     <div className="h-screen bg-gray-50 font-sans flex flex-col overflow-hidden">
       
+      {/* 🔹 AUDIO PLAYER TERSEMBUNYI */}
+      {/* Pastikan file 'backsound.mp3' ada di folder 'public' */}
+      <audio ref={audioRef} src="/backsound.mp3" loop />
+
+      {/* HEADER & CONTROLS */}
       <div className="bg-white px-6 py-4 shadow-sm flex items-center justify-between shrink-0 z-20">
-         <div>
-            <span className="text-xs text-gray-400 font-bold uppercase tracking-wider block">Ujian Kelas {kelasId}</span>
-            <span className="text-lg font-bold text-blue-900 capitalize">{mapelSlug.replace("-", " ")}</span>
+         <div className="flex items-center gap-4">
+            <div>
+                <span className="text-xs text-gray-400 font-bold uppercase tracking-wider block">Ujian Kelas {kelasId}</span>
+                <span className="text-lg font-bold text-blue-900 capitalize">{mapelSlug.replace("-", " ")}</span>
+            </div>
          </div>
-         <div className={`font-mono font-bold px-4 py-2 rounded-xl border ${waktuSisa < 300 ? 'bg-red-50 text-red-600 border-red-100 animate-pulse' : 'bg-blue-50 text-blue-600 border-blue-100'}`}>
-            ⏰ {formatWaktu(waktuSisa)}
+
+         <div className="flex items-center gap-3">
+             {/* 🔹 TOMBOL MUTE / UNMUTE MUSIK */}
+             <button 
+               onClick={toggleMusic}
+               className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 transition"
+               title={isMuted ? "Putar Musik" : "Matikan Musik"}
+             >
+               {isMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
+             </button>
+
+             {/* TIMER */}
+             <div className={`font-mono font-bold px-4 py-2 rounded-xl border ${waktuSisa < 300 ? 'bg-red-50 text-red-600 border-red-100 animate-pulse' : 'bg-blue-50 text-blue-600 border-blue-100'}`}>
+                ⏰ {formatWaktu(waktuSisa)}
+             </div>
          </div>
       </div>
 
