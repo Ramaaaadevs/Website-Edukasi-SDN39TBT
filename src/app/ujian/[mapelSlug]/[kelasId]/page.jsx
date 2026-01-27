@@ -7,7 +7,8 @@ import { ChevronLeft, Clock, FileText, AlertCircle } from "lucide-react";
 // IMPORT DATA SOAL
 import soalMtkPecahan from "@/data/mtk-kelas5-pecahan.json";
 import soalBingGreeting from "@/data/bing-kelas5-greeting.json";
-import soalIpa from "@/data/soalIpa.json"; // IMPORT DATA SOAL IPA
+import soalIpa from "@/data/soalIpa.json"; 
+import random from "@/data/random.json";
 
 export default function HalamanUjianAkhir() {
   const { mapelSlug, kelasId } = useParams();
@@ -17,21 +18,31 @@ export default function HalamanUjianAkhir() {
   const [soalUjian, setSoalUjian] = useState([]);
   const [indexSoal, setIndexSoal] = useState(0);
   const [jawabanUser, setJawabanUser] = useState({});
-  const [waktuSisa, setWaktuSisa] = useState(1200); // 20 Menit
+  const [waktuSisa, setWaktuSisa] = useState(1200); // Default 20 Menit
   const [loading, setLoading] = useState(true);
   
   // STATE BARU: STATUS UJIAN (belum-mulai | sedang-jalan)
   const [ujianDimulai, setUjianDimulai] = useState(false);
 
-  // LOGIC PILIH SOAL (Sama seperti sebelumnya)
+  // LOGIC PILIH SOAL & ATUR WAKTU
   useEffect(() => {
     let rawData = [];
     const kelas = parseInt(kelasId);
+    
+    // Default konfigurasi (untuk mapel biasa)
+    let limitSoal = 25;
+    let durasiDetik = 1200; // 20 Menit
 
     if (kelas === 5) {
       if (mapelSlug === "matematika") rawData = soalMtkPecahan;
       else if (mapelSlug === "bahasa-inggris") rawData = soalBingGreeting;
-      else if (mapelSlug === "ipa") rawData = soalIpa; // LOGIKA BARU: Ambil data IPA
+      else if (mapelSlug === "ipa") rawData = soalIpa; 
+      else if (mapelSlug === "random") {
+        rawData = random;
+        // KHUSUS RANDOM: Override konfigurasi
+        limitSoal = 10;       // Hanya 10 soal
+        durasiDetik = 900;    // 15 Menit (15 * 60)
+      }
     } 
     
     if (rawData.length > 0) {
@@ -56,15 +67,20 @@ export default function HalamanUjianAkhir() {
       });
 
       const acak = [...dataRapih].sort(() => 0.5 - Math.random());
-      setSoalUjian(acak.slice(0, 25));
+      
+      // Potong soal sesuai limit (10 untuk random, 25 untuk lainnya)
+      setSoalUjian(acak.slice(0, limitSoal)); 
+      
+      // Set waktu sesuai konfigurasi
+      setWaktuSisa(durasiDetik);
     }
 
     setLoading(false);
   }, [mapelSlug, kelasId]);
 
-  // TIMER (Hanya jalan kalau ujianDimulai = true)
+  // TIMER
   useEffect(() => {
-    if (loading || !ujianDimulai) return; // Stop timer kalau belum mulai
+    if (loading || !ujianDimulai) return; 
 
     const timer = setInterval(() => {
       setWaktuSisa((prev) => {
@@ -77,7 +93,7 @@ export default function HalamanUjianAkhir() {
       });
     }, 1000);
     return () => clearInterval(timer);
-  }, [loading, ujianDimulai]); // Dependency ditambah ujianDimulai
+  }, [loading, ujianDimulai]); 
 
   const formatWaktu = (s) => `${Math.floor(s/60).toString().padStart(2,'0')}:${(s%60).toString().padStart(2,'0')}`;
   
@@ -111,10 +127,8 @@ export default function HalamanUjianAkhir() {
     router.push("/result");
   };
 
-  // 1. TAMPILAN LOADING
   if (loading) return <div className="h-screen flex items-center justify-center font-bold text-gray-400">Menyiapkan Ujian...</div>;
   
-  // 2. TAMPILAN DATA KOSONG
   if (soalUjian.length === 0) return (
     <div className="h-screen flex flex-col items-center justify-center p-6 text-center">
        <div className="text-6xl mb-4 grayscale opacity-30">📂</div>
@@ -124,14 +138,13 @@ export default function HalamanUjianAkhir() {
   );
 
   // ==========================================
-  // 3. TAMPILAN HALAMAN "READY" (LOBBY)
+  // TAMPILAN HALAMAN "READY" (LOBBY)
   // ==========================================
   if (!ujianDimulai) {
     return (
       <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-6 font-sans">
         <div className="max-w-md w-full bg-white rounded-[2.5rem] shadow-2xl p-8 md:p-10 text-center border-4 border-white ring-4 ring-blue-50 relative overflow-hidden">
           
-          {/* Hiasan Background */}
           <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 to-indigo-500"></div>
           
           <div className="mb-6">
@@ -146,17 +159,22 @@ export default function HalamanUjianAkhir() {
              </p>
           </div>
 
-          {/* Info Box */}
           <div className="bg-gray-50 rounded-2xl p-5 mb-8 border border-gray-100 text-left space-y-3">
              <div className="flex items-center gap-3 text-gray-700">
                 <FileText className="text-blue-500" size={20} />
                 <span className="font-bold">Total Soal:</span>
-                <span className="ml-auto font-mono bg-white px-2 py-0.5 rounded border text-sm">25 Butir</span>
+                {/* TAMPILAN DINAMIS: Mengikuti jumlah data array */}
+                <span className="ml-auto font-mono bg-white px-2 py-0.5 rounded border text-sm">
+                    {soalUjian.length} Butir
+                </span>
              </div>
              <div className="flex items-center gap-3 text-gray-700">
                 <Clock className="text-orange-500" size={20} />
                 <span className="font-bold">Waktu:</span>
-                <span className="ml-auto font-mono bg-white px-2 py-0.5 rounded border text-sm">20 Menit</span>
+                {/* TAMPILAN DINAMIS: Mengikuti state waktuSisa */}
+                <span className="ml-auto font-mono bg-white px-2 py-0.5 rounded border text-sm">
+                    {Math.floor(waktuSisa / 60)} Menit
+                </span>
              </div>
              <div className="flex items-start gap-3 text-gray-700 pt-2 border-t border-gray-200 mt-2">
                 <AlertCircle className="text-red-500 flex-shrink-0" size={20} />
@@ -166,7 +184,6 @@ export default function HalamanUjianAkhir() {
              </div>
           </div>
 
-          {/* Tombol Start */}
           <button 
             onClick={() => setUjianDimulai(true)}
             className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 rounded-xl font-black text-xl shadow-lg shadow-blue-200 hover:scale-105 hover:shadow-xl transition-all active:scale-95"
@@ -187,7 +204,7 @@ export default function HalamanUjianAkhir() {
   }
 
   // ==========================================
-  // 4. TAMPILAN UJIAN (SOAL BERJALAN)
+  // TAMPILAN UJIAN (SOAL BERJALAN)
   // ==========================================
   const soalAktif = soalUjian[indexSoal];
   const progress = ((indexSoal + 1) / soalUjian.length) * 100;
@@ -195,7 +212,6 @@ export default function HalamanUjianAkhir() {
   return (
     <div className="h-screen bg-gray-50 font-sans flex flex-col overflow-hidden">
       
-      {/* HEADER & PROGRESS BAR (TETAP SAMA) */}
       <div className="bg-white px-6 py-4 shadow-sm flex items-center justify-between shrink-0 z-20">
          <div>
             <span className="text-xs text-gray-400 font-bold uppercase tracking-wider block">Ujian Kelas {kelasId}</span>
@@ -210,12 +226,9 @@ export default function HalamanUjianAkhir() {
         <div className="bg-blue-600 h-1.5 transition-all duration-300" style={{ width: `${progress}%` }}></div>
       </div>
 
-      {/* MAIN CONTENT */}
-      {/* Perhatikan: Footer sekarang ada DI DALAM sini */}
       <main className="flex-1 w-full flex flex-col justify-start items-center p-4 overflow-y-auto pt-10">
         <div className="w-full max-w-4xl">
             
-            {/* Pertanyaan (TETAP SAMA) */}
             <div className="mb-8 text-center">
                <span className="inline-block bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs font-bold mb-4">
                   Soal {indexSoal + 1} / {soalUjian.length}
@@ -225,7 +238,6 @@ export default function HalamanUjianAkhir() {
                </h2>
             </div>
 
-            {/* Pilihan Jawaban (TETAP SAMA) */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {["A", "B", "C", "D"].map((opsi) => (
                 <button
@@ -248,10 +260,6 @@ export default function HalamanUjianAkhir() {
               ))}
             </div>
 
-            {/* ==================================================== */}
-            {/* PINDAHAN FOOTER KE SINI (Di dalam max-w-4xl)         */}
-            {/* Saya tambahkan 'mt-10' biar ada jarak dari jawaban   */}
-            {/* ==================================================== */}
             <div className="mt-10 mb-10 flex justify-between items-center gap-4">
                 <button 
                   onClick={handlePrev}
@@ -273,10 +281,7 @@ export default function HalamanUjianAkhir() {
             </div>
 
         </div>
-      </main>
-
-      {/* FOOTER LAMA YANG DILUAR SUDAH DIHAPUS */}
-      
+      </main>      
     </div>
   );
 }

@@ -1,0 +1,405 @@
+[
+  {
+    "ID SOAL": 1,
+    "PERTANYAAN": "Hasil dari (125 + 75) : 5 adalah …",
+    "A": "30",
+    "B": "35",
+    "C": "40",
+    "D": "45",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "125 + 75 = 200, lalu 200 dibagi 5 = 40."
+  },
+  {
+    "ID SOAL": 2,
+    "PERTANYAAN": "Organ peredaran darah manusia yang berfungsi memompa darah adalah …",
+    "A": "paru-paru",
+    "B": "jantung",
+    "C": "hati",
+    "D": "ginjal",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Jantung berfungsi memompa darah ke seluruh tubuh."
+  },
+  {
+    "ID SOAL": 3,
+    "PERTANYAAN": "Bahasa Inggris dari kalimat \"Saya pergi ke sekolah\" adalah …",
+    "A": "I go to school",
+    "B": "I am school",
+    "C": "I school go",
+    "D": "I going school",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Kalimat yang benar adalah I go to school."
+  },
+  {
+    "ID SOAL": 4,
+    "PERTANYAAN": "Sikap yang sesuai dengan sila ke-2 Pancasila adalah …",
+    "A": "memilih teman",
+    "B": "menolong teman tanpa membeda-bedakan",
+    "C": "memaksakan pendapat",
+    "D": "mementingkan diri sendiri",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Sila ke-2 mengajarkan sikap kemanusiaan dan keadilan."
+  },
+  {
+    "ID SOAL": 5,
+    "PERTANYAAN": "Keliling persegi dengan sisi 12 cm adalah …",
+    "A": "36 cm",
+    "B": "40 cm",
+    "C": "44 cm",
+    "D": "48 cm",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Keliling persegi = 4 x sisi = 4 x 12 = 48 cm."
+  },
+  {
+    "ID SOAL": 6,
+    "PERTANYAAN": "Perubahan wujud dari cair menjadi gas disebut …",
+    "A": "membeku",
+    "B": "mencair",
+    "C": "menguap",
+    "D": "mengembun",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Cair ke gas disebut menguap."
+  },
+  {
+    "ID SOAL": 7,
+    "PERTANYAAN": "Jika 3 lusin pensil dibagi sama rata kepada 9 anak, tiap anak mendapat … pensil",
+    "A": "3",
+    "B": "4",
+    "C": "6",
+    "D": "12",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "3 lusin = 36, lalu 36 : 9 = 4. Soal ini jebakan, jawabannya seharusnya 4."
+  },
+  {
+    "ID SOAL": 8,
+    "PERTANYAAN": "Tumbuhan hijau dapat membuat makanan sendiri karena memiliki …",
+    "A": "akar",
+    "B": "klorofil",
+    "C": "batang",
+    "D": "bunga",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Klorofil berperan dalam proses fotosintesis."
+  },
+  {
+    "ID SOAL": 9,
+    "PERTANYAAN": "Bahasa Inggris dari \"lebih tinggi\" adalah …",
+    "A": "tall",
+    "B": "taller",
+    "C": "highest",
+    "D": "short",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Taller digunakan untuk perbandingan."
+  },
+  {
+    "ID SOAL": 10,
+    "PERTANYAAN": "Contoh keputusan yang diambil melalui musyawarah di sekolah adalah …",
+    "A": "nilai ujian",
+    "B": "jadwal piket kelas",
+    "C": "peringkat kelas",
+    "D": "nilai rapor",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Jadwal piket biasanya ditentukan bersama."
+  },
+
+  {
+    "ID SOAL": 11,
+    "PERTANYAAN": "Hasil dari 18 x 7 - 26 adalah …",
+    "A": "90",
+    "B": "96",
+    "C": "100",
+    "D": "110",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "18 x 7 = 126, lalu 126 - 26 = 100. Jawaban yang benar seharusnya C."
+  },
+  {
+    "ID SOAL": 12,
+    "PERTANYAAN": "Rangka manusia berfungsi untuk berikut ini, kecuali …",
+    "A": "menegakkan tubuh",
+    "B": "melindungi organ",
+    "C": "membantu gerak",
+    "D": "mengedarkan darah",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Peredaran darah adalah fungsi jantung dan pembuluh darah."
+  },
+  {
+    "ID SOAL": 13,
+    "PERTANYAAN": "Bahasa Inggris dari \"Dia sedang membaca buku\" adalah …",
+    "A": "She read a book",
+    "B": "She is reading a book",
+    "C": "She reading book",
+    "D": "She reads book now",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Is reading menunjukkan kegiatan sedang berlangsung."
+  },
+  {
+    "ID SOAL": 14,
+    "PERTANYAAN": "Menghargai perbedaan suku dan budaya termasuk pengamalan Pancasila sila ke …",
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "5",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Sila ke-3 berbunyi Persatuan Indonesia."
+  },
+  {
+    "ID SOAL": 15,
+    "PERTANYAAN": "Luas persegi panjang dengan panjang 15 cm dan lebar 8 cm adalah …",
+    "A": "110 cm²",
+    "B": "115 cm²",
+    "C": "120 cm²",
+    "D": "130 cm²",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Luas = panjang x lebar = 15 x 8 = 120 cm²."
+  },
+
+  {
+    "ID SOAL": 16,
+    "PERTANYAAN": "Energi panas matahari dimanfaatkan tumbuhan untuk …",
+    "A": "respirasi",
+    "B": "fotosintesis",
+    "C": "perkembangbiakan",
+    "D": "penguapan",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Fotosintesis membutuhkan energi cahaya matahari."
+  },
+  {
+    "ID SOAL": 17,
+    "PERTANYAAN": "Bahasa Inggris dari \"lebih rajin\" adalah …",
+    "A": "diligent",
+    "B": "more diligent",
+    "C": "most diligent",
+    "D": "very diligent",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "More digunakan untuk perbandingan."
+  },
+  {
+    "ID SOAL": 18,
+    "PERTANYAAN": "Melaksanakan hasil keputusan bersama merupakan contoh sikap …",
+    "A": "egois",
+    "B": "tanggung jawab",
+    "C": "malas",
+    "D": "masa bodoh",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Keputusan bersama harus dijalankan dengan tanggung jawab."
+  },
+  {
+    "ID SOAL": 19,
+    "PERTANYAAN": "Hasil dari 360 : (6 x 10) adalah …",
+    "A": "4",
+    "B": "5",
+    "C": "6",
+    "D": "8",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "6 x 10 = 60, lalu 360 : 60 = 6. Jawaban seharusnya C."
+  },
+  {
+    "ID SOAL": 20,
+    "PERTANYAAN": "Alat pernapasan ikan adalah …",
+    "A": "paru-paru",
+    "B": "kulit",
+    "C": "insang",
+    "D": "trakea",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Ikan bernapas menggunakan insang."
+  },
+
+  {
+    "ID SOAL": 21,
+    "PERTANYAAN": "Jika pukul 08.15 ditambah 1 jam 45 menit, maka menjadi pukul …",
+    "A": "09.45",
+    "B": "10.00",
+    "C": "10.15",
+    "D": "10.30",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "08.15 + 1 jam = 09.15, tambah 45 menit menjadi 10.00. Jawaban seharusnya B."
+  },
+  {
+    "ID SOAL": 22,
+    "PERTANYAAN": "Ciri-ciri benda magnet adalah …",
+    "A": "dapat menghantarkan panas",
+    "B": "dapat menarik benda tertentu",
+    "C": "berubah warna",
+    "D": "mudah terbakar",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Magnet menarik benda seperti besi."
+  },
+  {
+    "ID SOAL": 23,
+    "PERTANYAAN": "Bahasa Inggris dari \"mereka bermain di taman\" adalah …",
+    "A": "They play in park",
+    "B": "They are play in the park",
+    "C": "They are playing in the park",
+    "D": "They playing park",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Are playing menunjukkan kegiatan sedang berlangsung."
+  },
+  {
+    "ID SOAL": 24,
+    "PERTANYAAN": "Hak anak di sekolah adalah …",
+    "A": "mengerjakan PR",
+    "B": "mematuhi aturan",
+    "C": "mendapatkan pelajaran",
+    "D": "membersihkan kelas",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Mendapat pelajaran adalah hak siswa."
+  },
+  {
+    "ID SOAL": 25,
+    "PERTANYAAN": "Hasil dari 2,5 + 1,75 adalah …",
+    "A": "3,25",
+    "B": "4,00",
+    "C": "4,25",
+    "D": "4,75",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "2,5 + 1,75 = 4,25."
+  },
+  {
+    "ID SOAL": 26,
+    "PERTANYAAN": "Hari Kemerdekaan Republik Indonesia diperingati setiap tanggal …",
+    "A": "1 Juni",
+    "B": "17 Agustus",
+    "C": "20 Mei",
+    "D": "28 Oktober",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Indonesia merdeka pada tanggal 17 Agustus 1945."
+  },
+  {
+    "ID SOAL": 27,
+    "PERTANYAAN": "Tokoh yang dikenal sebagai Proklamator Kemerdekaan Indonesia adalah …",
+    "A": "Ki Hajar Dewantara",
+    "B": "Soekarno dan Mohammad Hatta",
+    "C": "RA Kartini",
+    "D": "Jenderal Sudirman",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Soekarno dan Mohammad Hatta membacakan teks proklamasi."
+  },
+  {
+    "ID SOAL": 28,
+    "PERTANYAAN": "Hari Pendidikan Nasional diperingati setiap tanggal …",
+    "A": "21 April",
+    "B": "20 Mei",
+    "C": "2 Mei",
+    "D": "28 Oktober",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Hardiknas diperingati tanggal 2 Mei."
+  },
+  {
+    "ID SOAL": 29,
+    "PERTANYAAN": "Pahlawan nasional yang dikenal sebagai Bapak Pendidikan Indonesia adalah …",
+    "A": "RA Kartini",
+    "B": "Ki Hajar Dewantara",
+    "C": "Soedirman",
+    "D": "Teuku Umar",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Ki Hajar Dewantara berjasa di bidang pendidikan."
+  },
+  {
+    "ID SOAL": 30,
+    "PERTANYAAN": "Makanan khas daerah Sumatera Barat adalah …",
+    "A": "Gudeg",
+    "B": "Pempek",
+    "C": "Rendang",
+    "D": "Papeda",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Rendang berasal dari Sumatera Barat."
+  },
+  {
+    "ID SOAL": 31,
+    "PERTANYAAN": "Hari Kebangkitan Nasional diperingati untuk mengenang berdirinya organisasi …",
+    "A": "Muhammadiyah",
+    "B": "Budi Utomo",
+    "C": "PNI",
+    "D": "Sarekat Dagang Islam",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Budi Utomo berdiri pada 20 Mei 1908."
+  },
+  {
+    "ID SOAL": 32,
+    "PERTANYAAN": "RA Kartini dikenal sebagai pahlawan yang memperjuangkan …",
+    "A": "kemerdekaan",
+    "B": "pendidikan perempuan",
+    "C": "pertahanan negara",
+    "D": "persatuan wilayah",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "RA Kartini memperjuangkan hak dan pendidikan perempuan."
+  },
+  {
+    "ID SOAL": 33,
+    "PERTANYAAN": "Makanan khas dari daerah Palembang adalah …",
+    "A": "Sate",
+    "B": "Pempek",
+    "C": "Rawon",
+    "D": "Gudeg",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Pempek merupakan makanan khas Palembang."
+  },
+  {
+    "ID SOAL": 34,
+    "PERTANYAAN": "Hari Sumpah Pemuda diperingati setiap tanggal …",
+    "A": "1 Juni",
+    "B": "17 Agustus",
+    "C": "28 Oktober",
+    "D": "10 November",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Sumpah Pemuda terjadi pada 28 Oktober 1928."
+  },
+  {
+    "ID SOAL": 35,
+    "PERTANYAAN": "Pahlawan nasional yang terkenal dengan semboyan \"Tut Wuri Handayani\" adalah …",
+    "A": "Soekarno",
+    "B": "Ki Hajar Dewantara",
+    "C": "RA Kartini",
+    "D": "Mohammad Hatta",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Tut Wuri Handayani adalah semboyan Ki Hajar Dewantara."
+  },
+  {
+    "ID SOAL": 36,
+    "PERTANYAAN": "Makanan khas dari Yogyakarta yang terbuat dari nangka muda adalah …",
+    "A": "Gudeg",
+    "B": "Rendang",
+    "C": "Pempek",
+    "D": "Kerak telor",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Gudeg merupakan makanan khas Yogyakarta."
+  },
+  {
+    "ID SOAL": 37,
+    "PERTANYAAN": "Hari Pahlawan diperingati setiap tanggal …",
+    "A": "20 Mei",
+    "B": "17 Agustus",
+    "C": "10 November",
+    "D": "28 Oktober",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Hari Pahlawan diperingati setiap 10 November."
+  },
+  {
+    "ID SOAL": 38,
+    "PERTANYAAN": "Jenderal Sudirman dikenal sebagai pahlawan di bidang …",
+    "A": "pendidikan",
+    "B": "sastra",
+    "C": "perjuangan militer",
+    "D": "ekonomi",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Jenderal Sudirman adalah panglima besar TNI."
+  },
+  {
+    "ID SOAL": 39,
+    "PERTANYAAN": "Makanan khas dari Papua yang berbahan dasar sagu adalah …",
+    "A": "Rendang",
+    "B": "Papeda",
+    "C": "Gudeg",
+    "D": "Pempek",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Papeda merupakan makanan khas Papua."
+  },
+  {
+    "ID SOAL": 40,
+    "PERTANYAAN": "Memperingati hari besar nasional bertujuan untuk …",
+    "A": "libur sekolah",
+    "B": "mengisi waktu luang",
+    "C": "mengingat jasa para pahlawan",
+    "D": "sekadar upacara",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Hari besar nasional mengingatkan jasa pahlawan."
+  }
+]

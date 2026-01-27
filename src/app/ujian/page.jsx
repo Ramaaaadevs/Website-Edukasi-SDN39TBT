@@ -12,6 +12,7 @@ export default function HalamanPilihMapelUjian() {
     { slug: "ipa", judul: "Ilmu Pengetahuan Alam", icon: "🌱", warna: "from-green-500 to-emerald-500" },
     { slug: "komputer", judul: "Komputer", icon: "💻", warna: "from-purple-500 to-pink-500" },
     { slug: "bahasa-inggris", judul: "Bahasa Inggris", icon: "🇬🇧", warna: "from-blue-500 to-indigo-500" },
+    { slug: "random", judul: "Random", icon: "🎲", warna: "from-yellow-500 to-red-500" },
   ];
 
   return (
