@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎓 60KUIZ — Web Edukasi Interaktif SD
 
-## Getting Started
+> Platform belajar dan ujian online untuk siswa SD Kelas 5 & 6, dikembangkan sebagai bagian dari program **KKN PPM Kelompok 60 Periode ke-16 Institut Teknologi Sumatera**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Live Demo
+
+**Website →** [60kuiz.vercel.app](https://60kuiz.vercel.app)
+
+---
+
+## 📸 Tampilan
+
+> *(tambahkan screenshot UI di sini jika ada)*
+
+---
+
+## ✨ Fitur
+
+- 📖 **Modul Belajar Interaktif** — materi + kuis mini per sesi (step-by-step learning)
+- 📝 **Ujian Akhir** — soal diacak dengan timer countdown
+- 📊 **Halaman Hasil & Pembahasan** — nilai, jumlah benar/salah, dan penjelasan tiap soal
+- 🎵 Backsound musik saat ujian berlangsung
+- 📱 Responsive — bisa diakses dari HP maupun laptop
+
+---
+
+## 📚 Mata Pelajaran
+
+| Mapel | Topik |
+|-------|-------|
+| Matematika | Pecahan, Perbandingan & Skala, Bangun Ruang, FPB & KPK |
+| IPA | Makhluk Hidup & Lingkungan, Benda & Sifatnya, Gaya & Energi |
+| Bahasa Inggris | Vocabulary, Daily Life & Reading, Grammar |
+| Komputer | Dasar Komputer |
+
+---
+
+## 🛠️ Tech Stack
+
+<div>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=0d1117" />
+  <img src="https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=flat-square&logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=0d1117" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />
+</div>
+
+---
+
+## 📁 Struktur Proyek
+
+```
+src/
+├── app/
+│   ├── modul/          # Halaman belajar per mapel & bab
+│   ├── ujian/          # Halaman ujian akhir
+│   └── result/         # Hasil & pembahasan
+├── components/
+│   ├── Navbar.jsx
+│   └── Credit.jsx
+├── data/               # Soal dalam format JSON
+│   ├── mtk-kelas5-pecahan.json
+│   ├── bing-kelas5-greeting.json
+│   ├── soalIpa.json
+│   └── random.json
+└── utils/
+    └── ambilSoal.js    # Helper untuk filter soal by ID
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ⚙️ Cara Menjalankan Lokal
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Clone repo
+git clone https://github.com/Ramaaaadevs/Website-Edukasi-SDN39TBT.git
+cd Website-Edukasi-SDN39TBT
 
-## Learn More
+# Install dependencies
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+# Jalankan development server
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Buka [http://localhost:3000](http://localhost:3000) di browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 👥 Tim KKN PPM Kelompok 60
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Institut Teknologi Sumatera — Periode ke-16**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+<p align="center">
+  <i>Belajar jadi menyenangkan! 🎉</i>
+</p>
