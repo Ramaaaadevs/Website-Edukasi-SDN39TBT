@@ -5,6 +5,22 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, CheckCircle2, XCircle, Lightbulb, MinusCircle } from "lucide-react";
 
+// IMPORT DATA SOAL UNTUK FALLBACK PEMBAHASAN JIKA DATA LOCALSTORAGE LAMA BELUM LENGKAP
+import soalMtkPecahan from "@/data/mtk-kelas5-pecahan.json";
+import soalBingGreeting from "@/data/bing-kelas5-greeting.json";
+import soalIpa from "@/data/soalIpa.json"; 
+import random from "@/data/random.json";
+
+const cariPembahasanDariDatabase = (pertanyaan) => {
+  const semuaSoal = [...soalMtkPecahan, ...soalBingGreeting, ...soalIpa, ...random];
+  const matched = semuaSoal.find(s => {
+    const q1 = (s.PERTANYAAN || s.pertanyaan || "").trim();
+    const q2 = (pertanyaan || "").trim();
+    return q1 === q2;
+  });
+  return matched ? (matched.PEMBAHASAN || matched.pembahasan) : null;
+};
+
 export default function HalamanPembahasan() {
   const router = useRouter();
   
@@ -124,6 +140,12 @@ export default function HalamanPembahasan() {
                    {soal.PERTANYAAN}
                  </h3>
 
+                 {soal.gambar && (
+                    <div className="flex justify-center mb-6 max-h-52 md:max-h-[300px] lg:max-h-[400px] overflow-hidden rounded-xl border bg-white p-3 shadow-sm">
+                      <img src={soal.gambar} alt="Pertanyaan" className="object-contain max-h-52 md:max-h-[300px] lg:max-h-[400px] w-auto" />
+                    </div>
+                  )}
+
                  {/* OPSI JAWABAN */}
                  <div className="space-y-3">
                     {["A", "B", "C", "D"].map((opsi) => {
@@ -170,7 +192,7 @@ export default function HalamanPembahasan() {
                     </div>
                     
                     <p className="font-medium leading-relaxed opacity-90 text-sm md:text-base">
-                      {soal.PEMBAHASAN || soal.pembahasan || "Jawaban yang benar sudah ditandai dengan warna hijau."}
+                      {soal.PEMBAHASAN || soal.pembahasan || cariPembahasanDariDatabase(soal.PERTANYAAN) || "Jawaban yang benar sudah ditandai dengan warna hijau."}
                     </p>
                  </div>
               </div>

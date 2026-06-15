@@ -62,8 +62,8 @@ export default function HalamanResult() {
   return (
     <div className="min-h-screen bg-gray-50 font-sans flex items-center justify-center p-6">
       
-      {/* Efek Konfeti Jika Lulus (Optional) */}
-      {isLulus && <Confetti width={windowSize.width} height={windowSize.height} recycle={false} numberOfPieces={300} />}
+      {/* Efek Konfeti Jika Lulus (Optional) - Dinonaktifkan untuk stabilitas & performa di Smart TV */}
+      {/* isLulus && <Confetti width={windowSize.width} height={windowSize.height} recycle={false} numberOfPieces={300} /> */}
 
       <div className="max-w-2xl w-full bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border-4 border-white ring-4 ring-blue-50 relative animate-fade-in-up">
         
