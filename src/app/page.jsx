@@ -10,10 +10,10 @@ export default function Beranda() {
 
   useEffect(() => {
     // Cek apakah user sudah pernah melihat popup pembaruan ini
-    // const hasSeen = localStorage.getItem("hasSeenMaintenancePopup");
-    // if (!hasSeen) {
+    const hasSeen = localStorage.getItem("hasSeenMaintenancePopup");
+    if (!hasSeen) {
       setShowPopup(true);
-    //}
+    }
   }, []);
 
   const handleClosePopup = () => {
