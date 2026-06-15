@@ -35,9 +35,9 @@
     "A": "3/8",
     "B": "5/4",
     "C": "1/2",
-    "D": "3/8",
+    "D": "5/8",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Penyebut sama, pembilang dijumlahkan"
+    "PEMBAHASAN": "Penyebut sama, pembilang dijumlahkan. (Opsi D yang kembar diubah menjadi 5/8)"
   },
   {
     "ID SOAL": 5,
@@ -47,7 +47,7 @@
     "C": "3/4",
     "D": "2/4",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": ""
+    "PEMBAHASAN": "Samakan penyebut menjadi 4. (2/4) + (1/4) = 3/4."
   },
   {
     "ID SOAL": 6,
@@ -106,8 +106,8 @@
     "B": "4/6",
     "C": "5/6",
     "D": "2/6",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "5/6 - 1/3\nSamakan penyebut\n1/3 = 2/6\n5/6 - 2/6 = 3/6"
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "5/6 - 1/3\nSamakan penyebut\n1/3 = 2/6\n5/6 - 2/6 = 3/6. (Kunci jawaban disesuaikan menjadi A)"
   },
   {
     "ID SOAL": 12,
@@ -123,11 +123,11 @@
     "ID SOAL": 13,
     "PERTANYAAN": "Hitunglah hasil dari 2/8 x 3/4 adalah",
     "A": "6/20",
-    "B": "3/10",
+    "B": "3/16",
     "C": "5/12",
     "D": "8/15",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Kalikan pembilang dengan pembilang dan penyebut dengan penyebut."
+    "PEMBAHASAN": "Kalikan pembilang dengan pembilang dan penyebut dengan penyebut. (2x3)/(8x4) = 6/32 disederhanakan menjadi 3/16."
   },
   {
     "ID SOAL": 14,
@@ -137,20 +137,10 @@
     "C": "5/7",
     "D": "3/4",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": ""
+    "PEMBAHASAN": "Kalikan pembilang dengan pembilang dan penyebut dengan penyebut. (2x3)/(3x4) = 6/12 disederhanakan menjadi 1/2."
   },
   {
     "ID SOAL": 15,
-    "PERTANYAAN": "Hasil dari 3/4 × 2/3 adalah ...",
-    "A": "1/2",
-    "B": "2/3",
-    "C": "3/4",
-    "D": "6/12",
-    "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "3/4 × 2/3\n= (3×2)/(4×3)\n= 6/12\n= 1/2"
-  },
-  {
-    "ID SOAL": 16,
     "PERTANYAAN": "Hasil pembagian dari 2/3 : 1/6 adalah ...",
     "A": 4,
     "B": 3,
@@ -160,7 +150,7 @@
     "PEMBAHASAN": "Ubah bagi jadi kali dan balik pecahan kedua. 2/3 x 6/1 = 12/3 = 4."
   },
   {
-    "ID SOAL": 17,
+    "ID SOAL": 16,
     "PERTANYAAN": "Hitunglah hasil 3/4 : 1/2 adalah",
     "A": "3/8",
     "B": "1/2",
@@ -170,17 +160,17 @@
     "PEMBAHASAN": "Pembagian pecahan diubah menjadi perkalian dengan kebalikan."
   },
   {
-    "ID SOAL": 18,
+    "ID SOAL": 17,
     "PERTANYAAN": "Hitunglah hasil dari 4/5 : 2/5 adalah",
     "A": 2,
     "B": "2/5",
     "C": "4/10",
     "D": "5/2",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": ""
+    "PEMBAHASAN": "Ubah menjadi perkalian: 4/5 x 5/2 = 20/10 = 2."
   },
   {
-    "ID SOAL": 19,
+    "ID SOAL": 18,
     "PERTANYAAN": "Hasil dari 6/7 : 3/7 adalah ...",
     "A": 1,
     "B": 2,
@@ -190,7 +180,7 @@
     "PEMBAHASAN": "6/7 : 3/7\n= 6/7 × 7/3\n= 6/3\n= 2"
   },
   {
-    "ID SOAL": 20,
+    "ID SOAL": 19,
     "PERTANYAAN": "Sebuah peta memiliki skala 1 : 1.000.000. Jika jarak sebenarnya 25 km, maka jarak pada peta adalah ...",
     "A": "2 cm",
     "B": "2,5 cm",
@@ -200,7 +190,7 @@
     "PEMBAHASAN": "Jarak Peta = Sebenarnya / Skala. 25 km = 2.500.000 cm. Dibagi 1.000.000 = 2,5 cm."
   },
   {
-    "ID SOAL": 21,
+    "ID SOAL": 20,
     "PERTANYAAN": "Jarak kota A ke kota B pada peta adalah 5 cm. Skala peta 1 : 200.000. Jarak sebenarnya adalah ...",
     "A": "10 km",
     "B": "100 km",
@@ -210,7 +200,7 @@
     "PEMBAHASAN": "Jarak Sebenarnya = Jarak Peta x Skala. 5 x 200.000 = 1.000.000 cm = 10 km."
   },
   {
-    "ID SOAL": 22,
+    "ID SOAL": 21,
     "PERTANYAAN": "Perbandingan uang Ani dan Budi 2 : 3. Jika uang Ani Rp 20.000, berapa uang Budi?",
     "A": "Rp25.000",
     "B": "Rp30.000",
@@ -220,7 +210,7 @@
     "PEMBAHASAN": "Uang Budi = (3/2) x Rp 20.000 = 3 x Rp 10.000 = Rp 30.000."
   },
   {
-    "ID SOAL": 23,
+    "ID SOAL": 22,
     "PERTANYAAN": "Tinggi menara sebenarnya 50 meter. Jika digambar dengan skala 1 : 1000, tinggi pada gambar adalah ...",
     "A": "5 cm",
     "B": "50 cm",
@@ -230,17 +220,17 @@
     "PEMBAHASAN": "50 m = 5000 cm. 5000 : 1000 = 5 cm."
   },
   {
-    "ID SOAL": 24,
+    "ID SOAL": 23,
     "PERTANYAAN": "Perbandingan umur kakak dan adik adalah 5 : 3. Jika umur kakak 15 tahun, maka umur adik adalah",
     "A": "5 tahun",
     "B": "6 tahun",
     "C": "9 tahun",
     "D": "10 tahun",
-    "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Umur kakah adalah 15 tahun, nilai 1 bagian adalah 15 : 5 = 3 jadi umur adik 3x3 = 9 tahun"
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Umur kakak adalah 15 tahun, nilai 1 bagian adalah 15 : 5 = 3 jadi umur adik 3x3 = 9 tahun"
   },
   {
-    "ID SOAL": 25,
+    "ID SOAL": 24,
     "PERTANYAAN": "Pada peta, jarak dua kota adalah 4 cm. Skala peta tersebut 1 : 100.000. Jarak sebenarnya adalah",
     "A": "400 m",
     "B": "4 km",
@@ -250,7 +240,7 @@
     "PEMBAHASAN": "Skala 1 : 100.000, jarak peta 4 cm, Artinya 1 cm = 100.000 cm, 4x100.000 = 400.000 cm lalu ubah ke km yaitu 400.000 cm = 4.000 m = 4 km"
   },
   {
-    "ID SOAL": 26,
+    "ID SOAL": 25,
     "PERTANYAAN": "Bangun ruang yang memiliki 6 sisi berbentuk persegi yang sama luas adalah ...",
     "A": "Balok",
     "B": "Kubus",
@@ -260,7 +250,7 @@
     "PEMBAHASAN": "Ciri utama kubus adalah memiliki 6 sisi berbentuk persegi yang kongruen (sama besar)."
   },
   {
-    "ID SOAL": 27,
+    "ID SOAL": 26,
     "PERTANYAAN": "Jumlah rusuk pada bangun ruang kubus adalah ...",
     "A": "8",
     "B": "10",
@@ -270,7 +260,7 @@
     "PEMBAHASAN": "Kubus memiliki 12 rusuk yang sama panjang."
   },
   {
-    "ID SOAL": 28,
+    "ID SOAL": 27,
     "PERTANYAAN": "Rumus untuk mencari volume balok adalah ...",
     "A": "s x s x s",
     "B": "p x l",
@@ -280,7 +270,7 @@
     "PEMBAHASAN": "Volume Balok = Panjang x Lebar x Tinggi (p x l x t)."
   },
   {
-    "ID SOAL": 29,
+    "ID SOAL": 28,
     "PERTANYAAN": "Sebuah kubus mempunyai panjang rusuk 8 cm. Volume kubus tersebut adalah ...",
     "A": "64 cm³",
     "B": "256 cm³",
@@ -290,7 +280,7 @@
     "PEMBAHASAN": "Volume = s x s x s = 8 x 8 x 8 = 512 cm³."
   },
   {
-    "ID SOAL": 30,
+    "ID SOAL": 29,
     "PERTANYAAN": "Balok mempunyai jumlah titik sudut sebanyak ...",
     "A": "6",
     "B": "8",
@@ -300,7 +290,7 @@
     "PEMBAHASAN": "Baik kubus maupun balok memiliki 8 titik sudut."
   },
   {
-    "ID SOAL": 31,
+    "ID SOAL": 30,
     "PERTANYAAN": "Sebuah balok memiliki panjang 10 cm, lebar 6 cm, dan tinggi 5 cm. Volumenya adalah ...",
     "A": "300 cm³",
     "B": "60 cm³",
@@ -310,7 +300,7 @@
     "PEMBAHASAN": "Volume = 10 x 6 x 5 = 300 cm³."
   },
   {
-    "ID SOAL": 32,
+    "ID SOAL": 31,
     "PERTANYAAN": "Volume sebuah kubus adalah 1.000 cm³. Panjang rusuk kubus tersebut adalah ...",
     "A": "10 cm",
     "B": "20 cm",
@@ -320,7 +310,7 @@
     "PEMBAHASAN": "Rusuk = ³√Volume. ³√1000 = 10 cm."
   },
   {
-    "ID SOAL": 33,
+    "ID SOAL": 32,
     "PERTANYAAN": "Sebuah akuarium berbentuk balok dengan panjang 20 dm, lebar 5 dm, dan tinggi 6 dm. Berapa liter air yang dapat ditampung?",
     "A": "60 liter",
     "B": "100 liter",
@@ -330,7 +320,7 @@
     "PEMBAHASAN": "Volume = 20 x 5 x 6 = 600 dm³. (1 dm³ = 1 liter)."
   },
   {
-    "ID SOAL": 34,
+    "ID SOAL": 33,
     "PERTANYAAN": "Diketahui volume balok 3.600 cm³. Jika panjang 24 cm dan tinggi 10 cm, maka lebarnya adalah ...",
     "A": "12 cm",
     "B": "14 cm",
@@ -340,7 +330,7 @@
     "PEMBAHASAN": "Lebar = Volume : (p x t) = 3600 : (24 x 10) = 3600 : 240 = 15 cm."
   },
   {
-    "ID SOAL": 35,
+    "ID SOAL": 34,
     "PERTANYAAN": "Jaring-jaring balok terdiri dari ...",
     "A": "6 persegi sama besar",
     "B": "4 persegi panjang dan 2 persegi",
@@ -350,7 +340,7 @@
     "PEMBAHASAN": "Balok umumnya terbentuk dari 3 pasang sisi, yang bisa berupa 4 persegi panjang dan 2 persegi (sisi penutup)."
   },
   {
-    "ID SOAL": 36,
+    "ID SOAL": 35,
     "PERTANYAAN": "Hasil dari 5² adalah ...",
     "A": 10,
     "B": 20,
@@ -360,7 +350,7 @@
     "PEMBAHASAN": "18. 5²\n= 5 × 5\n= 25"
   },
   {
-    "ID SOAL": 37,
+    "ID SOAL": 36,
     "PERTANYAAN": "Bilangan berpangkat tiga dari 4 adalah ...",
     "A": 12,
     "B": 16,
@@ -370,7 +360,7 @@
     "PEMBAHASAN": "4³\n= 4 × 4 × 4\n= 64"
   },
   {
-    "ID SOAL": 38,
+    "ID SOAL": 37,
     "PERTANYAAN": "Akar pangkat tiga dari 216 adalah ...",
     "A": 4,
     "B": 5,
@@ -380,7 +370,7 @@
     "PEMBAHASAN": "∛216\n6 × 6 × 6 = 216"
   },
   {
-    "ID SOAL": 39,
+    "ID SOAL": 38,
     "PERTANYAAN": "KPK dari 8 dan 12 adalah ...",
     "A": 12,
     "B": 16,
@@ -390,7 +380,7 @@
     "PEMBAHASAN": "KPK 8 & 12\nKelipatan 8: 8,16,24\nKelipatan 12: 12,24\nKPK = 24"
   },
   {
-    "ID SOAL": 40,
+    "ID SOAL": 39,
     "PERTANYAAN": "FPB dari 36 dan 48 adalah ...",
     "A": 6,
     "B": 12,
@@ -400,33 +390,33 @@
     "PEMBAHASAN": "FPB 36 & 48\nFaktor 36 = 1,2,3,4,6,9,12,18,36\nFaktor 48 = 1,2,3,4,6,8,12,16,24,48\nFPB = 12"
   },
   {
-    "ID SOAL": 41,
+    "ID SOAL": 40,
     "PERTANYAAN": "Kelipatan persekutuan terkecil (KPK) dari 6 dan 8 adalah",
     "A": 12,
     "B": 16,
     "C": 24,
     "D": 48,
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": ""
+    "PEMBAHASAN": "Kelipatan 6: 6, 12, 18, 24. Kelipatan 8: 8, 16, 24. KPK = 24."
   },
   {
-    "ID SOAL": 42,
+    "ID SOAL": 41,
     "PERTANYAAN": "Faktor dari 36 yang terbesar adalah",
     "A": 18,
     "B": 12,
     "C": 9,
     "D": 36,
     "JAWABAN BENAR": "D",
-    "PEMBAHASAN": ""
+    "PEMBAHASAN": "Faktor dari 36 adalah 1, 2, 3, 4, 6, 9, 12, 18, 36. Yang terbesar adalah 36."
   },
   {
-    "ID SOAL": 43,
+    "ID SOAL": 42,
     "PERTANYAAN": "FPB dari 24 dan 40 adalah",
     "A": 4,
     "B": 6,
     "C": 8,
     "D": 12,
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": ""
+    "PEMBAHASAN": "Faktor 24: 1,2,3,4,6,8,12,24. Faktor 40: 1,2,4,5,8,10,20,40. FPB = 8."
   }
 ]

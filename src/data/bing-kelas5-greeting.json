@@ -7,8 +7,7 @@
     "C": "Beach",
     "D": "Zoo",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Gambar menunjukkan lingkungan sekolah.",
-    "": ""
+    "PEMBAHASAN": "Kata 'students' (murid-murid) dan 'yard' (halaman tempat bermain) menunjukkan latar tempat di sekolah (School)."
   },
   {
     "ID SOAL": 2,
@@ -18,8 +17,7 @@
     "C": "Clean",
     "D": "Dangerous",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Tidak ada sampah berarti bersih (Clean).",
-    "": ""
+    "PEMBAHASAN": "Jika lingkungan tidak ada sampah (no trash), maka kondisi lingkungan tersebut menjadi bersih (Clean)."
   },
   {
     "ID SOAL": 3,
@@ -29,8 +27,7 @@
     "C": "Trash bin",
     "D": "Blackboard",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Trash bin (tempat sampah) untuk menjaga kebersihan.",
-    "": ""
+    "PEMBAHASAN": "'Trash bin' artinya tempat sampah. Benda ini berfungsi untuk menampung limbah agar lingkungan tetap bersih."
   },
   {
     "ID SOAL": 4,
@@ -40,8 +37,7 @@
     "C": "Twenty-three",
     "D": "Twenty-five",
     "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Setelah 24 adalah 25.",
-    "": ""
+    "PEMBAHASAN": "'Twenty-four' artinya 24. Bilangan setelah (after) angka 24 adalah 25, yang bahasa Inggrisnya adalah 'Twenty-five'."
   },
   {
     "ID SOAL": 5,
@@ -51,8 +47,7 @@
     "C": "Aunt",
     "D": "Uncle",
     "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Saudara ayah = Paman (Uncle).",
-    "": ""
+    "PEMBAHASAN": "Saudara laki-laki dari ayah (father's brother) disebut sebagai paman, yang dalam bahasa Inggris adalah 'Uncle'."
   },
   {
     "ID SOAL": 6,
@@ -62,8 +57,7 @@
     "C": "Small",
     "D": "Short",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Gajah itu besar (Big).",
-    "": ""
+    "PEMBAHASAN": "Gajah (elephant) dikenal secara umum sebagai hewan bertubuh besar (Big)."
   },
   {
     "ID SOAL": 7,
@@ -73,8 +67,7 @@
     "C": "Eyes",
     "D": "Nose",
     "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Hidung untuk mencium bau.",
-    "": ""
+    "PEMBAHASAN": "Kata 'smelling' artinya mencium bau/menghirup aroma. Anggota tubuh yang digunakan adalah hidung (Nose)."
   },
   {
     "ID SOAL": 8,
@@ -84,8 +77,7 @@
     "C": "I have two apples",
     "D": "I have two apple",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "I have + jamak (apples).",
-    "": ""
+    "PEMBAHASAN": "Subjek 'I' menggunakan kata kepunyaan 'have'. Karena jumlah apelnya jamak (two), kata benda 'apple' wajib ditambah akhiran -s menjadi 'apples'."
   },
   {
     "ID SOAL": 9,
@@ -95,8 +87,7 @@
     "C": "Living room",
     "D": "Bathroom",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Memasak di dapur (Kitchen).",
-    "": ""
+    "PEMBAHASAN": "Kegiatan memasak (cook) secara umum dilakukan di ruang dapur, yang dalam bahasa Inggris disebut 'Kitchen'."
   },
   {
     "ID SOAL": 10,
@@ -106,8 +97,7 @@
     "C": "Rice",
     "D": "Meat",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Kelinci suka wortel.",
-    "": ""
+    "PEMBAHASAN": "Makanan kesukaan hewan kelinci (rabbit) adalah wortel, yang dalam bahasa Inggris disebut 'Carrots'."
   },
   {
     "ID SOAL": 11,
@@ -117,8 +107,7 @@
     "C": "Libary",
     "D": "Labrary",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Perpustakaan = Library.",
-    "": ""
+    "PEMBAHASAN": "Penulisan kosakata bahasa Inggris untuk tempat 'perpustakaan' yang benar dan baku adalah L-I-B-R-A-R-Y."
   },
   {
     "ID SOAL": 12,
@@ -128,8 +117,7 @@
     "C": "Friday",
     "D": "Sunday",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Senin = Monday.",
-    "": ""
+    "PEMBAHASAN": "Dalam urutan nama hari bahasa Inggris, hari Senin diterjemahkan sebagai 'Monday'."
   },
   {
     "ID SOAL": 13,
@@ -139,8 +127,7 @@
     "C": "Arms",
     "D": "Legs",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Jari tangan = Fingers.",
-    "": ""
+    "PEMBAHASAN": "Manusia memiliki sepuluh jari tangan (fingers) pada bagian kedua belah tangannya (hands). Sedangkan 'toes' adalah jari kaki."
   },
   {
     "ID SOAL": 14,
@@ -150,8 +137,7 @@
     "C": "Yellow",
     "D": "Red",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Pisang warnanya kuning.",
-    "": ""
+    "PEMBAHASAN": "Buah pisang (banana) yang sudah matang pada umumnya berwarna kuning (Yellow)."
   },
   {
     "ID SOAL": 15,
@@ -161,8 +147,7 @@
     "C": "Cat",
     "D": "Snake",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Burung bisa terbang.",
-    "": ""
+    "PEMBAHASAN": "Di antara pilihan yang ada, burung (Bird) adalah hewan yang memiliki sayap dan bisa terbang (fly)."
   },
   {
     "ID SOAL": 16,
@@ -172,8 +157,7 @@
     "C": "Sharpener",
     "D": "Pencil case",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Rautan = Sharpener.",
-    "": ""
+    "PEMBAHASAN": "Alat tulis untuk meruncingkan pensil atau rautan dalam bahasa Inggris disebut 'Sharpener'."
   },
   {
     "ID SOAL": 17,
@@ -183,8 +167,7 @@
     "C": "Hands",
     "D": "Feet",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Mata untuk melihat.",
-    "": ""
+    "PEMBAHASAN": "Fungsi melihat (to see) merupakan kegunaan dari indra penglihatan manusia, yaitu mata (Eyes)."
   },
   {
     "ID SOAL": 18,
@@ -194,8 +177,7 @@
     "C": "School",
     "D": "Park",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Belajar di sekolah.",
-    "": ""
+    "PEMBAHASAN": "Seorang pelajar atau murid (student) menuntut ilmu dan belajar (studies) di lembaga sekolah (School)."
   },
   {
     "ID SOAL": 19,
@@ -205,8 +187,7 @@
     "C": "Sister",
     "D": "Grandfather",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Nenek = Grandmother.",
-    "": ""
+    "PEMBAHASAN": "Ibu dari ibu kita (mother's mother) merupakan nenek, yang dalam istilah keluarga bahasa Inggris disebut 'Grandmother'."
   },
   {
     "ID SOAL": 20,
@@ -216,8 +197,7 @@
     "C": "Large",
     "D": "Thin",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Lawan kecil = Besar (Large).",
-    "": ""
+    "PEMBAHASAN": "Kata 'Small' memiliki arti kecil. Lawan kata atau antonimnya (opposite) adalah besar/luas, yang diwakili oleh kata 'Large'."
   },
   {
     "ID SOAL": 21,
@@ -227,8 +207,7 @@
     "C": "Umbrella",
     "D": "Bag",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Hujan pakai payung.",
-    "": ""
+    "PEMBAHASAN": "Saat cuaca sedang turun hujan (it rains), kita memakai payung (Umbrella) agar badan tidak basah terkena air."
   },
   {
     "ID SOAL": 22,
@@ -238,8 +217,7 @@
     "C": "Nose",
     "D": "Head",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Hidung = Nose.",
-    "": ""
+    "PEMBAHASAN": "Bagian organ wajah hidung diterjemahkan ke dalam kosakata bahasa Inggris sebagai 'Nose'."
   },
   {
     "ID SOAL": 23,
@@ -249,8 +227,7 @@
     "C": "Evening",
     "D": "Night",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Sarapan pagi hari.",
-    "": ""
+    "PEMBAHASAN": "Istilah makan 'breakfast' merujuk spesifik pada kegiatan sarapan, yang secara waktu hanya dilakukan di pagi hari (Morning)."
   },
   {
     "ID SOAL": 24,
@@ -260,8 +237,7 @@
     "C": "Friend",
     "D": "Neighbor",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Teman bermain.",
-    "": ""
+    "PEMBAHASAN": "Arti kata dari kosakata bahasa Inggris 'friend' dalam bahasa Indonesia adalah teman atau rekan."
   },
   {
     "ID SOAL": 25,
@@ -271,8 +247,7 @@
     "C": "Take everything",
     "D": "Throw away",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Share = Berbagi.",
-    "": ""
+    "PEMBAHASAN": "Kata kerja 'share' bermakna membagi atau memberikan sebagian hal yang kita miliki kepada orang lain (Give part to others)."
   },
   {
     "ID SOAL": 26,
@@ -282,8 +257,7 @@
     "C": "Bag",
     "D": "Chair",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Buku = Book.",
-    "": ""
+    "PEMBAHASAN": "Benda berupa buku cetak atau tulis dalam kamus bahasa Inggris disebut 'Book'."
   },
   {
     "ID SOAL": 27,
@@ -293,8 +267,7 @@
     "C": "Spinach",
     "D": "Potato",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Apel adalah buah.",
-    "": ""
+    "PEMBAHASAN": "Di antara pilihan, pilihan A, C, dan D merupakan sayur/umbi. Sedangkan apel (Apple) diklasifikasikan sebagai buah-buahan (fruit)."
   },
   {
     "ID SOAL": 28,
@@ -304,8 +277,7 @@
     "C": "Red",
     "D": "Black",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Langit biru.",
-    "": ""
+    "PEMBAHASAN": "Pada kondisi cuaca cerah di siang hari, warna langit (sky) akan terlihat berwarna biru (Blue)."
   },
   {
     "ID SOAL": 29,
@@ -315,8 +287,7 @@
     "C": "kitchen",
     "D": "garage",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Masak di dapur.",
-    "": ""
+    "PEMBAHASAN": "Tempat khusus di dalam rumah yang diperuntukkan bagi aktivitas memasak hidangan makanan adalah dapur (kitchen)."
   },
   {
     "ID SOAL": 30,
@@ -326,8 +297,7 @@
     "C": "Long",
     "D": "Wide",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Lawan besar = Kecil.",
-    "": ""
+    "PEMBAHASAN": "Kata 'big' memiliki arti besar. Lawan kata langsung dari besar adalah berukuran kecil, yang dalam bahasa Inggris disebut 'Small'."
   },
   {
     "ID SOAL": 31,
@@ -337,8 +307,7 @@
     "C": "Car",
     "D": "House",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Anjing itu hewan.",
-    "": ""
+    "PEMBAHASAN": "Table (meja), car (mobil), dan house (rumah) adalah benda mati. Yang tergolong makhluk hidup kelompok hewan (animal) adalah anjing (Dog)."
   },
   {
     "ID SOAL": 32,
@@ -348,8 +317,7 @@
     "C": "Eight o'clock",
     "D": "Nine o'clock",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Jam 7.",
-    "": ""
+    "PEMBAHASAN": "Angka penunjuk jam 07.00 tepat dibaca dalam format bahasa Inggris formal sebagai 'Seven o'clock'."
   },
   {
     "ID SOAL": 33,
@@ -359,8 +327,7 @@
     "C": "farmer",
     "D": "doctor",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Sopir (Driver).",
-    "": ""
+    "PEMBAHASAN": "Seseorang yang mata pencariannya mengemudikan kendaraan bus (drives a bus) disebut sebagai sopir/pengemudi (driver)."
   },
   {
     "ID SOAL": 34,
@@ -370,8 +337,7 @@
     "C": "Wednesday",
     "D": "Friday",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Selasa.",
-    "": ""
+    "PEMBAHASAN": "Urutan penanggalan hari setelah hari Senin (Monday) adalah hari Selasa, yang bahasa Inggrisnya adalah 'Tuesday'."
   },
   {
     "ID SOAL": 35,
@@ -381,8 +347,7 @@
     "C": "Water",
     "D": "Egg",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Air itu minuman.",
-    "": ""
+    "PEMBAHASAN": "Rice (nasi), bread (roti), dan egg (telur) merupakan jenis makanan padat. Yang berupa benda cair untuk diminum (drink) adalah air (Water)."
   },
   {
     "ID SOAL": 36,
@@ -392,8 +357,7 @@
     "C": "smile",
     "D": "laugh",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Sedih.",
-    "": ""
+    "PEMBAHASAN": "Kata 'happy' mencerminkan perasaan senang atau bahagia. Lawan dari perasaan bahagia tersebut adalah sedih (sad)."
   },
   {
     "ID SOAL": 37,
@@ -403,8 +367,7 @@
     "C": "Singer",
     "D": "Pilot",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Dokter.",
-    "": ""
+    "PEMBAHASAN": "Pencocokan kosakata profesi masa depan: kata serapan dari 'Doctor' dalam padanan istilah Indonesia adalah dokter."
   },
   {
     "ID SOAL": 38,
@@ -414,8 +377,7 @@
     "C": "angrily",
     "D": "loudly",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Harmony artinya hidup rukun.",
-    "": ""
+    "PEMBAHASAN": "Hidup dalam keselarasan atau kerukunan (living in harmony) berarti mampu bersosialisasi dan hidup bahagia bersama orang lain (happily with others)."
   },
   {
     "ID SOAL": 39,
@@ -425,8 +387,7 @@
     "C": "Breaking rules",
     "D": "Being lazy",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Mengerjakan PR adalah tanggung jawab.",
-    "": ""
+    "PEMBAHASAN": "Sikap tanggung jawab (responsibility) seorang siswa dicerminkan dengan perilaku tertib seperti mengerjakan tugas pekerjaan rumah (Doing homework)."
   },
   {
     "ID SOAL": 40,
@@ -436,8 +397,7 @@
     "C": "feel happy",
     "D": "play together",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Salah harus minta maaf.",
-    "": ""
+    "PEMBAHASAN": "Kata santun maaf atau 'sorry' wajib diucapkan apabila kita berbuat suatu kesalahan atau kekeliruan (do something wrong)."
   },
   {
     "ID SOAL": 41,
@@ -447,8 +407,7 @@
     "C": "Good morning",
     "D": "Good afternoon",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Jam 7 pagi = Good morning.",
-    "": ""
+    "PEMBAHASAN": "Keterangan waktu '7 AM' menunjukkan jam 7 pagi hari. Kalimat sapaan yang tepat digunakan adalah selamat pagi (Good morning)."
   },
   {
     "ID SOAL": 42,
@@ -458,8 +417,7 @@
     "C": "I am fine thank you",
     "D": "My name is Budi",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Menanyakan kabar.",
-    "": ""
+    "PEMBAHASAN": "Pertanyaan 'How are you?' berfungsi menanyakan kabar kesehatan seseorang, respon standar yang tepat adalah 'I am fine thank you' (Saya sehat, terima kasih)."
   },
   {
     "ID SOAL": 43,
@@ -469,8 +427,7 @@
     "C": "I am sorry",
     "D": "Goodbye",
     "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Selamat tinggal = Goodbye.",
-    "": ""
+    "PEMBAHASAN": "Ungkapan perpisahan saat hendak berpisah atau mengakhiri pertemuan ('Selamat tinggal') adalah 'Goodbye'."
   },
   {
     "ID SOAL": 44,
@@ -480,8 +437,7 @@
     "C": "I like my friend",
     "D": "I play with my friend",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Many artinya banyak.",
-    "": ""
+    "PEMBAHASAN": "Kata penunjuk kuantitas 'many' memiliki arti banyak, yang maknanya sama dengan frasa 'a lot of' (jumlah yang banyak)."
   },
   {
     "ID SOAL": 45,
@@ -491,8 +447,7 @@
     "C": "swimming",
     "D": "riding a bike",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Sedang bermain bola.",
-    "": ""
+    "PEMBAHASAN": "Deskripsi gambar anak laki-laki sedang menggiring bola di lapangan menunjukkan aktivitas bermain sepak bola (playing football)."
   },
   {
     "ID SOAL": 46,
@@ -502,8 +457,7 @@
     "C": "riding a bicycle",
     "D": "playing basketball",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Sedang naik sepeda.",
-    "": ""
+    "PEMBAHASAN": "Deskripsi gambar anak perempuan yang sedang mengayuh sepeda menunjukkan aktivitas bersepeda (riding a bicycle)."
   },
   {
     "ID SOAL": 47,
@@ -513,8 +467,7 @@
     "C": "In the classroom",
     "D": "In the kitchen",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Layangan main di luar (Outside).",
-    "": ""
+    "PEMBAHASAN": "Permainan menerbangkan layang-layang (flying kite) membutuhkan area terbuka dan embusan angin, jadi harus dilakukan di luar ruangan (Outside)."
   },
   {
     "ID SOAL": 48,
@@ -524,8 +477,7 @@
     "C": "School",
     "D": "Hospital",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Belanja di Mall.",
-    "": ""
+    "PEMBAHASAN": "Pusat perbelanjaan modern yang menyediakan toko pakaian hingga gerai makanan secara terpadu adalah mall (Shopping mall)."
   },
   {
     "ID SOAL": 49,
@@ -535,8 +487,7 @@
     "C": "Restroom",
     "D": "Cinema",
     "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Nonton film di Bioskop (Cinema).",
-    "": ""
+    "PEMBAHASAN": "Fasilitas hiburan berupa gedung pertunjukan teater tempat orang menonton film layar lebar di mall disebut bioskop (Cinema)."
   },
   {
     "ID SOAL": 50,
@@ -546,30 +497,27 @@
     "C": "Food court",
     "D": "Shoe store",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Tempat makan = Food court.",
-    "": ""
+    "PEMBAHASAN": "Area khusus berkumpulnya banyak gerai penjual makanan dan meja makan bersama di mall dinamakan pusat jajanan atau 'Food court'."
   },
   {
     "ID SOAL": 51,
-    "PERTANYAAN": "Asking for price",
-    "A": "we say...",
+    "PERTANYAAN": "Asking for price, we say...",
+    "A": "What is your name?",
     "B": "How much is this?",
     "C": "How are you?",
-    "D": "Where are from?",
-    "JAWABAN BENAR": "What is your name?",
-    "PEMBAHASAN": "C",
-    "": "Tanya harga = How much."
+    "D": "Where are you from?",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Untuk menanyakan nominal harga suatu barang saat berbelanja (asking for price), kalimat tanya yang digunakan adalah 'How much is this?'."
   },
   {
     "ID SOAL": 52,
-    "PERTANYAAN": "Picture: Houses school market. This is a...",
+    "PERTANYAAN": "Picture: Houses, school, market. This is a...",
     "A": "zoo",
     "B": "hometown",
     "C": "beach",
     "D": "mountain",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Kota tempat tinggal (Hometown).",
-    "": ""
+    "PEMBAHASAN": "Gabungan area perumahan warga, sekolah, beserta pasar tradisional menggambarkan lingkungan pemukiman atau kampung halaman (Hometown)."
   },
   {
     "ID SOAL": 53,
@@ -579,8 +527,7 @@
     "C": "They swim in sea",
     "D": "They climb mountain",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Main di taman.",
-    "": ""
+    "PEMBAHASAN": "Narasi menyatakan anak-anak bermain di sebuah taman ('playing in a park'), yang cocok dengan kalimat 'They play in park'."
   },
   {
     "ID SOAL": 54,
@@ -590,8 +537,7 @@
     "C": "It has airport",
     "D": "It is crowded",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Ada sungainya.",
-    "": ""
+    "PEMBAHASAN": "Keterangan gambar menunjukkan objek aliran air sungai dekat perumahan, sehingga kalimat penjelas yang benar adalah 'It has a river' (Tempat itu memiliki sungai)."
   },
   {
     "ID SOAL": 55,
@@ -601,8 +547,7 @@
     "C": "Excuse me",
     "D": "Happy Birthday",
     "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Ucapkan Happy Birthday.",
-    "": ""
+    "PEMBAHASAN": "Kalimat ucapan selamat yang ditujukan khusus bagi seseorang yang sedang memperingati hari kelahirannya adalah 'Happy Birthday'."
   },
   {
     "ID SOAL": 56,
@@ -612,8 +557,7 @@
     "C": "Notebook",
     "D": "Blackboard",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Ada kue ulang tahun.",
-    "": ""
+    "PEMBAHASAN": "Benda ikonik penanda perayaan pesta ulang tahun yang sering ditemukan adalah kue ulang tahun (Birthday cake)."
   },
   {
     "ID SOAL": 57,
@@ -623,8 +567,7 @@
     "C": "Sleep",
     "D": "Sing birthday song",
     "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Nyanyi dulu baru makan.",
-    "": ""
+    "PEMBAHASAN": "Sesuai tradisi pesta ulang tahun, sebelum prosesi memotong dan memakan kue, para tamu akan menyanyikan lagu selamat ulang tahun (Sing birthday song)."
   },
   {
     "ID SOAL": 58,
@@ -634,8 +577,7 @@
     "C": "Happy Birthday to you!",
     "D": "What is your name?",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Ucapan selamat ulang tahun.",
-    "": ""
+    "PEMBAHASAN": "Dari seluruh pilihan kalimat, hanya ungkapan 'Happy Birthday to you!' yang merupakan bentuk kalimat harapan/ucapan selamat ulang tahun."
   },
   {
     "ID SOAL": 59,
@@ -645,8 +587,7 @@
     "C": "Writing",
     "D": "Playing",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Guru berdiri (Standing).",
-    "": ""
+    "PEMBAHASAN": "Saat mengajar murid-murid di depan kelas, posisi tubuh seorang guru umumnya adalah berdiri (Standing)."
   },
   {
     "ID SOAL": 60,
@@ -656,8 +597,7 @@
     "C": "Under the table",
     "D": "Next to the door",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Papan tulis di belakang guru.",
-    "": ""
+    "PEMBAHASAN": "Posisi penempatan papan tulis di ruang kelas biasanya menempel di dinding tepat di sisi belakang posisi guru mengajar (Behind the teacher)."
   },
   {
     "ID SOAL": 61,
@@ -667,8 +607,7 @@
     "C": "Food",
     "D": "Shoes",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Buku dan alat tulis.",
-    "": ""
+    "PEMBAHASAN": "Benda wajib yang diletakkan di atas meja murid guna menunjang proses kegiatan belajar mengajar adalah buku dan pensil (Books and pencils)."
   },
   {
     "ID SOAL": 62,
@@ -678,8 +617,7 @@
     "C": "My favorite show",
     "D": "My hobby",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Topik tentang acara TV.",
-    "": ""
+    "PEMBAHASAN": "Judul teks 'My Favorite Show' secara eksplisit menceritakan tentang tontonan atau acara favorit pilihan seseorang (My favorite show)."
   },
   {
     "ID SOAL": 63,
@@ -689,8 +627,7 @@
     "C": "Television",
     "D": "Closet",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Nonton di TV.",
-    "": ""
+    "PEMBAHASAN": "Media atau alat elektronik rumah tangga utama yang kita gunakan untuk menyaksikan siaran acara tontonan hiburan adalah televisi (Television)."
   },
   {
     "ID SOAL": 64,
@@ -700,8 +637,7 @@
     "C": "It is boring",
     "D": "It is long",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Karena seru (Fun).",
-    "": ""
+    "PEMBAHASAN": "Alasan mendasar seseorang menyukai sebuah program acara hiburan adalah karena tayangan tersebut dinilai seru atau menyenangkan (fun)."
   },
   {
     "ID SOAL": 65,
@@ -711,8 +647,7 @@
     "C": "During exam",
     "D": "Library",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Biasanya malam hari.",
-    "": ""
+    "PEMBAHASAN": "Waktu santai yang umum dipakai anak-anak untuk menonton televisi setelah selesai belajar adalah di malam hari sebelum tidur (At night before sleeping)."
   },
   {
     "ID SOAL": 66,
@@ -722,8 +657,7 @@
     "C": "Argue",
     "D": "Break rules",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Saling membantu.",
-    "": ""
+    "PEMBAHASAN": "Hidup berdampingan secara damai dan tenteram (live peacefully) terwujud lewat tindakan saling menolong dan menghormati sesama (Help and respect)."
   },
   {
     "ID SOAL": 67,
@@ -733,8 +667,7 @@
     "C": "Cleaning together",
     "D": "Making noise",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Kerja bakti.",
-    "": ""
+    "PEMBAHASAN": "Kerja sama yang baik (good cooperation) ditunjukkan lewat aktivitas gotong royong, seperti membersihkan lingkungan secara bersama-sama (Cleaning together)."
   },
   {
     "ID SOAL": 68,
@@ -744,8 +677,7 @@
     "C": "Limit friendship",
     "D": "Stop talking",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Agar tertib.",
-    "": ""
+    "PEMBAHASAN": "Tujuan utama diterapkannya peraturan (rules) di manapun berada adalah untuk menciptakan keteraturan serta menjamin keselamatan warga (Order and safety)."
   },
   {
     "ID SOAL": 69,
@@ -755,8 +687,7 @@
     "C": "Exercising",
     "D": "Junk food",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Olahraga.",
-    "": ""
+    "PEMBAHASAN": "Kebiasaan menjaga pola hidup sehat (healthy habit) di antara pilihan tersebut adalah berolahraga secara teratur (Exercising)."
   },
   {
     "ID SOAL": 70,
@@ -766,8 +697,7 @@
     "C": "Studying",
     "D": "Sleeping",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Belajar.",
-    "": ""
+    "PEMBAHASAN": "Bagi seorang pelajar, pemanfaatan perangkat komputer jinjing/laptop yang paling bernilai positif adalah untuk sarana belajar (Studying)."
   },
   {
     "ID SOAL": 71,
@@ -777,8 +707,7 @@
     "C": "TV",
     "D": "Sleeping",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Belajar buat masa depan.",
-    "": ""
+    "PEMBAHASAN": "Tujuan utama siswa rajin belajar di sekolah maupun rumah adalah untuk menuntut ilmu demi mempersiapkan masa depan mereka (Studying for future)."
   },
   {
     "ID SOAL": 72,
@@ -788,8 +717,7 @@
     "C": "Prepare goals",
     "D": "Play",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Menyiapkan cita-cita.",
-    "": ""
+    "PEMBAHASAN": "Aktivitas menuliskan cita-cita atau impian pada selembar papan dimaksudkan agar siswa dapat merancang target hidupnya sejak dini (Prepare goals)."
   },
   {
     "ID SOAL": 73,
@@ -799,8 +727,7 @@
     "C": "Playing important",
     "D": "Dreams useless",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Persiapan sejak dini.",
-    "": ""
+    "PEMBAHASAN": "Amanat pembelajaran moral yang dipetik adalah bahwa melakukan persiapan matang sejak usia dini akan sangat membantu kesuksesan (Preparing early helps)."
   },
   {
     "ID SOAL": 74,
@@ -810,8 +737,7 @@
     "C": "To make it healthy",
     "D": "To break the rules",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Lingkungan bersih membuat kita sehat.",
-    "": ""
+    "PEMBAHASAN": "Alasan utama pentingnya menjaga kebersihan lingkungan adalah demi menciptakan kondisi hidup yang sehat dan bebas kuman (To make it healthy)."
   },
   {
     "ID SOAL": 75,
@@ -821,8 +747,7 @@
     "C": "schools",
     "D": "animals only",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "SDA berasal dari alam (Nature).",
-    "": ""
+    "PEMBAHASAN": "Definisi 'Natural resources' (Sumber Daya Alam) merupakan segala sesuatu materi mentah berharga yang murni berasal dari alam (nature)."
   },
   {
     "ID SOAL": 76,
@@ -832,8 +757,7 @@
     "C": "Trees",
     "D": "Gold",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Pohon (Trees) bisa ditanam kembali.",
-    "": ""
+    "PEMBAHASAN": "Coal (batu bara), oil (minyak bumi), dan gold (emas) bisa habis. Sedangkan pepohonan (Trees) adalah SDA yang dapat diperbarui karena bisa ditanam kembali."
   },
   {
     "ID SOAL": 77,
@@ -843,8 +767,7 @@
     "C": "water is unlimited",
     "D": "water is not useful",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Air penting untuk kehidupan.",
-    "": ""
+    "PEMBAHASAN": "Kita diwajibkan menghemat pemakaian air bersih dikarenakan air adalah elemen krusial yang sangat penting menopang kehidupan makhluk hidup (water is important for life)."
   },
   {
     "ID SOAL": 78,
@@ -854,8 +777,7 @@
     "C": "food",
     "D": "oil",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Matahari memberikan panas dan cahaya.",
-    "": ""
+    "PEMBAHASAN": "Pancaran sinar matahari membagikan manfaat alami berupa energi panas untuk kehangatan bumi serta cahaya sebagai penerangan (heat and light)."
   },
   {
     "ID SOAL": 79,
@@ -865,8 +787,7 @@
     "C": "The Sun",
     "D": "Electricity",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Matahari adalah sumber energi utama.",
-    "": ""
+    "PEMBAHASAN": "Sumber energi alami paling besar dan utama yang menggerakkan seluruh siklus kehidupan makhluk hidup di planet bumi adalah Matahari (The Sun)."
   },
   {
     "ID SOAL": 80,
@@ -876,8 +797,7 @@
     "C": "Burning candle",
     "D": "Running fan",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Karet yang ditarik menyimpan energi potensial.",
-    "": ""
+    "PEMBAHASAN": "Energi potensial adalah energi yang tersimpan karena posisi benda. Karet gelang yang ditarik/direnggangkan (Stretched rubber band) menyimpan energi potensial tersebut."
   },
   {
     "ID SOAL": 81,
@@ -887,8 +807,7 @@
     "C": "Motion",
     "D": "Sound",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Kinetik adalah energi gerak (Motion).",
-    "": ""
+    "PEMBAHASAN": "Secara ilmu sains fisika dasar, istilah dari 'Kinetic energy' didefinisikan sebagai energi yang dihasilkan oleh suatu benda yang bergerak (Motion)."
   },
   {
     "ID SOAL": 82,
@@ -898,8 +817,7 @@
     "C": "Battery",
     "D": "Generator",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Panel surya mengubah cahaya jadi listrik.",
-    "": ""
+    "PEMBAHASAN": "Komponen teknologi yang dirancang khusus untuk menangkap radiasi sinar surya lalu mengubahnya menjadi arus listrik adalah panel surya (Solar panel)."
   },
   {
     "ID SOAL": 83,
@@ -909,8 +827,7 @@
     "C": "Always big",
     "D": "Can fly",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Semua makhluk hidup butuh makan/energi.",
-    "": ""
+    "PEMBAHASAN": "Ciri mutlak yang dimiliki oleh seluruh makhluk hidup (baik manusia, tumbuhan, maupun hewan) adalah membutuhkan asupan makanan atau energi untuk bertahan hidup (Need food or energy)."
   },
   {
     "ID SOAL": 84,
@@ -920,8 +837,7 @@
     "C": "Rock",
     "D": "Bird",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Batu (Rock) adalah benda mati.",
-    "": ""
+    "PEMBAHASAN": "Kucing, pohon, dan burung adalah makhluk hidup. Sedangkan batu (Rock) adalah kategori objek elemen benda mati (NOT a living thing)."
   },
   {
     "ID SOAL": 85,
@@ -931,8 +847,7 @@
     "C": "Become bigger",
     "D": "Turn into water",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Tumbuh artinya menjadi lebih besar.",
-    "": ""
+    "PEMBAHASAN": "Kata kerja biologi 'grow' memiliki arti bertumbuh/berkembang, yang ditandai dengan perubahan fisik makhluk hidup menjadi semakin besar (Become bigger)."
   },
   {
     "ID SOAL": 86,
@@ -942,8 +857,7 @@
     "C": "can move",
     "D": "do not grow",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Hewan bisa berpindah tempat (move).",
-    "": ""
+    "PEMBAHASAN": "Perbedaan gerak aktif yang membedakan kelompok hewan dengan tumbuhan adalah hewan memiliki kemampuan untuk berpindah tempat secara mandiri (can move)."
   },
   {
     "ID SOAL": 87,
@@ -953,8 +867,7 @@
     "C": "Energy movement",
     "D": "Group of animals",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Rantai makanan adalah perpindahan energi.",
-    "": ""
+    "PEMBAHASAN": "Konsep dari 'food chain' (rantai makanan) merupakan sebuah jalur peristiwa makan dan dimakan yang menggambarkan perpindahan aliran energi antar-makhluk hidup (Energy movement)."
   },
   {
     "ID SOAL": 88,
@@ -964,8 +877,7 @@
     "C": "Lion",
     "D": "Mushroom",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Rumput (Grass) adalah produsen.",
-    "": ""
+    "PEMBAHASAN": "Produsen dalam rantai makanan adalah organisme yang bisa memproduksi makanannya sendiri melalui fotosintesis, contoh utamanya adalah rumput hijau (Grass)."
   },
   {
     "ID SOAL": 89,
@@ -975,8 +887,7 @@
     "C": "make food",
     "D": "break down dead organisms",
     "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Pengurai menguraikan sisa makhluk hidup.",
-    "": ""
+    "PEMBAHASAN": "Fungsi utama dari mikroorganisme pengurai (decomposers) di alam adalah menghancurkan dan menguraikan jasad makhluk hidup yang telah mati (break down dead organisms)."
   },
   {
     "ID SOAL": 90,
@@ -986,8 +897,7 @@
     "C": "Exchange",
     "D": "Production",
     "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Menanam padi adalah kegiatan Produksi.",
-    "": ""
+    "PEMBAHASAN": "Aktivitas menghasilkan atau mengolah suatu barang (seperti petani menanam padi) termasuk ke dalam jenis kegiatan ekonomi bidang Produksi (Production)."
   },
   {
     "ID SOAL": 91,
@@ -997,8 +907,7 @@
     "C": "Delivering milk",
     "D": "Baking cake",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Mengantar barang = Distribusi.",
-    "": ""
+    "PEMBAHASAN": "Kegiatan distribusi berkaitan dengan pengantaran/penyaluran barang dari produsen ke konsumen, contohnya mengantarkan susu ke pelanggan (Delivering milk)."
   },
   {
     "ID SOAL": 92,
@@ -1008,8 +917,7 @@
     "C": "Distribution",
     "D": "Transportation",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Membeli/memakan = Konsumsi.",
-    "": ""
+    "PEMBAHASAN": "Aktivitas menggunakan, membeli, atau memakan suatu produk barang dan jasa dinamakan sebagai kegiatan konsumsi (Consumption)."
   },
   {
     "ID SOAL": 93,
@@ -1019,8 +927,7 @@
     "C": "Went",
     "D": "Go",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Simple Present (She) pakai Goes.",
-    "": ""
+    "PEMBAHASAN": "Kalimat rutinitas menggunakan Simple Present Tense. Karena subjeknya tunggal yaitu 'She', maka kata kerja dasar 'go' ditambahkan akhiran -es menjadi 'Goes'."
   },
   {
     "ID SOAL": 94,
@@ -1030,8 +937,7 @@
     "C": "Twelve",
     "D": "Fifty",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "10 + 5 = 15.",
-    "": ""
+    "PEMBAHASAN": "Operasi hitung matematika dasar: 'Ten' (10) ditambah/plus 'five' (5) hasilnya adalah 15, yang bahasa Inggrisnya adalah 'Fifteen'."
   },
   {
     "ID SOAL": 95,
@@ -1041,8 +947,7 @@
     "C": "Teacher",
     "D": "Family",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "They merujuk ke Friends (jamak).",
-    "": ""
+    "PEMBAHASAN": "Kata ganti orang ketiga jamak 'They' (Mereka) berfungsi merujuk pada objek orang yang berjumlah lebih dari satu, yaitu teman-teman (Friends)."
   },
   {
     "ID SOAL": 96,
@@ -1052,8 +957,7 @@
     "C": "had",
     "D": "having",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "She pakai Has.",
-    "": ""
+    "PEMBAHASAN": "Dalam aturan Simple Present Tense untuk menyatakan kepemilikan, kata ganti orang ketiga tunggal 'She' wajib dipasangkan dengan kata kerja 'has'."
   },
   {
     "ID SOAL": 97,
@@ -1063,8 +967,7 @@
     "C": "on",
     "D": "to",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Hari pakai On.",
-    "": ""
+    "PEMBAHASAN": "Kata depan penunjuk waktu (*preposition of time*) yang paling tepat dipasangkan di depan nama-nama hari (seperti Monday) adalah kata 'on'."
   },
   {
     "ID SOAL": 98,
@@ -1074,8 +977,7 @@
     "C": "playing",
     "D": "played",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "He pakai verb+s (Plays).",
-    "": ""
+    "PEMBAHASAN": "Kalimat kebiasaan berulang (every Sunday) menuntut aturan Simple Present Tense. Subjek 'He' (tunggal) membuat kata kerja 'play' ditambahkan akhiran -s menjadi 'plays'."
   },
   {
     "ID SOAL": 99,
@@ -1085,8 +987,7 @@
     "C": "the",
     "D": "is",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Huruf vokal pakai An.",
-    "": ""
+    "PEMBAHASAN": "Kata benda 'umbrella' diawali oleh bunyi huruf vokal (vowel sound 'ʌ'). Maka kata sandang benda tunggal yang tepat di depannya adalah 'an'."
   },
   {
     "ID SOAL": 100,
@@ -1096,8 +997,7 @@
     "C": "are",
     "D": "be",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "We pakai Are.",
-    "": ""
+    "PEMBAHASAN": "Kata hubung to be nominal Present Tense yang wajib berpasangan dengan subjek jamak 'We' (Kita/Kami) adalah 'are'."
   },
   {
     "ID SOAL": 101,
@@ -1107,8 +1007,7 @@
     "C": "youngest",
     "D": "youth",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Lebih muda = Younger.",
-    "": ""
+    "PEMBAHASAN": "Untuk menyatakan status keluarga yang memiliki usia 'lebih muda' (adik perempuan), kata sifat 'young' berubah ke bentuk komparatif menjadi 'younger sister'."
   },
   {
     "ID SOAL": 102,
@@ -1118,8 +1017,7 @@
     "C": "drank",
     "D": "drinking",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "I pakai verb 1 (Drink).",
-    "": ""
+    "PEMBAHASAN": "Sesuai kaidah Simple Present Tense, subjek kata ganti 'I' (Saya) harus diikuti oleh kata kerja dasar bentuk pertama tanpa imbuhan apapun, yaitu 'drink'."
   },
   {
     "ID SOAL": 103,
@@ -1129,8 +1027,7 @@
     "C": "Chair",
     "D": "Bag",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Lari (Run) kata kerja.",
-    "": ""
+    "PEMBAHASAN": "Cat (kucing), chair (kursi), dan bag (tas) adalah kelas kata benda (noun). Yang termasuk kelas kata kerja tindakan (verb) adalah berlari (Run)."
   },
   {
     "ID SOAL": 104,
@@ -1140,8 +1037,7 @@
     "C": "east",
     "D": "south",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Terbit di Timur (East).",
-    "": ""
+    "PEMBAHASAN": "Berdasarkan hukum alam arah mata angin, matahari selalu terbit (rises) di sebelah timur (east) dan terbenam di sebelah barat (west)."
   },
   {
     "ID SOAL": 105,
@@ -1151,8 +1047,7 @@
     "C": "is",
     "D": "are",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "She pakai Does not.",
-    "": ""
+    "PEMBAHASAN": "Dalam struktur kalimat verbal negatif Simple Present Tense, subjek tunggal 'She' memerlukan kata bantu 'does' sebelum kata 'not'."
   },
   {
     "ID SOAL": 106,
@@ -1162,8 +1057,7 @@
     "C": "children",
     "D": "childrens",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Jamak Child = Children.",
-    "": ""
+    "PEMBAHASAN": "Kata benda 'child' memiliki bentuk perubahan jamak tidak beraturan (*irregular plural*). Bentuk jamak dari anak adalah 'children' tanpa tambahan -s lagi."
   },
   {
     "ID SOAL": 107,
@@ -1173,8 +1067,7 @@
     "C": "are",
     "D": "be",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Jamak pakai Are.",
-    "": ""
+    "PEMBAHASAN": "Frasa penunjuk 'There' dipasangkan dengan to be 'are' apabila jumlah kata benda di belakangnya bernilai jamak atau lebih dari satu (three apples)."
   },
   {
     "ID SOAL": 108,
@@ -1184,8 +1077,7 @@
     "C": "is watching",
     "D": "watched",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Now = Sedang (Is watching).",
-    "": ""
+    "PEMBAHASAN": "Keterangan waktu 'now' menandakan kejadian sedang berlangsung saat ini (*Present Continuous Tense*), rumusnya adalah to be + Verb-ing ('is watching')."
   },
   {
     "ID SOAL": 109,
@@ -1195,8 +1087,7 @@
     "C": "the",
     "D": "an",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Seorang siswa (A student).",
-    "": ""
+    "PEMBAHASAN": "Kata benda 'student' diawali bunyi huruf konsonan ('st-'). Maka kata sandang tunggal untuk menyatakan 'seorang siswa' yang tepat adalah 'a'."
   },
   {
     "ID SOAL": 110,
@@ -1206,8 +1097,7 @@
     "C": "Making bread",
     "D": "Paying",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Produksi = Membuat barang.",
-    "": ""
+    "PEMBAHASAN": "Kegiatan produksi adalah aktivitas menghasilkan barang atau jasa baru. Contoh konkretnya adalah proses membuat makanan roti (Making bread)."
   },
   {
     "ID SOAL": 111,
@@ -1217,8 +1107,7 @@
     "C": "Exchange",
     "D": "Production",
     "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Menanam = Produksi.",
-    "": ""
+    "PEMBAHASAN": "Tindakan petani mengolah lahan sawah hingga menghasilkan padi siap panen (grows rice) tergolong ke dalam pilar kegiatan ekonomi produksi (Production)."
   },
   {
     "ID SOAL": 112,
@@ -1228,8 +1117,7 @@
     "C": "Truck delivers milk",
     "D": "Baking",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Mengirim barang = Distribusi.",
-    "": ""
+    "PEMBAHASAN": "Distribusi adalah mata rantai penyaluran komoditas barang. Aktivitas truk yang mengantarkan susu ke berbagai agen (Truck delivers milk) adalah contoh distribusi."
   },
   {
     "ID SOAL": 113,
@@ -1239,8 +1127,7 @@
     "C": "Throw trash in bin",
     "D": "Cut trees",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Buang sampah di tempatnya.",
-    "": ""
+    "PEMBAHASAN": "Sikap peduli kebersihan lingkungan ditunjukkan dengan cara membuang sampah pada tempat penampungan yang benar (Throw trash in bin)."
   },
   {
     "ID SOAL": 114,
@@ -1250,8 +1137,7 @@
     "C": "Polluting",
     "D": "Planting trees",
     "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Menanam pohon.",
-    "": ""
+    "PEMBAHASAN": "Langkah nyata pelestarian alam untuk mencegah bencana kekeringan serta banjir adalah dengan giat menanam pohon (Planting trees)."
   },
   {
     "ID SOAL": 115,
@@ -1261,8 +1147,7 @@
     "C": "Not important",
     "D": "Dirty",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Air vital untuk hidup.",
-    "": ""
+    "PEMBAHASAN": "Gerakan hemat air bersih mutlak dilakukan oleh manusia lantaran air adalah zat vital utama yang dibutuhkan demi kelangsungan hidup (Needed for life)."
   },
   {
     "ID SOAL": 116,
@@ -1272,8 +1157,7 @@
     "C": "Use water needed",
     "D": "Throw paper",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Hemat air.",
-    "": ""
+    "PEMBAHASAN": "Wujud tindakan bijak memanfaatkan kekayaan alam tecermin dari perilaku mengonsumsi air bersih secukupnya sesuai kebutuhan (Use water needed)."
   },
   {
     "ID SOAL": 117,
@@ -1283,8 +1167,7 @@
     "C": "Stronger",
     "D": "Replaced",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Bisa habis (Run out).",
-    "": ""
+    "PEMBAHASAN": "Apabila mengeksploitasi sumber daya alam secara berlebihan dan boros, maka pasokan sumber daya tersebut terancam habis (Run out)."
   },
   {
     "ID SOAL": 118,
@@ -1294,8 +1177,7 @@
     "C": "Gas",
     "D": "Sunlight",
     "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "Sinar matahari.",
-    "": ""
+    "PEMBAHASAN": "Batu bara, minyak, dan gas adalah energi fosil yang bisa habis. Energi abadi yang terbarukan dan tidak akan pernah habis adalah cahaya matahari (Sunlight)."
   },
   {
     "ID SOAL": 119,
@@ -1305,8 +1187,7 @@
     "C": "Clean",
     "D": "Water plants",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Agar tidak dehidrasi.",
-    "": ""
+    "PEMBAHASAN": "Tujuan utama membawa wadah botol air minum saat sekolah atau berolahraga adalah agar kebutuhan cairan tubuh terpenuhi dan tidak dehidrasi (Stay hydrated)."
   },
   {
     "ID SOAL": 120,
@@ -1316,8 +1197,7 @@
     "C": "Night",
     "D": "Storm",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Pagi hari.",
-    "": ""
+    "PEMBAHASAN": "Waktu yang paling ideal dan menyehatkan bagi metabolisme tubuh untuk melakukan senam atau olahraga adalah di pagi hari (Morning)."
   },
   {
     "ID SOAL": 121,
@@ -1327,8 +1207,7 @@
     "C": "Stay indoors",
     "D": "Eat sweets",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Minum air itu penting.",
-    "": ""
+    "PEMBAHASAN": "Pesan edukatif dari visual anak yang minum setelah beraktivitas mengajari kita bahwa rutin minum air putih itu sangat penting bagi kesehatan (Drink water important)."
   },
   {
     "ID SOAL": 122,
@@ -1338,8 +1217,7 @@
     "C": "Laptop",
     "D": "Smartphone",
     "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "HP (Smartphone).",
-    "": ""
+    "PEMBAHASAN": "Gawai elektronik portabel modern yang fungsi utamanya didesain untuk mengirim pesan instan maupun panggilan telepon adalah telepon pintar (Smartphone)."
   },
   {
     "ID SOAL": 123,
@@ -1349,8 +1227,7 @@
     "C": "Homework",
     "D": "Draw",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Cek kesehatan.",
-    "": ""
+    "PEMBAHASAN": "Salah satu keunggulan teknologi jam tangan pintar (smartwatch) adalah dilengkapi sensor medis untuk mendeteksi detak jantung atau menghitung jumlah langkah kaki (Check health/steps)."
   },
   {
     "ID SOAL": 124,
@@ -1360,8 +1237,7 @@
     "C": "Cooking",
     "D": "Study",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Hiburan & Info.",
-    "": ""
+    "PEMBAHASAN": "Fungsi dasar dari media massa televisi adalah sebagai sarana hiburan visual sekaligus penyalur informasi berita (Entertainment/Info)."
   },
   {
     "ID SOAL": 125,
@@ -1371,8 +1247,7 @@
     "C": "TV",
     "D": "Toy",
     "JAWABAN BENAR": "A",
-    "PEMBAHASAN": "Laptop.",
-    "": ""
+    "PEMBAHASAN": "Dengan koneksi internet, perangkat komputer/laptop menjadi sarana paling efektif untuk membantu siswa mengakses wawasan dan mempelajari hal-hal baru (Laptop)."
   },
   {
     "ID SOAL": 126,
@@ -1382,8 +1257,7 @@
     "C": "is",
     "D": "does",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Present Perfect (She Has V3).",
-    "": ""
+    "PEMBAHASAN": "Kalimat tersebut berbentuk Present Perfect Tense yang ditandai dengan kata kerja bentuk ketiga 'finished'. Subjek tunggal 'She' wajib menggunakan auxiliary verb 'has'."
   },
   {
     "ID SOAL": 127,
@@ -1393,8 +1267,7 @@
     "C": "few",
     "D": "a few",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Water (Uncountable) pakai Much.",
-    "": ""
+    "PEMBAHASAN": "Kata benda air ('water') tergolong jenis benda yang tidak dapat dihitung (*uncountable noun*). Penunjuk jumlah 'banyak' untuk benda tidak dapat dihitung wajib menggunakan kata 'much'."
   },
   {
     "ID SOAL": 128,
@@ -1404,8 +1277,7 @@
     "C": "finish",
     "D": "finishes",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Did not + Verb 1.",
-    "": ""
+    "PEMBAHASAN": "Pada struktur kalimat negatif lampau (Past Tense) yang sudah memuat kata bantu 'didn't', kata kerja yang mengikutinya harus kembali ke bentuk dasar kata kerja pertama (Verb 1), yaitu 'finish'."
   },
   {
     "ID SOAL": 129,
@@ -1415,8 +1287,7 @@
     "C": "biggest",
     "D": "more big",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Comparative Big = Bigger.",
-    "": ""
+    "PEMBAHASAN": "Kalimat perbandingan (*Comparative Degree*) ditandai dengan kata 'than'. Untuk kata sifat pendek satu suku kata seperti 'big', bentuk komparatifnya adalah menambahkan akhiran -ger sehingga menjadi 'bigger'."
   },
   {
     "ID SOAL": 130,
@@ -1426,8 +1297,7 @@
     "C": "but",
     "D": "and",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Pertentangan (Tapi) = But.",
-    "": ""
+    "PEMBAHASAN": "Kalimat ini menggabungkan dua kondisi yang kontradiktif (lelah vs menyelesaikan tugas). Kata hubung pertentangan (*conjunction*) yang tepat untuk mengartikan kata 'tetapi' adalah 'but'."
   },
   {
     "ID SOAL": 131,
@@ -1437,7 +1307,6 @@
     "C": "not to be",
     "D": "didn't be",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "Ask not to be.",
-    "": ""
+    "PEMBAHASAN": "Kalimat ini menggunakan pola kalimat perintah tidak langsung dalam bentuk larangan (*indirect negative command*). Pola baku setelah kata kerja 'asked' adalah diikuti oleh 'not to be + adjective' ('not to be noisy')."
   }
 ]

@@ -129,7 +129,7 @@ export const databaseAlurBelajar = {
       tipe: "kuis",
       judul: "Cek Pemahaman",
       // Di kode lama kamu pakai soalPecahan, pastikan nanti diganti soalPerbandingan jika sudah ada
-      soal: ambilSoalById(soalPecahan, [22, 24]), 
+      soal: ambilSoalById(soalPecahan, [21, 23]), 
     },
     {
       tipe: "materi",
@@ -144,7 +144,7 @@ export const databaseAlurBelajar = {
     {
       tipe: "kuis",
       judul: "Latihan Skala",
-      soal: ambilSoalById(soalPecahan, [20,21]), 
+      soal: ambilSoalById(soalPecahan, [19, 20]), 
     },
     {
       tipe: "selesai",
@@ -187,7 +187,7 @@ export const databaseAlurBelajar = {
       tipe: "kuis",
       judul: "Latihan: Volume Kubus",
       // Pastikan ID 31 & 32 ada di file JSON kamu
-      soal: ambilSoalById(soalPecahan, [31,32]), 
+      soal: ambilSoalById(soalPecahan, [30, 31]), 
     },
 
     // --- SESI 2: BALOK ---
@@ -221,7 +221,7 @@ export const databaseAlurBelajar = {
       tipe: "kuis",
       judul: "Latihan: Volume Balok",
       // ID 33 ada di snippet kamu. Tambahkan soal ID 34 & 35 di JSON agar lengkap 3 soal.
-      soal: ambilSoalById(soalPecahan, [33, 34, 35]), 
+      soal: ambilSoalById(soalPecahan, [32, 33, 34]), 
     },
 
     // --- SELESAI ---
@@ -253,7 +253,7 @@ export const databaseAlurBelajar = {
       tipe: "kuis",
       judul: "Latihan Pangkat Dua",
       // Masukkan ID soal pangkat dari JSON kamu disini
-      soal: ambilSoalById(soalPecahan, [37]), 
+      soal: ambilSoalById(soalPecahan, [36]), 
     },
 
     // --- SESI 2: FAKTOR PRIMA (POHON FAKTOR) ---
@@ -298,7 +298,7 @@ export const databaseAlurBelajar = {
       tipe: "kuis",
       judul: "Latihan Mencari KPK",
       // Masukkan ID soal KPK disini
-      soal: ambilSoalById(soalPecahan, [39]), 
+      soal: ambilSoalById(soalPecahan, [38]), 
     },
 
     // --- SESI 4: FPB ---
@@ -321,7 +321,7 @@ export const databaseAlurBelajar = {
       tipe: "kuis",
       judul: "Latihan Mencari FPB",
       // Masukkan ID soal FPB disini
-      soal: ambilSoalById(soalPecahan, [40]), 
+      soal: ambilSoalById(soalPecahan, [39]), 
     },
 
     // --- SELESAI ---

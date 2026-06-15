@@ -37,7 +37,7 @@
     "C": "memaksakan pendapat",
     "D": "mementingkan diri sendiri",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "Sila ke-2 mengajarkan sikap kemanusiaan dan keadilan."
+    "PEMBAHASAN": "Sila ke-2 mengajarkan sikap kemানুsiaan dan keadilan."
   },
   {
     "ID SOAL": 5,
@@ -67,7 +67,7 @@
     "C": "6",
     "D": "12",
     "JAWABAN BENAR": "B",
-    "PEMBAHASAN": "3 lusin = 36, lalu 36 : 9 = 4. Soal ini jebakan, jawabannya seharusnya 4."
+    "PEMBAHASAN": "3 lusin = 36, lalu 36 : 9 = 4."
   },
   {
     "ID SOAL": 8,
@@ -99,7 +99,6 @@
     "JAWABAN BENAR": "B",
     "PEMBAHASAN": "Jadwal piket biasanya ditentukan bersama."
   },
-
   {
     "ID SOAL": 11,
     "PERTANYAAN": "Hasil dari 18 x 7 - 26 adalah …",
@@ -108,7 +107,7 @@
     "C": "100",
     "D": "110",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "18 x 7 = 126, lalu 126 - 26 = 100. Jawaban yang benar seharusnya C."
+    "PEMBAHASAN": "18 x 7 = 126, lalu 126 - 26 = 100."
   },
   {
     "ID SOAL": 12,
@@ -150,7 +149,6 @@
     "JAWABAN BENAR": "C",
     "PEMBAHASAN": "Luas = panjang x lebar = 15 x 8 = 120 cm²."
   },
-
   {
     "ID SOAL": 16,
     "PERTANYAAN": "Energi panas matahari dimanfaatkan tumbuhan untuk …",
@@ -189,7 +187,7 @@
     "C": "6",
     "D": "8",
     "JAWABAN BENAR": "C",
-    "PEMBAHASAN": "6 x 10 = 60, lalu 360 : 60 = 6. Jawaban seharusnya C."
+    "PEMBAHASAN": "6 x 10 = 60, lalu 360 : 60 = 6."
   },
   {
     "ID SOAL": 20,
@@ -201,7 +199,6 @@
     "JAWABAN BENAR": "C",
     "PEMBAHASAN": "Ikan bernapas menggunakan insang."
   },
-
   {
     "ID SOAL": 21,
     "PERTANYAAN": "Jika pukul 08.15 ditambah 1 jam 45 menit, maka menjadi pukul …",
@@ -209,8 +206,8 @@
     "B": "10.00",
     "C": "10.15",
     "D": "10.30",
-    "JAWABAN BENAR": "D",
-    "PEMBAHASAN": "08.15 + 1 jam = 09.15, tambah 45 menit menjadi 10.00. Jawaban seharusnya B."
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "08.15 + 1 jam = 09.15, tambah 45 menit menjadi 10.00."
   },
   {
     "ID SOAL": 22,
@@ -224,7 +221,7 @@
   },
   {
     "ID SOAL": 23,
-    "PERTANYAAN": "Bahasa Inggris dari \"mereka bermain di taman\" adalah …",
+    "PERTANYAAN": "Bahasa Inggris dari \"Mereka sedang bermain di taman\" adalah …",
     "A": "They play in park",
     "B": "They are play in the park",
     "C": "They are playing in the park",
@@ -401,5 +398,605 @@
     "D": "sekadar upacara",
     "JAWABAN BENAR": "C",
     "PEMBAHASAN": "Hari besar nasional mengingatkan jasa pahlawan."
+  },
+  {
+    "ID SOAL": 41,
+    "PERTANYAAN": "Hasil dari 250 - 75 x 2 adalah …",
+    "A": "350",
+    "B": "150",
+    "C": "100",
+    "D": "50",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Perkalian dikerjakan lebih dulu: 75 x 2 = 150. Lalu 250 - 150 = 100."
+  },
+  {
+    "ID SOAL": 42,
+    "PERTANYAAN": "Bagian tumbuhan yang berfungsi menyerap air dan zat hara dari dalam tanah adalah …",
+    "A": "akar",
+    "B": "batang",
+    "C": "daun",
+    "D": "bunga",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Akar berfungsi menyerap air dan zat hara dari dalam tanah untuk kebutuhan tumbuhan."
+  },
+  {
+    "ID SOAL": 43,
+    "PERTANYAAN": "Bahasa Inggris dari kalimat \"Saya punya dua ekor sapi\" adalah …",
+    "A": "I have two cows",
+    "B": "I has two cows",
+    "C": "I am two cows",
+    "D": "I having two cows",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Subjek 'I' menggunakan kata kerja 'have' untuk menyatakan kepemilikan."
+  },
+  {
+    "ID SOAL": 44,
+    "PERTANYAAN": "Menjaga kebersihan lingkungan rumah dan sekolah merupakan bentuk … anak.",
+    "A": "hak",
+    "B": "hadiah",
+    "C": "kewajiban",
+    "D": "kebebasan",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Menjaga kebersihan adalah kewajiban setiap warga, termasuk anak-anak di rumah maupun sekolah."
+  },
+  {
+    "ID SOAL": 45,
+    "PERTANYAAN": "Sebuah lapangan berbentuk persegi memiliki panjang sisi 20 meter. Luas lapangan tersebut adalah …",
+    "A": "40 m²",
+    "B": "80 m²",
+    "C": "200 m²",
+    "D": "400 m²",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Luas persegi = sisi x sisi = 20 x 20 = 400 m²."
+  },
+  {
+    "ID SOAL": 46,
+    "PERTANYAAN": "Contoh hewan yang berkembang biak dengan cara bertelur (ovipar) adalah …",
+    "A": "kambing dan sapi",
+    "B": "ayam dan bebek",
+    "C": "kucing dan tikus",
+    "D": "paus dan lumba-lumba",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Ayam dan bebek berkembang biak dengan cara bertelur atau ovipar."
+  },
+  {
+    "ID SOAL": 47,
+    "PERTANYAAN": "Bahasa Inggris dari \"lebih murah\" adalah …",
+    "A": "cheap",
+    "B": "cheaper",
+    "C": "cheapest",
+    "D": "expensive",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Cheaper artinya lebih murah, digunakan untuk tingkat perbandingan (comparative)."
+  },
+  {
+    "ID SOAL": 48,
+    "PERTANYAAN": "Sila ketiga Pancasila dilambangkan dengan gambar …",
+    "A": "Rantai emas",
+    "B": "Pohon beringin",
+    "C": "Kepala banteng",
+    "D": "Padi dan kapas",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Pohon beringin adalah lambang dari Sila ke-3, Persatuan Indonesia."
+  },
+  {
+    "ID SOAL": 49,
+    "PERTANYAAN": "Hasil dari 3/4 + 1/2 adalah …",
+    "A": "4/6",
+    "B": "1/2",
+    "C": "5/4",
+    "D": "3/8",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Samakan penyebut menjadi 4: 3/4 + 2/4 = 5/4 (atau 1 1/4)."
+  },
+  {
+    "ID SOAL": 50,
+    "PERTANYAAN": "Benda berikut yang termasuk isolator panas (tidak dapat menghantarkan panas) adalah …",
+    "A": "paku besi",
+    "B": "sendok aluminium",
+    "C": "wajan tembaga",
+    "D": "ranting kayu",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Kayu adalah bahan isolator yang buruk dalam menghantarkan panas."
+  },
+  {
+    "ID SOAL": 51,
+    "PERTANYAAN": "Bahasa Inggris dari \"Dia sedang memasak di dapur\" adalah …",
+    "A": "She is cooking in the kitchen",
+    "B": "She cooking in kitchen",
+    "C": "She kitchen cooking",
+    "D": "She are cooking in kitchen",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Menggunakan Present Continuous Tense karena 'sedang berlangsung': She + is + verb-ing."
+  },
+  {
+    "ID SOAL": 52,
+    "PERTANYAAN": "Jika di sekolah melihat teman yang jatuh dari sepeda, sikap kita seharusnya adalah …",
+    "A": "menertawakannya",
+    "B": "membiarkannya saja",
+    "C": "menolong dan mengobatinya",
+    "D": "melaporkan ke polisi",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Menolong teman yang kesusahan sesuai dengan nilai kemanusiaan Pancasila."
+  },
+  {
+    "ID SOAL": 53,
+    "PERTANYAAN": "Sebuah bak air berbentuk kubus dengan panjang rusuk 10 dm. Volume bak air tersebut adalah … liter.",
+    "A": "100",
+    "B": "600",
+    "C": "1.000",
+    "D": "10.000",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Volume kubus = s x s x s = 10 x 10 x 10 = 1.000 dm³ = 1.000 liter."
+  },
+  {
+    "ID SOAL": 54,
+    "PERTANYAAN": "Gaya yang bekerja saat kita mengerem sepeda sehingga sepeda berhenti adalah gaya …",
+    "A": "otot",
+    "B": "gesek",
+    "C": "gravitasi",
+    "D": "magnet",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Gesekan antara karet rem dan velg roda menghasilkan gaya gesek yang memperlambat laju sepeda."
+  },
+  {
+    "ID SOAL": 55,
+    "PERTANYAAN": "Arti dari kata tanya \"Where\" dalam bahasa Inggris adalah …",
+    "A": "Apa",
+    "B": "Kapan",
+    "C": "Siapa",
+    "D": "Di mana",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Where adalah kata tanya yang digunakan untuk menanyakan tempat (Di mana)."
+  },
+  {
+    "ID SOAL": 56,
+    "PERTANYAAN": "Semboyan negara kita adalah Bhinneka Tunggal Ika, yang artinya …",
+    "A": "Bersatu kita teguh bercerai kita runtuh",
+    "B": "Berbeda-beda tetapi tetap satu jua",
+    "C": "Berbeda-beda suku tetapi sama bahasa",
+    "D": "Pantang mundur sebelum berhasil",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Bhinneka Tunggal Ika bermakna meskipun bangsa Indonesia terdiri dari beragam suku dan budaya, tetap merupakan satu kesatuan."
+  },
+  {
+    "ID SOAL": 57,
+    "PERTANYAAN": "Seorang petani memanen 5 karung padi. Jika setiap karung beratnya 50 kg, total hasil panen petani adalah … kg.",
+    "A": "55",
+    "B": "150",
+    "C": "200",
+    "D": "250",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Total berat = 5 karung x 50 kg = 250 kg."
+  },
+  {
+    "ID SOAL": 58,
+    "PERTANYAAN": "Hewan yang dapat hidup di dua alam (darat dan air) seperti katak disebut hewan …",
+    "A": "mamalia",
+    "B": "reptil",
+    "C": "amfibi",
+    "D": "aves",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Amfibi adalah kelompok hewan bertulang belakang yang hidup di dua alam."
+  },
+  {
+    "ID SOAL": 59,
+    "PERTANYAAN": "Bahasa Inggris dari \"paling besar\" adalah …",
+    "A": "big",
+    "B": "bigger",
+    "C": "biggest",
+    "D": "small",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Biggest merupakan bentuk superlative (paling/ter-) dari kata 'big'."
+  },
+  {
+    "ID SOAL": 60,
+    "PERTANYAAN": "Pemilihan Ketua RT atau Ketua Kelas biasanya dilakukan dengan cara … jika tidak mencapai mufakat.",
+    "A": "berkelahi",
+    "B": "voting (pemungutan suara)",
+    "C": "ditunjuk guru",
+    "D": "diundi koin",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Jika musyawarah mufakat tidak tercapai, keputusan diambil melalui voting atau suara terbanyak."
+  },
+  {
+    "ID SOAL": 61,
+    "PERTANYAAN": "Ibu membeli gula 1,5 kg dan tepung 2,25 kg. Berat total belanjaan Ibu adalah … kg.",
+    "A": "3,50",
+    "B": "3,75",
+    "C": "4,00",
+    "D": "4,25",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "1,5 + 2,25 = 3,75 kg."
+  },
+  {
+    "ID SOAL": 62,
+    "PERTANYAAN": "Hubungan saling menguntungkan antara dua makhluk hidup (misal kupu-kupu dan bunga) disebut simbiosis …",
+    "A": "mutualisme",
+    "B": "parasitisme",
+    "C": "komensalisme",
+    "D": "amensalisme",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Simbiosis mutualisme adalah hubungan antar-makhluk hidup yang saling menguntungkan kedua belah pihak."
+  },
+  {
+    "ID SOAL": 63,
+    "PERTANYAAN": "Bahasa Inggris dari \"Mereka sedang mandi di sungai\" adalah …",
+    "A": "They are taking a bath in the river",
+    "B": "They take bath in river",
+    "C": "They bathing river",
+    "D": "They is taking bath in river",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "They berpasangan dengan to be 'are' ditambah verb-ing (taking a bath)."
+  },
+  {
+    "ID SOAL": 64,
+    "PERTANYAAN": "Kerja bakti membersihkan saluran air atau parit di kampung merupakan pengamalan Pancasila sila ke …",
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "5",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Gotong royong menunjukkan kerukunan dan persatuan warga (Sila ke-3)."
+  },
+  {
+    "ID SOAL": 65,
+    "PERTANYAAN": "Faktor Persekutuan Terbesar (FPB) dari 12 dan 18 adalah …",
+    "A": "2",
+    "B": "3",
+    "C": "6",
+    "D": "12",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Faktor 12 = 1,2,3,4,6,12. Faktor 18 = 1,2,3,6,9,18. Faktor persekutuan terbesar mereka adalah 6."
+  },
+  {
+    "ID SOAL": 66,
+    "PERTANYAAN": "Lagu kebangsaan negara Indonesia adalah …",
+    "A": "Bagimu Negeri",
+    "B": "Indonesia Raya",
+    "C": "Hari Merdeka",
+    "D": "Garuda Pancasila",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Lagu kebangsaan Indonesia adalah Indonesia Raya yang diciptakan oleh W.R. Supratman."
+  },
+  {
+    "ID SOAL": 67,
+    "PERTANYAAN": "Pencipta lagu kebangsaan Indonesia Raya adalah …",
+    "A": "Kusbini",
+    "B": "Ibu Sud",
+    "C": "W.R. Supratman",
+    "D": "C. Simanjuntak",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Wage Rudolf Supratman adalah penggubah lagu Indonesia Raya."
+  },
+  {
+    "ID SOAL": 68,
+    "PERTANYAAN": "Hari Lahir Pancasila diperingati bangsa Indonesia setiap tanggal …",
+    "A": "1 Juni",
+    "B": "22 Juni",
+    "C": "17 Agustus",
+    "D": "1 Oktober",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Hari Lahir Pancasila diperingati tiap 1 Juni berdasarkan pidato Bung Karno tahun 1945."
+  },
+  {
+    "ID SOAL": 69,
+    "PERTANYAAN": "Tokoh pahlawan perempuan dari Aceh yang memimpin perang melawan Belanda adalah …",
+    "A": "Cut Nyak Dien",
+    "B": "RA Kartini",
+    "C": "Dewi Sartika",
+    "D": "Fatmawati",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Cut Nyak Dien merupakan pahlawan wanita tangguh yang memimpin gerilya di Aceh."
+  },
+  {
+    "ID SOAL": 70,
+    "PERTANYAAN": "Makanan khas daerah Jawa Barat yang terbuat dari aci dan bumbu kacang adalah …",
+    "A": "Batagor dan Siomay",
+    "B": "Pempek",
+    "C": "Gudeg",
+    "D": "Lumpia",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Batagor dan siomay berbahan dasar tepung sagu/aci merupakan kuliner khas Bandung, Jawa Barat."
+  },
+  {
+    "ID SOAL": 71,
+    "PERTANYAAN": "Hari Kesaktian Pancasila diperingati setiap tanggal …",
+    "A": "1 Juni",
+    "B": "17 Agustus",
+    "C": "30 September",
+    "D": "1 Oktober",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Hari Kesaktian Pancasila diperingati setiap tanggal 1 Oktober."
+  },
+  {
+    "ID SOAL": 72,
+    "PERTANYAAN": "Penjahit bendera Merah Putih yang dikibarkan saat proklamasi kemerdekaan adalah …",
+    "A": "Sayuti Melik",
+    "B": "Fatmawati",
+    "C": "Sukarni",
+    "D": "Achmad Soebardjo",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Ibu Fatmawati (istri Bung Karno) adalah tokoh yang menjahit bendera pusaka pertama."
+  },
+  {
+    "ID SOAL": 73,
+    "PERTANYAAN": "Rumah adat khas masyarakat Minangkabau di Sumatera Barat disebut rumah …",
+    "A": "Joglo",
+    "B": "Gadang",
+    "C": "Honai",
+    "D": "Panggung",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Rumah Gadang memiliki atap ikonik yang berbentuk seperti tanduk kerbau."
+  },
+  {
+    "ID SOAL": 74,
+    "PERTANYAAN": "Kota di Jepang yang dijatuhi bom atom oleh sekutu sehingga membuat Jepang menyerah adalah …",
+    "A": "Tokyo dan Kyoto",
+    "B": "Hiroshima dan Nagasaki",
+    "C": "Osaka dan Nagoya",
+    "D": "Okinawa dan Hokkaido",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Pengeboman kota Hiroshima (6 Agustus) dan Nagasaki (9 Agustus 1945) melumpuhkan Jepang."
+  },
+  {
+    "ID SOAL": 75,
+    "PERTANYAAN": "Tokoh yang bertugas mengetik teks Proklamasi Kemerdekaan Indonesia adalah …",
+    "A": "Sayuti Melik",
+    "B": "Sukarni",
+    "C": "Laksamana Maeda",
+    "D": "B.M. Diah",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Teks proklamasi diketik oleh Sayuti Melik dengan beberapa perubahan kecil dari draf asli."
+  },
+  {
+    "ID SOAL": 76,
+    "PERTANYAAN": "Senjata tradisional khas masyarakat suku Sunda (Jawa Barat) adalah …",
+    "A": "Keris",
+    "B": "Kujang",
+    "C": "Rencong",
+    "D": "Mandau",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Kujang adalah senjata tradisional bernilai sakral dari Jawa Barat."
+  },
+  {
+    "ID SOAL": 77,
+    "PERTANYAAN": "Peristiwa diculiknya Bung Karno dan Bung Hatta ke luar kota oleh para pemuda sebelum proklamasi disebut peristiwa …",
+    "A": "Rengasdengklok",
+    "B": "Ambarawa",
+    "C": "Bandung Lautan Api",
+    "D": "Malari",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Peristiwa Rengasdengklok bertujuan mengamankan para tokoh tua dari pengaruh Jepang."
+  },
+  {
+    "ID SOAL": 78,
+    "PERTANYAAN": "Nama pahlawan nasional yang mendapat julukan \"Ayam Jantan dari Timur\" adalah …",
+    "A": "Pangeran Diponegoro",
+    "B": "Sultan Hasanuddin",
+    "C": "Sultan Ageng Tirtayasa",
+    "D": "Tuanku Imam Bonjol",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Sultan Hasanuddin dari Makassar dijuluki demikian oleh Belanda karena keberaniannya."
+  },
+  {
+    "ID SOAL": 79,
+    "PERTANYAAN": "Rumah adat berbentuk jamur tanpa jendela milik suku Dani di Papua bernama rumah …",
+    "A": "Tongkonan",
+    "B": "Gadang",
+    "C": "Honai",
+    "D": "Lamin",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Honai adalah rumah adat suku Dani di Papua yang berbentuk bulat pendek berbahan jerami."
+  },
+  {
+    "ID SOAL": 80,
+    "PERTANYAAN": "Upacara bendera setiap hari Senin di sekolah dilaksanakan dengan tujuan utama untuk …",
+    "A": "membuat siswa lelah",
+    "B": "menumbuhkan rasa nasionalisme dan cinta tanah air",
+    "C": "menghabiskan waktu pagi",
+    "D": "pamer seragam sekolah",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Upacara bendera melatih kedisiplinan serta memupuk rasa cinta kepada tanah air."
+  },
+  {
+    "ID SOAL": 81,
+    "PERTANYAAN": "Hasil dari 12² adalah …",
+    "A": "24",
+    "B": "120",
+    "C": "144",
+    "D": "154",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "12² = 12 x 12 = 144."
+  },
+  {
+    "ID SOAL": 82,
+    "PERTANYAAN": "Planet dalam tata surya kita yang dikenal sebagai Planet Merah adalah …",
+    "A": "Merkurius",
+    "B": "Venus",
+    "C": "Mars",
+    "D": "Yupiter",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Mars berwarna kemerahan karena tanahnya banyak mengandung besi oksida (berkarat)."
+  },
+  {
+    "ID SOAL": 83,
+    "PERTANYAAN": "Bahasa Inggris dari kalimat \"Ini adalah sebuah buku\" adalah …",
+    "A": "This is a book",
+    "B": "That is a book",
+    "C": "These are books",
+    "D": "This am book",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Kata 'ini' tunggal menggunakan 'This is' diikuti kata benda tunggal (a book)."
+  },
+  {
+    "ID SOAL": 84,
+    "PERTANYAAN": "Menghargai kebebasan beragama dan beribadah merupakan contoh pengamalan Pancasila sila ke …",
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "4",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Sila ke-1 berbunyi Ketuhanan Yang Maha Esa, mengatur hubungan manusia dengan agama."
+  },
+  {
+    "ID SOAL": 85,
+    "PERTANYAAN": "Jika diameter sebuah lingkaran adalah 14 cm, maka jari-jari (r) lingkaran tersebut adalah … cm.",
+    "A": "7",
+    "B": "14",
+    "C": "21",
+    "D": "28",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Jari-jari adalah setengah dari diameter, maka 14 : 2 = 7 cm."
+  },
+  {
+    "ID SOAL": 86,
+    "PERTANYAAN": "Hewan pemakan tumbuhan (seperti kambing, sapi, dan kelinci) disebut kelompok hewan …",
+    "A": "herbivora",
+    "B": "karnivora",
+    "C": "omnivora",
+    "D": "insektivora",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Herbivora adalah istilah biologi bagi hewan pemakan tumbuhan."
+  },
+  {
+    "ID SOAL": 87,
+    "PERTANYAAN": "Lawan kata (antonym) dari kata \"hot\" dalam bahasa Inggris adalah …",
+    "A": "warm",
+    "B": "cold",
+    "C": "dry",
+    "D": "wet",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Hot artinya panas, dan lawan katanya adalah cold yang berarti dingin."
+  },
+  {
+    "ID SOAL": 88,
+    "PERTANYAAN": "Dasar negara Republik Indonesia adalah …",
+    "A": "UUD 1945",
+    "B": "Pancasila",
+    "C": "Tap MPR",
+    "D": "Burung Garuda",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Pancasila berkedudukan sebagai falsafah hidup dan dasar negara Indonesia."
+  },
+  {
+    "ID SOAL": 89,
+    "PERTANYAAN": "KPK (Kelipatan Persekutuan Terkecil) dari 4 dan 6 adalah …",
+    "A": "2",
+    "B": "12",
+    "C": "18",
+    "D": "24",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Kelipatan 4 = 4,8,12,16... Kelipatan 6 = 6,12,18... Kelipatan terkecil yang sama adalah 12."
+  },
+  {
+    "ID SOAL": 90,
+    "PERTANYAAN": "Gaya tarik bumi yang menyebabkan buah kelapa jatuh ke bawah menuju tanah disebut gaya …",
+    "A": "pegas",
+    "B": "magnet",
+    "C": "listrik",
+    "D": "gravitasi",
+    "JAWABAN BENAR": "D",
+    "PEMBAHASAN": "Gaya gravitasi menarik semua benda bermassa menuju pusat bumi."
+  },
+  {
+    "ID SOAL": 91,
+    "PERTANYAAN": "Bahasa Inggris dari \"Dia (laki-laki) menyukai bermain sepak bola\" adalah …",
+    "A": "He likes playing football",
+    "B": "He like play football",
+    "C": "He are like football",
+    "D": "He liking football",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "Untuk subjek tunggal 'He' pada Simple Present Tense, kata kerja 'like' mendapat tambahan -s menjadi 'likes'."
+  },
+  {
+    "ID SOAL": 92,
+    "PERTANYAAN": "Lambang rantai emas pada perisai burung Garuda melambangkan sila ke …",
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "4",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Rantai emas bergelang bulat dan persegi melambangkan Sila ke-2, Kemanusiaan yang Adil dan Beradab."
+  },
+  {
+    "ID SOAL": 93,
+    "PERTANYAAN": "Sebuah truk membawa 1,2 ton pupuk kelapa sawit. Berapa kg berat pupuk tersebut? (1 ton = 1.000 kg)",
+    "A": "120 kg",
+    "B": "1.200 kg",
+    "C": "12.000 kg",
+    "D": "120.000 kg",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "1,2 ton x 1.000 kg = 1.200 kg."
+  },
+  {
+    "ID SOAL": 94,
+    "PERTANYAAN": "Bagian darah manusia yang berfungsi untuk membekukan darah saat terjadi luka adalah …",
+    "A": "sel darah merah",
+    "B": "sel darah putih",
+    "C": "keping darah (trombosit)",
+    "D": "plasma darah",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Trombosit atau keping darah bertugas menutup pembuluh darah yang robek agar pendarahan berhenti."
+  },
+  {
+    "ID SOAL": 95,
+    "PERTANYAAN": "Arti dari kalimat bahasa Inggris \"Close the door, please!\" adalah …",
+    "A": "Buka pintunya!",
+    "B": "Tolong tutup pintunya!",
+    "C": "Jangan kunci pintunya!",
+    "D": "Masuk lewat pintu!",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Close = tutup, the door = pintu, please = kata penanda sopan santun (tolong/silakan)."
+  },
+  {
+    "ID SOAL": 96,
+    "PERTANYAAN": "Lembaga tinggi negara yang bertugas membuat undang-undang bersama Presiden adalah …",
+    "A": "DPR (Dewan Perwakilan Rakyat)",
+    "B": "MA (Mahkamah Agung)",
+    "C": "MK (Mahkamah Konstitusi)",
+    "D": "BPK (Badan Pemeriksa Keuangan)",
+    "JAWABAN BENAR": "A",
+    "PEMBAHASAN": "DPR memegang kekuasaan legislatif (membuat undang-undang) di tingkat pusat."
+  },
+  {
+    "ID SOAL": 97,
+    "PERTANYAAN": "Sebuah bak berbentuk balok memiliki panjang 5 meter, lebar 2 meter, dan tinggi 1 meter. Volume balok adalah … m³.",
+    "A": "7",
+    "B": "8",
+    "C": "10",
+    "D": "12",
+    "JAWABAN BENAR": "C",
+    "PEMBAHASAN": "Volume balok = p x l x t = 5 x 2 x 1 = 10 m³."
+  },
+  {
+    "ID SOAL": 98,
+    "PERTANYAAN": "Peristiwa pergerakan bumi mengelilingi matahari disebut …",
+    "A": "rotasi bumi",
+    "B": "revolusi bumi",
+    "C": "gerhana bumi",
+    "D": "orbit bumi",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Bumi mengelilingi matahari disebut revolusi bumi (terjadi selama 365,25 hari)."
+  },
+  {
+    "ID SOAL": 99,
+    "PERTANYAAN": "Bahasa Inggris dari kata \"Kakek dan Nenek\" adalah …",
+    "A": "Father and Mother",
+    "B": "Brother and Sister",
+    "C": "Grandfather and Grandmother",
+    "D": "Uncle and Aunt",
+    "JAWABAN BENAR": "C",
+    "%-PEMBAHASAN": "Grandfather = Kakek, Grandmother = Nenek."
+  },
+  {
+    "ID SOAL": 100,
+    "PERTANYAAN": "Hak utama seorang anak ketika berada di lingkungan sekolah adalah …",
+    "A": "membersihkan halaman sekolah",
+    "B": "mendapatkan bimbingan ilmu dari guru",
+    "C": "membayar gaji karyawan sekolah",
+    "D": "menghukum teman yang nakal",
+    "JAWABAN BENAR": "B",
+    "PEMBAHASAN": "Mendapatkan pelajaran dan kasih sayang guru merupakan hak mendasar bagi setiap murid."
   }
 ]
