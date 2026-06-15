@@ -10,10 +10,10 @@ export default function Beranda() {
 
   useEffect(() => {
     // Cek apakah user sudah pernah melihat popup pembaruan ini
-    const hasSeen = localStorage.getItem("hasSeenMaintenancePopup");
-    if (!hasSeen) {
+    // const hasSeen = localStorage.getItem("hasSeenMaintenancePopup");
+    // if (!hasSeen) {
       setShowPopup(true);
-    }
+    //}
   }, []);
 
   const handleClosePopup = () => {
@@ -26,72 +26,72 @@ export default function Beranda() {
       {/* POPUP PEMBARUAN APLIKASI (Hanya muncul 1 kali) */}
       {showPopup && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-md p-4 transition-all duration-300">
-          <div className="bg-white rounded-[2rem] shadow-2xl max-w-lg w-full overflow-hidden border-4 border-white ring-8 ring-blue-50/50 transform transition-all duration-300">
+          <div className="bg-white rounded-[2rem] shadow-2xl max-w-lg w-full max-h-[90vh] flex flex-col border-4 border-white ring-8 ring-blue-50/50 transform transition-all duration-300 overflow-hidden">
             
-            {/* Header dengan Gradasi Ceria */}
-            <div className="bg-gradient-to-r from-blue-500 to-indigo-600 p-6 text-center text-white relative">
+            {/* Header dengan Gradasi Ceria (shrink-0) */}
+            <div className="bg-gradient-to-r from-blue-500 to-indigo-600 p-6 text-center text-white relative shrink-0">
               <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
               <div className="absolute -bottom-10 -left-10 w-24 h-24 bg-indigo-400/20 rounded-full blur-xl"></div>
-              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto text-3xl mb-3 backdrop-blur-sm shadow-inner animate-bounce">
+              <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mx-auto text-2xl mb-2 backdrop-blur-sm shadow-inner animate-bounce">
                 📢
               </div>
-              <h3 className="text-2xl font-black tracking-tight">Kabar Gembira! ✨</h3>
-              <p className="text-white/80 text-sm font-semibold mt-1">Aplikasi 60KUIZ Sudah Diperbarui</p>
+              <h3 className="text-xl md:text-2xl font-black tracking-tight">Kabar Gembira! ✨</h3>
+              <p className="text-white/80 text-xs md:text-sm font-semibold mt-1">Aplikasi 60KUIZ Sudah Diperbarui</p>
             </div>
 
-            {/* Konten Non-Teknis untuk Murid, Guru, & Orang Tua */}
-            <div className="p-8 space-y-5 text-gray-700">
-              <p className="text-center font-semibold text-[#2E2856] text-lg leading-relaxed">
+            {/* Konten Scrollable untuk Murid, Guru, & Orang Tua (flex-1 overflow-y-auto) */}
+            <div className="p-6 md:p-8 space-y-5 text-gray-700 overflow-y-auto flex-1 text-left">
+              <p className="text-center font-bold text-[#2E2856] text-sm md:text-base leading-relaxed">
                 Halo Ayah/Bunda, Bapak/Ibu Guru, dan Sahabat Juara! Kami telah melakukan pembaruan seru agar belajar jadi makin menyenangkan:
               </p>
 
               <div className="space-y-4">
                 {/* Poin 1: Gambar Soal */}
-                <div className="flex gap-4 items-start">
-                  <div className="bg-blue-100 text-blue-600 w-10 h-10 rounded-full flex items-center justify-center text-xl shrink-0 font-bold shadow-sm">
+                <div className="flex gap-3 items-start">
+                  <div className="bg-blue-100 text-blue-600 w-9 h-9 rounded-full flex items-center justify-center text-lg shrink-0 font-bold shadow-sm">
                     🖼️
                   </div>
                   <div>
-                    <h4 className="font-extrabold text-[#2E2856]">Gambar Soal Lebih Besar & Jelas</h4>
-                    <p className="text-sm text-gray-500 mt-0.5">Gambar diagram dan ilustrasi soal (terutama pelajaran IPA) sekarang tampil lebih besar dan tajam di layar TV maupun komputer.</p>
+                    <h4 className="font-extrabold text-[#2E2856] text-sm md:text-base">Gambar Soal Lebih Besar & Jelas</h4>
+                    <p className="text-xs md:text-sm text-gray-500 mt-0.5">Gambar diagram dan ilustrasi soal (terutama pelajaran IPA) sekarang tampil lebih besar dan tajam di layar TV maupun komputer.</p>
                   </div>
                 </div>
 
                 {/* Poin 2: Akurasi KJ */}
-                <div className="flex gap-4 items-start">
-                  <div className="bg-yellow-100 text-yellow-700 w-10 h-10 rounded-full flex items-center justify-center text-xl shrink-0 font-bold shadow-sm">
+                <div className="flex gap-3 items-start">
+                  <div className="bg-yellow-100 text-yellow-700 w-9 h-9 rounded-full flex items-center justify-center text-lg shrink-0 font-bold shadow-sm">
                     📝
                   </div>
                   <div>
-                    <h4 className="font-extrabold text-[#2E2856]">Soal & Kunci Jawaban Lebih Tepat</h4>
-                    <p className="text-sm text-gray-500 mt-0.5">Penambahan kuis baru serta perbaikan kunci jawaban latihan matematika, IPA, dan Bahasa Inggris.</p>
+                    <h4 className="font-extrabold text-[#2E2856] text-sm md:text-base">Soal & Kunci Jawaban Lebih Tepat</h4>
+                    <p className="text-xs md:text-sm text-gray-500 mt-0.5">Penambahan kuis baru serta perbaikan kunci jawaban latihan matematika, IPA, dan Bahasa Inggris.</p>
                   </div>
                 </div>
 
                 {/* Poin 3: Kelancaran */}
-                <div className="flex gap-4 items-start">
-                  <div className="bg-green-100 text-green-700 w-10 h-10 rounded-full flex items-center justify-center text-xl shrink-0 font-bold shadow-sm">
+                <div className="flex gap-3 items-start">
+                  <div className="bg-green-100 text-green-700 w-9 h-9 rounded-full flex items-center justify-center text-lg shrink-0 font-bold shadow-sm">
                     ⚡
                   </div>
                   <div>
-                    <h4 className="font-extrabold text-[#2E2856]">Aplikasi Lebih Lancar & Stabil</h4>
-                    <p className="text-sm text-gray-500 mt-0.5">Belajar dan kuis berjalan lebih mulus dan stabil, bebas hambatan saat melihat hasil belajar akhir.</p>
+                    <h4 className="font-extrabold text-[#2E2856] text-sm md:text-base">Aplikasi Lebih Lancar & Stabil</h4>
+                    <p className="text-xs md:text-sm text-gray-500 mt-0.5">Belajar dan kuis berjalan lebih mulus dan stabil bebas hambatan saat melihat hasil belajar akhir untuk belajar di SmartTV, Laptop dan HP dengan.</p>
                   </div>
                 </div>
               </div>
+            </div>
 
-              {/* Tombol Mulai */}
-              <div className="pt-4 text-center">
-                <button
-                  onClick={handleClosePopup}
-                  className="w-full bg-gradient-to-r from-yellow-400 to-amber-400 hover:from-yellow-500 hover:to-amber-500 text-blue-950 font-black py-4 rounded-2xl text-lg shadow-lg hover:scale-102 hover:shadow-xl transition-all cursor-pointer text-center mb-3"
-                >
-                  Siap, Ayo Belajar! 🚀
-                </button>
-                <span className="text-[11px] text-gray-400 font-bold block">
-                  Salam hangat dari Tim KKN PPM Kelompok 60 ITERA 2026 💙
-                </span>
-              </div>
+            {/* Tombol Mulai Tetap di Bawah (shrink-0) */}
+            <div className="p-6 pt-4 text-center shrink-0 border-t border-gray-100 bg-gray-50 rounded-b-[2rem]">
+              <button
+                onClick={handleClosePopup}
+                className="w-full bg-gradient-to-r from-yellow-400 to-amber-400 hover:from-yellow-500 hover:to-amber-500 text-blue-950 font-black py-3 md:py-4 rounded-xl md:rounded-2xl text-base md:text-lg shadow-lg hover:scale-102 hover:shadow-xl transition-all cursor-pointer text-center mb-3"
+              >
+                Siap, Ayo Belajar! 🚀
+              </button>
+              <span className="text-[10px] md:text-[11px] text-gray-400 font-bold block">
+                Salam hangat dari Tim KKN PPM Kelompok 60 ITERA 2026 💙
+              </span>
             </div>
 
           </div>
