@@ -175,7 +175,7 @@ export default function HalamanEvaluasi() {
 
         {soalAktif.gambar && (
           <div className="flex justify-center mb-8 max-h-64 md:max-h-[400px] lg:max-h-[500px] overflow-hidden rounded-2xl border bg-white p-4 shadow-sm">
-            <img src={soalAktif.gambar} alt="Pertanyaan" className="object-contain max-h-64 md:max-h-[400px] lg:max-h-[500px] w-auto" />
+            <img src={soalAktif.gambar} alt="Pertanyaan" className="object-contain max-h-64 md:max-h-[400px] lg:max-h-[500px] w-auto" loading="lazy" />
           </div>
         )}
 

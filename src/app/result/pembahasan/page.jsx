@@ -142,7 +142,7 @@ export default function HalamanPembahasan() {
 
                  {soal.gambar && (
                     <div className="flex justify-center mb-6 max-h-52 md:max-h-[300px] lg:max-h-[400px] overflow-hidden rounded-xl border bg-white p-3 shadow-sm">
-                      <img src={soal.gambar} alt="Pertanyaan" className="object-contain max-h-52 md:max-h-[300px] lg:max-h-[400px] w-auto" />
+                      <img src={soal.gambar} alt="Pertanyaan" className="object-contain max-h-52 md:max-h-[300px] lg:max-h-[400px] w-auto" loading="lazy" />
                     </div>
                   )}
 
