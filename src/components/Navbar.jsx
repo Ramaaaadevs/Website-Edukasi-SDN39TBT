@@ -27,6 +27,10 @@ export default function Navbar() {
           <Link href="/ujian" className="nav-btn-highlight">
             Ujian Akhir
           </Link>
+
+          <Link href="/about" className="nav-link">
+            Tentang Kami
+          </Link>
         </div>
 
       </div>
