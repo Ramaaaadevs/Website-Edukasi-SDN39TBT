@@ -56,23 +56,62 @@ export default function HalamanEvaluasi() {
 
         return {
           id: item.id || index,
+          idSoalOriginal: item["ID SOAL"] || item.id || (index + 1),
           PERTANYAAN: item.PERTANYAAN || item.pertanyaan,
           // Normalisasi opsi A,B,C,D
           A: isArray ? item.pilihan[0] : (item.A || item.a),
           B: isArray ? item.pilihan[1] : (item.B || item.b),
           C: isArray ? item.pilihan[2] : (item.C || item.c),
           D: isArray ? item.pilihan[3] : (item.D || item.d),
-          "JAWABAN BENAR": kunci
+          "JAWABAN BENAR": kunci,
+          PEMBAHASAN: item.PEMBAHASAN || item.pembahasan || "",
+          gambar: item.gambar || item.GAMBAR || null
         };
       });
 
+      // Filter berdasarkan Bab (Mata Pelajaran & Topik)
+      let dataSesuaiBab = dataRapih;
+      
+      if (mapelSlug === 'matematika') {
+        if (babSlug === 'pecahan') {
+          dataSesuaiBab = dataRapih.filter(item => item.idSoalOriginal >= 1 && item.idSoalOriginal <= 18);
+        } else if (babSlug === 'perbandingan') {
+          dataSesuaiBab = dataRapih.filter(item => item.idSoalOriginal >= 19 && item.idSoalOriginal <= 24);
+        } else if (babSlug === 'bangun-ruang') {
+          dataSesuaiBab = dataRapih.filter(item => item.idSoalOriginal >= 25 && item.idSoalOriginal <= 34);
+        } else if (babSlug === 'fpb-kpk') {
+          dataSesuaiBab = dataRapih.filter(item => item.idSoalOriginal >= 35 && item.idSoalOriginal <= 42);
+        }
+      } else if (mapelSlug === 'ipa') {
+        const ipaCategories = {
+          "makhluk-hidup": [1, 2, 3, 5, 8, 9, 10, 11, 13, 14, 15, 16, 17, 20, 22, 23, 25, 26, 27, 28, 32, 34, 35, 36, 37, 40, 42, 43, 45, 46, 50, 51, 52, 53, 54, 55],
+          "benda-sifat": [6, 12, 18, 24, 29, 38, 44, 47, 48, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75],
+          "gaya-energi": [4, 7, 19, 21, 30, 31, 33, 39, 41, 49, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
+        };
+        const allowedIds = ipaCategories[babSlug] || [];
+        if (allowedIds.length > 0) {
+          dataSesuaiBab = dataRapih.filter(item => allowedIds.includes(item.idSoalOriginal));
+        }
+      } else if (mapelSlug === 'bahasa-inggris' || mapelSlug === 'vocab') {
+        if (babSlug === 'vocab') {
+          dataSesuaiBab = dataRapih.filter(item => item.idSoalOriginal >= 1 && item.idSoalOriginal <= 55);
+        } else if (babSlug === 'reading') {
+          dataSesuaiBab = dataRapih.filter(item => item.idSoalOriginal >= 56 && item.idSoalOriginal <= 75);
+        } else if (babSlug === 'grammar') {
+          dataSesuaiBab = dataRapih.filter(item => item.idSoalOriginal >= 76 && item.idSoalOriginal <= 131);
+        }
+      }
+
       // Acak soal (Shuffle)
-      const acak = [...dataRapih].sort(() => 0.5 - Math.random());
-      setSoalUjian(acak.slice(0, 25)); // Ambil max 25 soal
+      const acak = [...dataSesuaiBab].sort(() => 0.5 - Math.random());
+      
+      // Batasi jumlah soal (maksimal 10 soal agar tidak terlalu lama)
+      const limitSoal = Math.min(acak.length, 10);
+      setSoalUjian(acak.slice(0, limitSoal));
     }
 
     setLoading(false);
-  }, [mapelSlug]); // Dependency mapelSlug agar berubah saat ganti mapel
+  }, [mapelSlug, babSlug]); // Dependency mapelSlug agar berubah saat ganti mapel
 
   // ==========================================
   // SISA KODE KE BAWAH TIDAK DIUBAH (SAMA SEPERTI ASLIMU)
@@ -133,6 +172,12 @@ export default function HalamanEvaluasi() {
         <h2 className="text-xl md:text-2xl font-bold text-[#2E2856] mb-8 text-center leading-relaxed">
            {soalAktif.PERTANYAAN}
         </h2>
+
+        {soalAktif.gambar && (
+          <div className="flex justify-center mb-8 max-h-64 md:max-h-[400px] lg:max-h-[500px] overflow-hidden rounded-2xl border bg-white p-4 shadow-sm">
+            <img src={soalAktif.gambar} alt="Pertanyaan" className="object-contain max-h-64 md:max-h-[400px] lg:max-h-[500px] w-auto" />
+          </div>
+        )}
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {["A", "B", "C", "D"].map((opsi) => (

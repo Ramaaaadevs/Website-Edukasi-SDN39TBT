@@ -73,7 +73,7 @@ const databaseMateri = {
         deskripsi: "Eksperimen wujud zat, perubahan suhu, dan sifat-sifat cahaya.",
         icon: "🧊",
         warnaIcon: "text-cyan-500 bg-cyan-50",
-        kelas: [5]
+        kelas: [5,6]
       },
       {
         id: 3,
@@ -82,7 +82,7 @@ const databaseMateri = {
         deskripsi: "Pahami gaya gravitasi, magnet, bunyi, dan sumber energi matahari.",
         icon: "⚡",
         warnaIcon: "text-yellow-500 bg-yellow-50",
-        kelas: [5]
+        kelas: [5,6]
       }
     ]  
   },

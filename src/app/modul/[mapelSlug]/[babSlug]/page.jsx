@@ -122,9 +122,14 @@ export default function HalamanBelajarInteraktif() {
                 return (
                   <>
                     <div className="text-center mb-10">
-                      <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+                      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
                         {soalSaatIni.PERTANYAAN}
                       </h2>
+                      {soalSaatIni.gambar && (
+                        <div className="flex justify-center mb-6 max-h-64 md:max-h-[400px] lg:max-h-[500px] overflow-hidden rounded-2xl border bg-white p-4 shadow-sm">
+                          <img src={soalSaatIni.gambar} alt="Pertanyaan" className="object-contain max-h-64 md:max-h-[400px] lg:max-h-[500px] w-auto" />
+                        </div>
+                      )}
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">

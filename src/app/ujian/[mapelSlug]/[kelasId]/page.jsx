@@ -35,7 +35,7 @@ export default function HalamanUjianAkhir() {
     let limitSoal = 25;
     let durasiDetik = 1200; // 20 Menit
 
-    if (kelas === 5) {
+    if (kelas === 5 || kelas === 6) {
       if (mapelSlug === "matematika") rawData = soalMtkPecahan;
       else if (mapelSlug === "bahasa-inggris") rawData = soalBingGreeting;
       else if (mapelSlug === "ipa") rawData = soalIpa; 
@@ -59,19 +59,26 @@ export default function HalamanUjianAkhir() {
 
         return {
           id: item.id || idx,
+          idSoalOriginal: item["ID SOAL"] || item.id || (idx + 1),
           PERTANYAAN: item.PERTANYAAN || item.pertanyaan,
           A: isArrayPilihan ? item.pilihan[0] : (item.A || item.a),
           B: isArrayPilihan ? item.pilihan[1] : (item.B || item.b),
           C: isArrayPilihan ? item.pilihan[2] : (item.C || item.c),
           D: isArrayPilihan ? item.pilihan[3] : (item.D || item.d),
-          "JAWABAN BENAR": kunci
+          "JAWABAN BENAR": kunci,
+          PEMBAHASAN: item.PEMBAHASAN || item.pembahasan || "",
+          gambar: item.gambar || item.GAMBAR || null
         };
       });
 
-      const acak = [...dataRapih].sort(() => 0.5 - Math.random());
+      // Semua soal diikutsertakan secara penuh baik untuk Kelas 5 maupun 6
+      let dataSesuaiKelas = dataRapih;
+
+      const acak = [...dataSesuaiKelas].sort(() => 0.5 - Math.random());
       
       // Potong soal sesuai limit (10 untuk random, 25 untuk lainnya)
-      setSoalUjian(acak.slice(0, limitSoal)); 
+      const limitAkhir = Math.min(acak.length, limitSoal);
+      setSoalUjian(acak.slice(0, limitAkhir)); 
       
       // Set waktu sesuai konfigurasi
       setWaktuSisa(durasiDetik);
@@ -276,9 +283,14 @@ export default function HalamanUjianAkhir() {
                <span className="inline-block bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs font-bold mb-4">
                   Soal {indexSoal + 1} / {soalUjian.length}
                </span>
-               <h2 className="text-2xl md:text-3xl font-bold text-[#2E2856] leading-relaxed">
+               <h2 className="text-2xl md:text-3xl font-bold text-[#2E2856] leading-relaxed mb-6">
                  {soalAktif.PERTANYAAN}
                </h2>
+               {soalAktif.gambar && (
+                 <div className="flex justify-center mb-6 max-h-64 md:max-h-[400px] lg:max-h-[500px] overflow-hidden rounded-2xl border bg-white p-4 shadow-sm">
+                   <img src={soalAktif.gambar} alt="Pertanyaan" className="object-contain max-h-64 md:max-h-[400px] lg:max-h-[500px] w-auto" />
+                 </div>
+               )}
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
