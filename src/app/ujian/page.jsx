@@ -2,10 +2,9 @@
 
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
-import { useRouter } from "next/navigation";
+
 
 export default function HalamanPilihMapelUjian() {
-  const router = useRouter();
 
   const daftarMapel = [
     { slug: "matematika", judul: "Matematika", icon: "📐", warna: "from-red-500 to-orange-500" },
@@ -37,7 +36,7 @@ export default function HalamanPilihMapelUjian() {
           {daftarMapel.map((mapel) => (
             <Link 
               key={mapel.slug}
-              href={`/ujian/${mapel.slug}`}
+              href={mapel.slug === "random" ? `/ujian/random/5` : `/ujian/${mapel.slug}`}
               className="group relative overflow-hidden bg-white rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all hover:-translate-y-2 border border-gray-100 cursor-pointer h-64 flex flex-col justify-between"
             >
               {/* Background Gradient Circle */}
@@ -51,7 +50,9 @@ export default function HalamanPilihMapelUjian() {
                 <h2 className="text-2xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors">
                   {mapel.judul}
                 </h2>
-                <p className="text-gray-400 text-sm mt-2">Masuk ke pemilihan kelas ➔</p>
+                <p className="text-gray-400 text-sm mt-2">
+                  {mapel.slug === "random" ? "Mulai Ujian ➔" : "Masuk ke pemilihan kelas ➔"}
+                </p>
               </div>
             </Link>
           ))}
