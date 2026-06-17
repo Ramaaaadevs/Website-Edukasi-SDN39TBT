@@ -12,13 +12,10 @@ export default function HalamanResult() {
   // STATE
   const [hasil, setHasil] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
+
 
   useEffect(() => {
-    // 1. Set ukuran window untuk konfeti (biar fit screen)
-    setWindowSize({ width: window.innerWidth, height: window.innerHeight });
-
-    // 2. Ambil data dari LocalStorage dengan aman
+    // Ambil data dari LocalStorage dengan aman
     const dataDisimpan = localStorage.getItem("hasilUjian");
 
     if (dataDisimpan) {
@@ -133,8 +130,8 @@ export default function HalamanResult() {
            </div>
            
            <div className="mt-8 pt-6 border-t border-gray-100 text-xs text-gray-400">
-              Mapel: <span className="font-bold capitalize text-gray-600">{hasil.mapelSlug ? hasil.mapelSlug.replace("-", " ") : "-"}</span> • 
-              Bab: <span className="font-bold capitalize text-gray-600">{hasil.babSlug ? hasil.babSlug.replace("-", " ") : "-"}</span>
+              Mapel: <span className="font-bold capitalize text-gray-600">{hasil.mapelSlug ? hasil.mapelSlug.replace(/-/g, " ") : "-"}</span> • 
+              Bab: <span className="font-bold capitalize text-gray-600">{hasil.babSlug ? hasil.babSlug.replace(/-/g, " ") : "-"}</span>
            </div>
 
         </div>

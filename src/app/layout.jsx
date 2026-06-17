@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Credit from "@/components/Credit"; 
 import "./globals.css";
 
 export const metadata = {
