@@ -5,11 +5,6 @@
 */
 
 @layer components {
-  /* --- LAYOUT GLOBAL --- */
-  .page-container {
-    @apply h-screen bg-blue-50 font-sans flex flex-col;
-  }
-
   /* --- HALAMAN DEPAN (HERO SECTION) --- */
   .hero-wrapper {
     @apply flex-grow flex items-center justify-center p-6 md:p-12;
@@ -19,7 +14,6 @@
     @apply max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center;
   }
 
-  /* Teks Judul */
   .hero-title-primary {
     @apply text-5xl md:text-7xl font-extrabold text-blue-900 mb-2 tracking-tight leading-tight;
   }
@@ -30,23 +24,6 @@
 
   .hero-desc {
     @apply text-blue-800 text-lg md:text-xl font-medium leading-relaxed max-w-lg mb-8;
-  }
-
-  /* Tombol Kuning Besar */
-  .btn-hero {
-    @apply inline-flex items-center gap-3 bg-yellow-400 hover:bg-yellow-500 text-blue-900 
-    text-xl font-extrabold py-4 px-10 rounded-full shadow-lg transform transition 
-    hover:scale-105 border-b-8 border-yellow-600 active:border-b-0 active:translate-y-2 cursor-pointer;
-  }
-
-  /* Gambar Ilustrasi Kanan */
-  .hero-image-container {
-    @apply relative w-full h-full flex justify-center md:justify-end items-center;
-  }
-  
-  .hero-image {
-    /* animate-pulse dihapus dulu biar gak pusing liatnya, opsional */
-    @apply w-full max-w-md h-auto object-contain drop-shadow-2xl; 
   }
 
   /* --- FOOTER (CREDIT) --- */
@@ -66,45 +43,8 @@
     @apply flex gap-4 items-center opacity-90 hover:opacity-100 transition cursor-pointer;
   }
 
-  /* --- HALAMAN MODUL (DAFTAR MAPEL) --- */
-  
-  /* Header Putih di atas */
-  .modul-header-box {
-    @apply bg-white rounded-3xl p-6 md:p-10 shadow-sm border-b-4 border-blue-100 flex items-center justify-between mb-10 max-w-7xl w-full mx-auto;
-  }
-  
-  .modul-title {
-    @apply text-3xl md:text-5xl font-extrabold text-blue-900 tracking-tight;
-  }
-
-  .modul-subtitle {
-    @apply text-blue-600 mt-2 font-medium text-lg;
-  }
-
-  /* Grid Container untuk Kartu */
-  .modul-grid {
-    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-7xl w-full mx-auto;
-  }
-
-  /* Kartu Mata Pelajaran */
-  .card-mapel {
-    @apply bg-white p-8 rounded-2xl shadow-sm border-2 border-transparent hover:border-yellow-400
-    hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer
-    flex flex-col items-center justify-center gap-4 text-center h-64;
-  }
-
-  /* Icon Bulat di tengah kartu */
-  .card-mapel-icon {
-    @apply w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-2 shadow-inner;
-  }
-
-  .card-mapel-title {
-    @apply font-bold text-xl text-blue-900;
-  }
-
-  /* --- NAVBAR (MENU ATAS) --- */
+  /* --- NAVBAR --- */
   .navbar-container {
-    /* Sticky: Nempel di atas layar */
     @apply sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b-4 border-blue-100 shadow-sm;
   }
 
@@ -113,22 +53,14 @@
   }
 
   .nav-logo {
-    /* Logo Teks */
     @apply text-2xl font-extrabold text-blue-600 tracking-tighter hover:scale-105 transition cursor-pointer flex items-center gap-2;
   }
 
-  .nav-menu {
-    /* Container Link Kanan */
-    @apply flex items-center gap-4 md:gap-8;
-  }
-
   .nav-link {
-    /* Link Menu (Beranda, Belajar, dll) */
     @apply font-bold text-gray-500 hover:text-yellow-500 hover:scale-135 transition text-sm md:text-base cursor-pointer;
   }
 
   .nav-btn-highlight {
-    /* Tombol Spesial (Misal: Masuk/Evaluasi) */
     @apply bg-yellow-400 text-blue-900 px-5 py-2 rounded-full font-bold shadow-md hover:bg-yellow-500 hover:scale-135 transition cursor-pointer border-b-4 border-yellow-600 active:border-b-0 active:translate-y-1;
   }
 
@@ -137,13 +69,13 @@
     @apply min-h-screen bg-blue-50 font-sans;
   }
 
-  /* --- HEADER BANNER --- */
+  /* --- HEADER BANNER MODUL --- */
   .modul-header-wrapper {
-    @apply px-6 pt-8 md:pt-12;
+    @apply px-6 pt-8 md:pt-12 max-w-7xl mx-auto w-full;
   }
   
   .modul-header-box {
-    @apply bg-white rounded-3xl shadow-sm border border-blue-100 p-8 md:p-12 flex flex-col md:flex-row justify-between items-center relative overflow-hidden;
+    @apply bg-white rounded-3xl shadow-sm border border-blue-100 p-8 md:p-12 flex flex-col md:flex-row justify-between items-center relative;
   }
 
   .modul-title {
@@ -154,29 +86,13 @@
     @apply text-gray-500 text-lg md:text-xl font-medium;
   }
 
-  /* --- BAGIAN FILTER & JUDUL --- */
+  /* --- FILTER & JUDUL SECTION --- */
   .section-header-row {
     @apply flex flex-row justify-between items-end mb-8 border-b-2 border-gray-200 pb-4 mt-10;
   }
 
   .section-title {
     @apply text-2xl md:text-3xl font-extrabold text-blue-900 border-b-4 border-yellow-400 inline-block pb-1;
-  }
-
-  /* --- DROPDOWN CUSTOM (FIXED) --- */
-  .dropdown-wrapper {
-    @apply relative inline-block w-40 md:w-48;
-  }
-
-  .dropdown-select {
-    @apply appearance-none w-full bg-blue-600 text-white font-bold 
-    py-3 pl-5 pr-10 rounded-xl shadow-md text-sm md:text-base
-    focus:outline-none focus:ring-4 focus:ring-blue-200
-    cursor-pointer hover:bg-blue-700 transition-colors border-none;
-  }
-
-  .dropdown-icon {
-    @apply pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-white;
   }
 
   /* --- GRID MATA PELAJARAN --- */

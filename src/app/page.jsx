@@ -10,10 +10,10 @@ export default function Beranda() {
 
   useEffect(() => {
     // Cek apakah user sudah pernah melihat popup pembaruan ini
-    const hasSeen = localStorage.getItem("hasSeenMaintenancePopup");
-    if (!hasSeen) {
+    // const hasSeen = localStorage.getItem("hasSeenMaintenancePopup");
+    // if (!hasSeen) {
       setShowPopup(true);
-    }
+    // }
   }, []);
 
   const handleClosePopup = () => {
@@ -75,7 +75,18 @@ export default function Beranda() {
                   </div>
                   <div>
                     <h4 className="font-extrabold text-[#2E2856] text-sm md:text-base">Aplikasi Lebih Lancar & Stabil</h4>
-                    <p className="text-xs md:text-sm text-gray-500 mt-0.5">Belajar dan kuis berjalan lebih mulus dan stabil bebas hambatan saat melihat hasil belajar akhir untuk belajar di SmartTV, Laptop dan HP dengan.</p>
+                    <p className="text-xs md:text-sm text-gray-500 mt-0.5">Belajar dan kuis berjalan lebih mulus dan stabil bebas hambatan saat melihat hasil belajar akhir di SmartTV, Laptop, dan HP.</p>
+                  </div>
+                </div>
+
+                {/* Poin 4: Kustomisasi Ujian */}
+                <div className="flex gap-3 items-start">
+                  <div className="bg-purple-100 text-purple-700 w-9 h-9 rounded-full flex items-center justify-center text-lg shrink-0 font-bold shadow-sm">
+                    ⏱️
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-[#2E2856] text-sm md:text-base">Atur Jumlah Soal & Waktu Ujian Akhir</h4>
+                    <p className="text-xs md:text-sm text-gray-500 mt-0.5">Kamu bisa bebas memilih total soal yang akan keluar dan durasi waktu ujian sebelum ujian akhir dimulai.</p>
                   </div>
                 </div>
               </div>
