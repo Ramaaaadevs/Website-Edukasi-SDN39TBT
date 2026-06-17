@@ -1,7 +1,76 @@
 "use client";
 
+import { useState, useEffect, useRef, Suspense } from "react";
 import { useSearchParams, useParams, useRouter } from "next/navigation";
 import Link from "next/link";
+
+// CUSTOM SELECT COMPONENT FOR HIGH-QUALITY DROPDOWNS
+function CustomSelect({ value, options, onChange, themeColor = "blue", compact = false }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (containerRef.current && !containerRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const activeOption = options.find((opt) => opt.value === value) || options[0];
+
+  const hoverBg = themeColor === "blue" ? "hover:bg-blue-50 text-blue-900" : "hover:bg-orange-50 text-orange-900";
+  const activeBg = themeColor === "blue" ? "bg-blue-600 text-white" : "bg-orange-500 text-white";
+
+  return (
+    <div className="relative w-full text-left select-none text-gray-800" ref={containerRef}>
+      <button
+        type="button"
+        onClick={() => setIsOpen(!isOpen)}
+        className={`w-full bg-white border-2 rounded-xl flex items-center justify-between font-bold text-xs md:text-sm text-gray-700 shadow-sm hover:shadow transition-all duration-200 cursor-pointer ${
+          compact ? "py-2 px-3" : "py-3 px-4"
+        } ${
+          isOpen ? (themeColor === "blue" ? "border-blue-500 ring-2 ring-blue-100" : "border-orange-500 ring-2 ring-orange-100") : "border-gray-200"
+        }`}
+      >
+        <span className="truncate">{activeOption?.label || ""}</span>
+        <svg
+          className={`h-4 w-4 text-gray-500 transition-transform duration-200 ${isOpen ? "transform rotate-180" : ""}`}
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+
+      {isOpen && (
+        <div className="absolute z-50 mt-2 w-full bg-white border border-gray-100 rounded-2xl shadow-xl py-1 overflow-hidden max-h-60 overflow-y-auto">
+          {options.map((option) => {
+            const isSelected = option.value === value;
+            return (
+              <button
+                key={option.value}
+                type="button"
+                onClick={() => {
+                  onChange(option.value);
+                  setIsOpen(false);
+                }}
+                className={`w-full text-left px-4 py-2.5 text-xs font-bold transition-colors cursor-pointer ${
+                  isSelected ? activeBg : `text-gray-600 ${hoverBg}`
+                }`}
+              >
+                {option.label}
+              </button>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
 
 // ==========================================
 // 1. DATA (Database Materi)
@@ -145,51 +214,53 @@ const Breadcrumb = ({ judulMapel, kelasAktif }) => (
   </div>
 );
 
-const HeaderBanner = ({ data, kelasAktif, onBack, onGantiKelas }) => (
-  <div className={`rounded-3xl p-8 md:p-12 text-white relative overflow-hidden shadow-xl mb-10 bg-gradient-to-r ${data.gradient}`}>
-    <div className="relative z-10 w-full md:w-2/3">
-      <button 
-        onClick={onBack} 
-        className="flex items-center text-sm font-bold opacity-80 hover:opacity-100 transition mb-4"
-      >
-        <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-        Ganti Pelajaran
-      </button>
+const HeaderBanner = ({ data, kelasAktif, onBack, onGantiKelas }) => {
+  const opsiKelas = [
+    { value: "5", label: "Kelas 5" },
+    { value: "6", label: "Kelas 6" },
+    { value: "semua", label: "Semua Kelas" }
+  ];
 
-      <h1 className="text-3xl md:text-5xl font-extrabold mt-4 mb-2">
-        {data.judul}
-      </h1>
-      
-      {/* --- BAGIAN DROPDOWN PILIH KELAS (DITAMBAHKAN KEMBALI) --- */}
-      <div className="flex items-center gap-3 mt-4">
-        <p className="text-white/90 text-lg font-medium">Materi untuk:</p>
-        <div className="relative">
-          <select 
-            value={kelasAktif}
-            onChange={(e) => onGantiKelas(e.target.value)}
-            className="appearance-none bg-white/20 hover:bg-white/30 text-white font-bold py-2 pl-4 pr-10 rounded-xl border border-white/30 backdrop-blur-sm cursor-pointer focus:outline-none focus:ring-2 focus:ring-white/50 transition-all"
-          >
-            {[5, 6].map((k) => (
-              <option key={k} value={k} className="text-gray-800 bg-white">
-                Kelas {k}
-              </option>
-            ))}
-          </select>
-          {/* Icon Panah Dropdown */}
-          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-white">
-            <svg className="h-4 w-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
+  return (
+    <div className={`rounded-3xl p-8 md:p-12 text-white relative shadow-xl mb-10 bg-gradient-to-r ${data.gradient}`}>
+      <div className="relative z-10 w-full md:w-2/3">
+        <button 
+          onClick={onBack} 
+          className="flex items-center text-sm font-bold opacity-80 hover:opacity-100 transition mb-4 cursor-pointer"
+        >
+          <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+          Ganti Pelajaran
+        </button>
+
+        <h1 className="text-3xl md:text-5xl font-extrabold mt-4 mb-2">
+          {data.judul}
+        </h1>
+        
+        {/* --- BAGIAN DROPDOWN PILIH KELAS DENGAN CUSTOM SELECT --- */}
+        <div className="flex flex-col sm:flex-row sm:items-center gap-3 mt-4">
+          <p className="text-white/95 text-base md:text-lg font-bold">Materi untuk:</p>
+          <div className="w-40">
+            <CustomSelect
+              value={String(kelasAktif)}
+              options={opsiKelas}
+              onChange={onGantiKelas}
+              themeColor="blue"
+              compact={true}
+            />
           </div>
         </div>
+        {/* --------------------------------------------------------- */}
+
       </div>
-      {/* --------------------------------------------------------- */}
 
+      <div className="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none z-0">
+        <div className="hidden md:flex absolute right-10 top-1/2 -translate-y-1/2 text-[10rem] opacity-20 rotate-12 select-none">
+          {data.iconUtama}
+        </div>
+      </div>
     </div>
-
-    <div className="hidden md:flex absolute right-10 top-1/2 -translate-y-1/2 text-[10rem] opacity-20 rotate-12 select-none pointer-events-none">
-      {data.iconUtama}
-    </div>
-  </div>
-);
+  );
+};
 
 const TopicCard = ({ item, mapelSlug, kelasAktif }) => (
   <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1 border border-transparent hover:border-blue-200 group flex flex-col h-full">
@@ -211,7 +282,9 @@ const TopicCard = ({ item, mapelSlug, kelasAktif }) => (
 const EmptyState = ({ kelasAktif }) => (
   <div className="col-span-full py-20 text-center border-2 border-dashed border-gray-200 rounded-3xl">
     <div className="text-6xl mb-4 grayscale opacity-30">📭</div>
-    <h3 className="text-xl font-bold text-gray-400">Belum ada materi untuk Kelas {kelasAktif}</h3>
+    <h3 className="text-xl font-bold text-gray-400">
+      Belum ada materi untuk {kelasAktif === "semua" ? "Semua Kelas" : `Kelas ${kelasAktif}`}
+    </h3>
     <p className="text-gray-400 text-sm">Coba cek pelajaran lain atau kembali lagi nanti ya!</p>
   </div>
 );
@@ -219,24 +292,25 @@ const EmptyState = ({ kelasAktif }) => (
 // ==========================================
 // 3. MAIN COMPONENT
 // ==========================================
-export default function HalamanSubModul() {
+export function HalamanSubModulContent() {
   const params = useParams();       
   const searchParams = useSearchParams(); 
   const router = useRouter();
 
   const slug = params.mapelSlug; 
-  const kelasAktif = parseInt(searchParams.get("kelas")) || 5; 
+  const kelasParam = searchParams.get("kelas");
+  const kelasAktif = kelasParam === "6" ? "6" : (kelasParam === "semua" ? "semua" : "5");
   
   // Logic: Ambil data berdasarkan slug, fallback ke default jika tidak ketemu
   const dataCurrent = databaseMateri[slug] || databaseMateri["default"];
 
   // Logic: Filtering Kelas
   const listTopikTersedia = dataCurrent.topik.filter(item => {
-    // Jika di data ada properti 'kelas', filter berdasarkan itu
+    if (kelasAktif === "semua") return true;
+    const kelasNum = parseInt(kelasAktif);
     if (item.kelas) {
-      return item.kelas.includes(kelasAktif);
+      return item.kelas.includes(kelasNum);
     }
-    // Jika tidak ada properti 'kelas', berarti materi ini untuk semua kelas
     return true; 
   });
 
@@ -281,5 +355,13 @@ export default function HalamanSubModul() {
 
       </main>
     </div>
+  );
+}
+
+export default function HalamanSubModul() {
+  return (
+    <Suspense fallback={<div className="h-screen flex items-center justify-center font-bold text-gray-400">Loading Modul...</div>}>
+      <HalamanSubModulContent />
+    </Suspense>
   );
 }
