@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter, useParams } from "next/navigation";
+import { useRouter, useParams, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight, CheckCircle, XCircle } from "lucide-react";
 
@@ -11,7 +11,9 @@ import { databaseAlurBelajar } from "@/data/alur-belajar";
 export default function HalamanBelajarInteraktif() {
   const params = useParams();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const { mapelSlug, babSlug } = params;
+  const kelasAktif = searchParams.get("kelas") || "5";
 
   // --- LOGIC DINAMIS ---
   // Ambil alur belajar berdasarkan babSlug dari URL
@@ -61,7 +63,7 @@ export default function HalamanBelajarInteraktif() {
       
       {/* HEADER NAVIGATION */}
       <div className="bg-white px-6 py-4 shadow-sm flex items-center justify-between sticky top-0 z-10">
-        <Link href={`/modul/${mapelSlug}?kelas=5`} className="flex items-center text-gray-500 hover:text-blue-600 font-bold transition">
+        <Link href={`/modul/${mapelSlug}?kelas=${kelasAktif}`} className="flex items-center text-gray-500 hover:text-blue-600 font-bold transition">
           <ChevronLeft className="w-5 h-5 mr-1" />
           Kembali ke Modul
         </Link>
