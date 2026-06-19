@@ -223,7 +223,10 @@ export default function HalamanUjianAkhir() {
       salah: soalUjian.length - benar,
       totalSoal: soalUjian.length,
       jawabanUser,
-      soalUjian
+      soalUjian,
+      waktuSisa,
+      waktuMenit,
+      kelasId
     }));
 
     router.push("/result");
