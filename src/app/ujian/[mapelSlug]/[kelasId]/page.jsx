@@ -97,6 +97,20 @@ export default function HalamanUjianAkhir() {
   // STATE ANTI-CHEAT & TIMER PER SOAL
   const [waktuSoal, setWaktuSoal] = useState(30);
   const [jumlahPelanggaran, setJumlahPelanggaran] = useState(0);
+  const [toast, setToast] = useState({ show: false, message: "", id: 0 });
+
+  const showToast = (message) => {
+    setToast({ show: true, message, id: Date.now() });
+  };
+
+  useEffect(() => {
+    if (toast.show) {
+      const timer = setTimeout(() => {
+        setToast((prev) => ({ ...prev, show: false }));
+      }, 4000);
+      return () => clearTimeout(timer);
+    }
+  }, [toast.show, toast.id]);
 
   // STATE AUDIO & UJIAN
   const [ujianDimulai, setUjianDimulai] = useState(false);
@@ -235,11 +249,12 @@ export default function HalamanUjianAkhir() {
         setJumlahPelanggaran((prev) => {
           const baru = prev + 1;
           if (baru >= 2) {
-            alert("⚠️ Kamu terdeteksi keluar dari halaman kuis sebanyak 2 kali. Ujian otomatis selesai!");
-            handleSelesai();
+            setTimeout(() => {
+              handleSelesai();
+            }, 0);
             return baru;
           } else {
-            alert("🚨 Peringatan! Jangan keluar dari tab ujian atau membuka tab browser lain. Ujian akan otomatis selesai jika melanggar sekali lagi!");
+            showToast("🚨 Jangan keluar dari tab ujian atau membuka tab browser lain. Ujian akan otomatis selesai jika melanggar sekali lagi!");
             return baru;
           }
         });
@@ -256,7 +271,7 @@ export default function HalamanUjianAkhir() {
 
     const cegahAksi = (e) => {
       e.preventDefault();
-      alert("🔒 Fitur copy-paste dan klik kanan dinonaktifkan demi kejujuran ujian.");
+      showToast("🔒 Fitur copy-paste dan klik kanan dinonaktifkan demi kejujuran ujian.");
     };
 
     const cegahKeyboard = (e) => {
@@ -268,7 +283,7 @@ export default function HalamanUjianAkhir() {
         (e.ctrlKey && e.shiftKey && e.keyCode === 73) // Ctrl+Shift+I
       ) {
         e.preventDefault();
-        alert("🔒 Akses tombol ini dinonaktifkan demi kejujuran ujian.");
+        showToast("🔒 Akses tombol ini dinonaktifkan demi kejujuran ujian.");
       }
     };
 
@@ -525,6 +540,27 @@ export default function HalamanUjianAkhir() {
 
   return (
     <div className="h-screen bg-gray-50 font-sans flex flex-col overflow-hidden">
+
+      {/* 🚨 GLASSMORPHIC TOAST WARNING NOTIFICATION */}
+      <div
+        className={`fixed top-6 left-1/2 -translate-x-1/2 z-[9999] w-full max-w-md px-4 transition-all duration-300 transform ${
+          toast.show ? "translate-y-0 opacity-100 scale-100" : "-translate-y-10 opacity-0 scale-95 pointer-events-none"
+        }`}
+      >
+        <div className="bg-red-600/95 backdrop-blur-md text-white rounded-2xl p-4 shadow-xl border border-red-500/30 flex items-start gap-3.5 ring-4 ring-red-500/10">
+          <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0 animate-bounce">
+            <AlertCircle className="text-white" size={20} />
+          </div>
+          <div className="flex-1">
+            <h4 className="font-extrabold text-xs uppercase tracking-wider mb-0.5 text-white">
+              Peringatan Keamanan
+            </h4>
+            <p className="text-xs text-red-50 font-bold leading-relaxed">
+              {toast.message}
+            </p>
+          </div>
+        </div>
+      </div>
 
       {/* 🔹 AUDIO PLAYER TERSEMBUNYI */}
       {/* Pastikan file 'backsound.mp3' ada di folder 'public' */}
