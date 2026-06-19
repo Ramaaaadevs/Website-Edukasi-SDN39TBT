@@ -94,6 +94,10 @@ export default function HalamanUjianAkhir() {
   const [waktuMenit, setWaktuMenit] = useState(20);
   const [dropdownWaktu, setDropdownWaktu] = useState("20");
 
+  // STATE ANTI-CHEAT & TIMER PER SOAL
+  const [waktuSoal, setWaktuSoal] = useState(30);
+  const [jumlahPelanggaran, setJumlahPelanggaran] = useState(0);
+
   // STATE AUDIO & UJIAN
   const [ujianDimulai, setUjianDimulai] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
@@ -180,7 +184,7 @@ export default function HalamanUjianAkhir() {
     }
   };
 
-  // TIMER
+  // TIMER UTAMA (GLOBAL)
   useEffect(() => {
     if (loading || !ujianDimulai) return;
 
@@ -195,7 +199,89 @@ export default function HalamanUjianAkhir() {
       });
     }, 1000);
     return () => clearInterval(timer);
-  }, [loading, ujianDimulai]);
+  }, [loading, ujianDimulai, jawabanUser, soalUjian]);
+
+  // TIMER PER SOAL (30 DETIK)
+  useEffect(() => {
+    if (!ujianDimulai || loading) return;
+
+    setWaktuSoal(30); // Reset ke 30 detik setiap kali soal berubah
+
+    const interval = setInterval(() => {
+      setWaktuSoal((prev) => {
+        if (prev <= 1) {
+          clearInterval(interval);
+          // Jika waktu habis, pindah ke soal berikutnya atau selesaikan kuis
+          if (indexSoal < soalUjian.length - 1) {
+            setIndexSoal((idx) => idx + 1);
+          } else {
+            handleSelesai();
+          }
+          return 30;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [indexSoal, ujianDimulai, loading, soalUjian, jawabanUser]);
+
+  // DETEKSI PINDAH TAB BROWSER (ANTI-CHEAT)
+  useEffect(() => {
+    if (!ujianDimulai) return;
+
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        setJumlahPelanggaran((prev) => {
+          const baru = prev + 1;
+          if (baru >= 2) {
+            alert("⚠️ Kamu terdeteksi keluar dari halaman kuis sebanyak 2 kali. Ujian otomatis selesai!");
+            handleSelesai();
+            return baru;
+          } else {
+            alert("🚨 Peringatan! Jangan keluar dari tab ujian atau membuka tab browser lain. Ujian akan otomatis selesai jika melanggar sekali lagi!");
+            return baru;
+          }
+        });
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    return () => document.removeEventListener("visibilitychange", handleVisibilityChange);
+  }, [ujianDimulai, jawabanUser, soalUjian]);
+
+  // BLOKIR KLIK KANAN & COPY-PASTE (ANTI-CHEAT)
+  useEffect(() => {
+    if (!ujianDimulai) return;
+
+    const cegahAksi = (e) => {
+      e.preventDefault();
+      alert("🔒 Fitur copy-paste dan klik kanan dinonaktifkan demi kejujuran ujian.");
+    };
+
+    const cegahKeyboard = (e) => {
+      if (
+        e.keyCode === 123 || // F12
+        (e.ctrlKey && e.keyCode === 67) || // Ctrl+C
+        (e.ctrlKey && e.keyCode === 86) || // Ctrl+V
+        (e.ctrlKey && e.keyCode === 85) || // Ctrl+U
+        (e.ctrlKey && e.shiftKey && e.keyCode === 73) // Ctrl+Shift+I
+      ) {
+        e.preventDefault();
+        alert("🔒 Akses tombol ini dinonaktifkan demi kejujuran ujian.");
+      }
+    };
+
+    document.addEventListener("contextmenu", cegahAksi);
+    document.addEventListener("copy", cegahAksi);
+    document.addEventListener("keydown", cegahKeyboard);
+
+    return () => {
+      document.removeEventListener("contextmenu", cegahAksi);
+      document.removeEventListener("copy", cegahAksi);
+      document.removeEventListener("keydown", cegahKeyboard);
+    };
+  }, [ujianDimulai]);
 
   const formatWaktu = (s) => `${Math.floor(s / 60).toString().padStart(2, '0')}:${(s % 60).toString().padStart(2, '0')}`;
 
@@ -465,8 +551,13 @@ export default function HalamanUjianAkhir() {
             {isMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
           </button>
 
-          {/* TIMER */}
-          <div className={`font-mono font-bold px-4 py-2 rounded-xl border ${waktuSisa < 300 ? 'bg-red-50 text-red-600 border-red-100 animate-pulse' : 'bg-blue-50 text-blue-600 border-blue-100'}`}>
+          {/* TIMER PER SOAL */}
+          <div className="font-mono font-bold px-3 py-1.5 rounded-xl border bg-orange-50 text-orange-600 border-orange-100 flex items-center gap-1.5 animate-pulse text-xs sm:text-sm">
+            ⏳ {waktuSoal}s
+          </div>
+
+          {/* TIMER GLOBAL */}
+          <div className={`font-mono font-bold px-3 py-1.5 rounded-xl border text-xs sm:text-sm ${waktuSisa < 300 ? 'bg-red-50 text-red-600 border-red-100 animate-pulse' : 'bg-blue-50 text-blue-600 border-blue-100'}`}>
             ⏰ {formatWaktu(waktuSisa)}
           </div>
         </div>

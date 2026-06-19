@@ -12,6 +12,71 @@ export default function HalamanResult() {
   // STATE
   const [hasil, setHasil] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [statusKirim, setStatusKirim] = useState("idle"); // idle, mengirim, sukses, gagal
+
+  const kirimNilaiKeGoogleSheets = async (dataUjian) => {
+    setStatusKirim("mengirim");
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxjtaVplIvdxqYaNakLfHGAlkFUX2kURCGk42e4BH_-TClcGL9s2Q6LZbb_bhy2j0Sp/exec";
+    
+    const totalWaktuDetik = (dataUjian.waktuMenit || 20) * 60;
+    const sisaWaktuDetik = dataUjian.sisaWaktu !== undefined ? dataUjian.sisaWaktu : 0;
+    const waktuHabisDetik = totalWaktuDetik - sisaWaktuDetik;
+    const totalSoal = dataUjian.totalSoal || 25;
+    const kecepatanSoal = parseFloat((waktuHabisDetik / totalSoal).toFixed(1));
+
+    try {
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          nama: `${dataUjian.nama} (Absen ${dataUjian.absen})`,
+          kelas: dataUjian.kelas,
+          mapel: `${dataUjian.mapel} (${totalSoal} Soal)`,
+          skor: dataUjian.skor,
+          sisaWaktu: sisaWaktuDetik,
+          kecepatanSoal: kecepatanSoal
+        }),
+      });
+
+      // Tandai sudah terkirim agar tidak dobel
+      const dataDisimpan = localStorage.getItem("hasilUjian");
+      if (dataDisimpan) {
+        const parsed = JSON.parse(dataDisimpan);
+        parsed.sudahKirim = true;
+        localStorage.setItem("hasilUjian", JSON.stringify(parsed));
+      }
+      setStatusKirim("sukses");
+    } catch (e) {
+      console.error("Gagal mengirim data:", e);
+      setStatusKirim("gagal");
+    }
+  };
+
+  useEffect(() => {
+    if (hasil && !hasil.sudahKirim && statusKirim === "idle") {
+      const profilString = localStorage.getItem("profil_siswa");
+      if (profilString) {
+        try {
+          const profil = JSON.parse(profilString);
+          kirimNilaiKeGoogleSheets({
+            nama: profil.nama,
+            kelas: profil.kelas,
+            absen: profil.absen,
+            mapel: hasil.mapelSlug,
+            skor: hasil.nilai,
+            sisaWaktu: hasil.waktuSisa,
+            waktuMenit: hasil.waktuMenit,
+            totalSoal: hasil.totalSoal
+          });
+        } catch (e) {
+          console.error("Gagal parse profil siswa:", e);
+        }
+      }
+    }
+  }, [hasil, statusKirim]);
 
 
   useEffect(() => {
@@ -65,8 +130,14 @@ export default function HalamanResult() {
       <div className="max-w-2xl w-full bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border-4 border-white ring-4 ring-blue-50 relative animate-fade-in-up">
         
         {/* Header Background */}
-        <div className={`h-32 w-full ${isLulus ? "bg-gradient-to-r from-green-400 to-emerald-500" : "bg-gradient-to-r from-orange-400 to-red-500"} flex items-center justify-center`}>
-           <Trophy className="text-white drop-shadow-md animate-bounce" size={60} />
+        <div className={`h-32 w-full ${isLulus ? "bg-gradient-to-r from-green-400 to-emerald-500" : "bg-gradient-to-r from-orange-400 to-red-500"} flex flex-col items-center justify-center gap-1.5`}>
+           <Trophy className="text-white drop-shadow-md animate-bounce" size={48} />
+           <span className="text-[10px] text-white/90 bg-black/15 px-3 py-1 rounded-full font-bold select-none">
+             {statusKirim === "mengirim" && "📡 Mengirim nilai ke guru..."}
+             {statusKirim === "sukses" && "✅ Nilai berhasil dilaporkan!"}
+             {statusKirim === "gagal" && "❌ Gagal melaporkan nilai"}
+             {statusKirim === "idle" && "🏆 Hasil Ujian Akhir"}
+           </span>
         </div>
 
         <div className="px-8 pb-10 pt-2 text-center -mt-12">

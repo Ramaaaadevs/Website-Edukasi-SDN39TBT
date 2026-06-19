@@ -7,18 +7,30 @@ import Image from "next/image";
 
 export default function Beranda() {
   const [showPopup, setShowPopup] = useState(false);
+  const [showProfileModal, setShowProfileModal] = useState(false);
+  const [profilInput, setProfilInput] = useState({ nama: "", kelas: "5", absen: "" });
 
   useEffect(() => {
     // Cek apakah user sudah pernah melihat popup pembaruan ini
-    // const hasSeen = localStorage.getItem("hasSeenMaintenancePopup");
-    // if (!hasSeen) {
+    const hasSeen = localStorage.getItem("hasSeenMaintenancePopup");
+    const profil = localStorage.getItem("profil_siswa");
+
+    if (!hasSeen) {
       setShowPopup(true);
-    // }
+    } else if (!profil) {
+      setShowProfileModal(true);
+    }
   }, []);
 
   const handleClosePopup = () => {
     localStorage.setItem("hasSeenMaintenancePopup", "true");
     setShowPopup(false);
+
+    // Setelah popup update ditutup, cek jika harus menampilkan modal registrasi profil
+    const profil = localStorage.getItem("profil_siswa");
+    if (!profil) {
+      setShowProfileModal(true);
+    }
   };
 
   return (
@@ -105,6 +117,86 @@ export default function Beranda() {
               </span>
             </div>
 
+          </div>
+        </div>
+      )}
+
+      {/* MODAL PROFIL SISWA 1X */}
+      {showProfileModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-md p-4">
+          <div className="bg-white rounded-[2rem] shadow-2xl max-w-md w-full border-4 border-white ring-8 ring-blue-50/50 p-8 text-center relative max-h-[95vh] overflow-y-auto">
+            
+            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-t-[2.5rem]"></div>
+            
+            <div className="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto text-3xl mb-4 shadow-inner">
+              👦
+            </div>
+            
+            <h3 className="text-2xl font-black text-[#2E2856] mb-1">Daftarkan Dirimu! ✨</h3>
+            <p className="text-gray-400 text-xs font-bold uppercase tracking-wider mb-6">Profil Juara Kuis</p>
+            
+            <form onSubmit={(e) => {
+              e.preventDefault();
+              if (!profilInput.nama.trim() || !profilInput.absen) return;
+              localStorage.setItem("profil_siswa", JSON.stringify({
+                nama: profilInput.nama.trim(),
+                kelas: profilInput.kelas,
+                absen: parseInt(profilInput.absen)
+              }));
+              setShowProfileModal(false);
+              alert(`Selamat datang Juara, ${profilInput.nama.trim()}! 🎉`);
+            }} className="space-y-4 text-left">
+              
+              <div>
+                <label className="block text-xs font-bold text-gray-500 mb-1.5 uppercase">Nama Panggilan:</label>
+                <input
+                  type="text"
+                  maxLength={12}
+                  required
+                  value={profilInput.nama}
+                  onChange={(e) => setProfilInput({ ...profilInput, nama: e.target.value })}
+                  placeholder="Ketik nama panggilanmu (Maks 12 huruf)..."
+                  className="w-full px-4 py-3 rounded-xl border-2 border-gray-100 bg-gray-50/50 focus:bg-white focus:outline-none focus:border-blue-500 font-bold text-sm text-gray-800 transition"
+                />
+              </div>
+
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-bold text-gray-500 mb-1.5 uppercase">Kelas:</label>
+                  <select
+                    value={profilInput.kelas}
+                    onChange={(e) => setProfilInput({ ...profilInput, kelas: e.target.value })}
+                    className="w-full px-4 py-3 rounded-xl border-2 border-gray-100 bg-gray-50/50 focus:bg-white focus:outline-none focus:border-blue-500 font-bold text-sm text-gray-800 transition"
+                  >
+                    <option value="5">Kelas 5 SD</option>
+                    <option value="6">Kelas 6 SD</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-gray-500 mb-1.5 uppercase">No. Absen:</label>
+                  <input
+                    type="number"
+                    min={1}
+                    max={50}
+                    required
+                    value={profilInput.absen}
+                    onChange={(e) => setProfilInput({ ...profilInput, absen: e.target.value })}
+                    placeholder="Contoh: 12"
+                    className="w-full px-4 py-3 rounded-xl border-2 border-gray-100 bg-gray-50/50 focus:bg-white focus:outline-none focus:border-blue-500 font-bold text-sm text-gray-800 transition"
+                  />
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                disabled={!profilInput.nama.trim() || !profilInput.absen}
+                className="w-full mt-6 bg-gradient-to-r from-blue-600 to-indigo-600 disabled:from-gray-300 disabled:to-gray-300 text-white font-black py-4 rounded-xl text-base shadow-lg shadow-blue-200 hover:scale-102 transition cursor-pointer text-center"
+              >
+                Mulai Berpetualang! ➔
+              </button>
+
+            </form>
           </div>
         </div>
       )}
