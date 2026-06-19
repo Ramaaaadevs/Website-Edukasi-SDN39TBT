@@ -35,6 +35,10 @@ export default function Navbar() {
           <Link href="/modul" className="nav-link">
             Belajar Materi
           </Link>
+
+          <Link href="/leaderboard" className="nav-link">
+            Papan Juara
+          </Link>
           
           {/* Tombol yang lebih menonjol buat Ujian */}
           <Link href="/ujian" className="nav-btn-highlight">
@@ -74,6 +78,14 @@ export default function Navbar() {
             onClick={closeMenu}
           >
             Belajar Materi
+          </Link>
+
+          <Link 
+            href="/leaderboard" 
+            className="text-lg font-bold text-gray-600 hover:text-yellow-500 py-2 border-b border-gray-100 transition"
+            onClick={closeMenu}
+          >
+            Papan Juara
           </Link>
 
           <Link 
