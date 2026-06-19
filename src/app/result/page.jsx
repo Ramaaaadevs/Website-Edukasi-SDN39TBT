@@ -130,7 +130,7 @@ export default function HalamanResult() {
       <div className="max-w-2xl w-full bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border-4 border-white ring-4 ring-blue-50 relative animate-fade-in-up">
         
         {/* Header Background */}
-        <div className={`h-32 w-full ${isLulus ? "bg-gradient-to-r from-green-400 to-emerald-500" : "bg-gradient-to-r from-orange-400 to-red-500"} flex flex-col items-center justify-center gap-1.5`}>
+        <div className={`h-40 w-full ${isLulus ? "bg-gradient-to-r from-green-400 to-emerald-500" : "bg-gradient-to-r from-orange-400 to-red-500"} flex flex-col items-center pt-6 gap-1.5`}>
            <Trophy className="text-white drop-shadow-md animate-bounce" size={48} />
            <span className="text-[10px] text-white/90 bg-black/15 px-3 py-1 rounded-full font-bold select-none">
              {statusKirim === "mengirim" && "📡 Mengirim nilai ke guru..."}
