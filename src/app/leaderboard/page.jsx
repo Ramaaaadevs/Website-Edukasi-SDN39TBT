@@ -75,23 +75,34 @@ function CustomSelect({ value, options, onChange, themeColor = "blue", compact =
 export default function HalamanLeaderboard() {
   // STATE FILTERS
   const [mapelFilter, setMapelFilter] = useState("matematika");
-  const [kelasFilter, setKelasFilter] = useState("5");
+  const [kelasFilter, setKelasFilter] = useState("semua");
   const [activeTab, setActiveTab] = useState("accuracy"); // accuracy (Ranked) vs speed (Speedrun)
 
   // STATE DATA ONLINE
   const [dataPeringkat, setDataPeringkat] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [errorStatus, setErrorStatus] = useState(null);
 
   const fetchDataOnline = async () => {
     setLoading(true);
-    setErrorStatus(null);
     const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxjtaVplIvdxqYaNakLfHGAlkFUX2kURCGk42e4BH_-TClcGL9s2Q6LZbb_bhy2j0Sp/exec";
     
     try {
       const res = await fetch(GOOGLE_SCRIPT_URL);
       if (!res.ok) throw new Error("Respons jaringan tidak OK");
-      const json = await res.json();
+      
+      const text = await res.text();
+      // Cek jika respon berupa HTML (berarti doGet belum aktif)
+      if (text.trim().startsWith("<!DOCTYPE html>") || text.trim().startsWith("<html")) {
+        console.warn("Respons berupa HTML (kemungkinan doGet belum di-deploy). Menggunakan data kosong.");
+        setDataPeringkat([]);
+        return;
+      }
+
+      const json = JSON.parse(text);
+      if (!Array.isArray(json)) {
+        setDataPeringkat([]);
+        return;
+      }
       
       // Parse data kotor dari spreadsheet
       const parsedData = json.map(item => {
@@ -118,7 +129,7 @@ export default function HalamanLeaderboard() {
 
         return {
           nama: String(item.nama || "Juara Cilik"),
-          kelas: String(item.kelas || "5"),
+          kelas: String(item.kelas || "").trim().toUpperCase(),
           mapelSlug,
           totalSoal,
           skor: Number(item.skor || 0),
@@ -130,8 +141,8 @@ export default function HalamanLeaderboard() {
 
       setDataPeringkat(parsedData);
     } catch (e) {
-      console.error("Gagal memuat kuis:", e);
-      setErrorStatus("Gagal mengambil data dari Google Sheets. Pastikan kran internet aktif dan spreadsheet sudah disetujui.");
+      console.warn("Gagal memuat kuis dari Google Sheets (menggunakan data kosong):", e);
+      setDataPeringkat([]);
     } finally {
       setLoading(false);
     }
@@ -150,11 +161,23 @@ export default function HalamanLeaderboard() {
     { value: "random", label: "🎲 Random" }
   ];
 
-  const opsiKelas = [
-    { value: "5", label: "Kelas 5 SD" },
-    { value: "6", label: "Kelas 6 SD" },
-    { value: "semua", label: "Semua Kelas" }
-  ];
+  // Hitung kelas secara dinamis dari data yang didapat
+  const dapatkanOpsiKelas = () => {
+    const listKelas = dataPeringkat
+      .map(item => String(item.kelas || "").trim())
+      .filter(Boolean);
+    const kelasUnik = Array.from(new Set(listKelas));
+    
+    // Urutkan kelas (misal 5A, 5B, 6A, 6B)
+    kelasUnik.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+
+    return [
+      { value: "semua", label: "Semua Kelas" },
+      ...kelasUnik.map(k => ({ value: k, label: `Kelas ${k}` }))
+    ];
+  };
+
+  const opsiKelas = dapatkanOpsiKelas();
 
   // LOGIK FILTER & SORTING DATA
   const getFilteredData = () => {
@@ -281,17 +304,6 @@ export default function HalamanLeaderboard() {
           </div>
         </div>
 
-        {/* JIKA ERROR */}
-        {errorStatus && (
-          <div className="bg-red-50 border border-red-200 text-red-700 rounded-3xl p-8 text-center mb-10">
-            <p className="font-extrabold mb-3">⚠️ Terjadi Kendala Koneksi</p>
-            <p className="text-sm opacity-90 mb-4">{errorStatus}</p>
-            <button onClick={fetchDataOnline} className="bg-red-600 hover:bg-red-700 text-white font-bold px-5 py-2 rounded-xl transition text-xs">
-              Coba Hubungkan Ulang
-            </button>
-          </div>
-        )}
-
         {/* JIKA LOADING */}
         {loading ? (
           <div className="bg-white rounded-3xl py-20 text-center border shadow-sm flex flex-col items-center justify-center">
@@ -299,23 +311,23 @@ export default function HalamanLeaderboard() {
             <p className="text-gray-400 font-bold text-sm">Menghubungkan ke Google Sheets...</p>
           </div>
         ) : (
-          listPeringkat.length === 0 && !errorStatus ? (
-            <div className="bg-white rounded-3xl py-20 text-center border border-slate-200 shadow-sm">
-              <div className="text-7xl mb-4 grayscale opacity-45">🏆</div>
-              <h3 className="text-xl font-extrabold text-slate-500 mb-1">Papan Peringkat Masih Kosong</h3>
+          listPeringkat.length === 0 ? (
+            <div className="bg-white rounded-3xl py-20 text-center border border-slate-200 shadow-sm animate-fadeIn">
+              <div className="text-7xl mb-4">🏆</div>
+              <h3 className="text-xl font-extrabold text-slate-700 mb-1">Belum Ada Juara</h3>
               <p className="text-slate-400 text-sm max-w-sm mx-auto px-6">
                 {activeTab === "accuracy" 
-                  ? `Belum ada siswa yang menyelesaikan Ujian Standar (${mapelFilter === "random" ? 10 : 25} Soal) untuk kategori ini.` 
-                  : "Belum ada siswa yang mendapat nilai ujian di atas 80 untuk kategori ini."}
+                  ? `Belum ada juara untuk kelas ${kelasFilter === "semua" ? "" : kelasFilter} di pelajaran ${mapelFilter.replace("-", " ")}.`
+                  : `Belum ada juara kilat untuk kelas ${kelasFilter === "semua" ? "" : kelasFilter} di pelajaran ${mapelFilter.replace("-", " ")}.`}
               </p>
               <Link href="/ujian">
-                <button className="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-2.5 rounded-xl transition shadow-md cursor-pointer">
-                  Mulai Ujian Pertama 🚀
+                <button className="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-2.5 rounded-xl transition shadow-md cursor-pointer text-sm">
+                  Jadilah yang Pertama! 🚀
                 </button>
               </Link>
             </div>
           ) : (
-            !errorStatus && (
+            (
               <div className="space-y-10">
                 
                 {/* 🔹 PODIUM VISUAL 3D (JUARA 1, 2, 3) */}

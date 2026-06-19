@@ -8,7 +8,8 @@ import Image from "next/image";
 export default function Beranda() {
   const [showPopup, setShowPopup] = useState(false);
   const [showProfileModal, setShowProfileModal] = useState(false);
-  const [profilInput, setProfilInput] = useState({ nama: "", kelas: "5", absen: "" });
+  const [profilInput, setProfilInput] = useState({ nama: "", kelas: "", absen: "" });
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
 
   useEffect(() => {
     // Cek apakah user sudah pernah melihat popup pembaruan ini
@@ -137,14 +138,13 @@ export default function Beranda() {
             
             <form onSubmit={(e) => {
               e.preventDefault();
-              if (!profilInput.nama.trim() || !profilInput.absen) return;
+              if (!profilInput.nama.trim() || !profilInput.kelas.trim() || !profilInput.absen) return;
               localStorage.setItem("profil_siswa", JSON.stringify({
                 nama: profilInput.nama.trim(),
-                kelas: profilInput.kelas,
+                kelas: profilInput.kelas.trim().toUpperCase(),
                 absen: parseInt(profilInput.absen)
               }));
-              setShowProfileModal(false);
-              alert(`Selamat datang Juara, ${profilInput.nama.trim()}! 🎉`);
+              setShowSuccessModal(true);
             }} className="space-y-4 text-left">
               
               <div>
@@ -163,14 +163,14 @@ export default function Beranda() {
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <label className="block text-xs font-bold text-gray-500 mb-1.5 uppercase">Kelas:</label>
-                  <select
+                  <input
+                    type="text"
+                    required
                     value={profilInput.kelas}
-                    onChange={(e) => setProfilInput({ ...profilInput, kelas: e.target.value })}
+                    onChange={(e) => setProfilInput({ ...profilInput, kelas: e.target.value.toUpperCase() })}
+                    placeholder="Contoh: 5A / 6B"
                     className="w-full px-4 py-3 rounded-xl border-2 border-gray-100 bg-gray-50/50 focus:bg-white focus:outline-none focus:border-blue-500 font-bold text-sm text-gray-800 transition"
-                  >
-                    <option value="5">Kelas 5 SD</option>
-                    <option value="6">Kelas 6 SD</option>
-                  </select>
+                  />
                 </div>
 
                 <div>
@@ -190,13 +190,41 @@ export default function Beranda() {
 
               <button
                 type="submit"
-                disabled={!profilInput.nama.trim() || !profilInput.absen}
+                disabled={!profilInput.nama.trim() || !profilInput.kelas.trim() || !profilInput.absen}
                 className="w-full mt-6 bg-gradient-to-r from-blue-600 to-indigo-600 disabled:from-gray-300 disabled:to-gray-300 text-white font-black py-4 rounded-xl text-base shadow-lg shadow-blue-200 hover:scale-102 transition cursor-pointer text-center"
               >
                 Mulai Berpetualang! ➔
               </button>
 
             </form>
+          </div>
+        </div>
+      )}
+
+      {/* MODAL SUKSES PENDAFTARAN */}
+      {showSuccessModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-md p-4">
+          <div className="bg-white rounded-[2rem] shadow-2xl max-w-sm w-full border-4 border-white ring-8 ring-blue-50/50 p-8 text-center relative">
+            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-green-500 to-emerald-500 rounded-t-[2.5rem]"></div>
+            
+            <div className="w-16 h-16 bg-green-50 text-green-600 rounded-full flex items-center justify-center mx-auto text-3xl mb-4 shadow-inner">
+              🎉
+            </div>
+            
+            <h3 className="text-xl font-black text-green-950 mb-2">Pendaftaran Berhasil!</h3>
+            <p className="text-sm text-gray-500 mb-6 leading-relaxed">
+              Selamat datang Juara, <span className="font-extrabold text-blue-600">{profilInput.nama}</span>! Profilmu telah tersimpan secara aman di HP/Laptop ini.
+            </p>
+            
+            <button
+              onClick={() => {
+                setShowSuccessModal(false);
+                setShowProfileModal(false);
+              }}
+              className="w-full bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-black py-3 rounded-xl text-sm shadow-md transition cursor-pointer text-center"
+            >
+              Mulai Belajar 🚀
+            </button>
           </div>
         </div>
       )}
