@@ -12,6 +12,45 @@ export default function HalamanResult() {
   // STATE
   const [hasil, setHasil] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [namaSiswa, setNamaSiswa] = useState("");
+  const [sudahSimpan, setSudahSimpan] = useState(false);
+
+  const handleSimpanKeLeaderboard = () => {
+    if (!namaSiswa.trim() || !hasil) return;
+
+    const mapel = hasil.mapelSlug || "random";
+    const kelas = hasil.kelasId || "5";
+    const key = `${mapel}_${kelas}`;
+
+    // Ambil data lama
+    const dataLokal = JSON.parse(localStorage.getItem("papan_peringkat_lokal")) || {};
+    const listPeringkat = dataLokal[key] || [];
+
+    // Hitung kecepatan per soal
+    const totalWaktuDetik = (hasil.waktuMenit || 20) * 60;
+    const sisaWaktuDetik = hasil.waktuSisa !== undefined ? hasil.waktuSisa : 0;
+    const waktuHabisDetik = totalWaktuDetik - sisaWaktuDetik;
+    const totalSoal = hasil.totalSoal || 25;
+    const kecepatanSoal = parseFloat((waktuHabisDetik / totalSoal).toFixed(1));
+
+    // Tambahkan data baru
+    const dataBaru = {
+      nama: namaSiswa.trim(),
+      skor: hasil.nilai,
+      sisaWaktu: sisaWaktuDetik,
+      totalSoal: totalSoal,
+      kecepatanSoal: kecepatanSoal,
+      tanggal: new Date().toLocaleDateString("id-ID")
+    };
+
+    listPeringkat.push(dataBaru);
+
+    // Simpan maksimal 50 data untuk disortir
+    dataLokal[key] = listPeringkat.slice(0, 50);
+
+    localStorage.setItem("papan_peringkat_lokal", JSON.stringify(dataLokal));
+    setSudahSimpan(true);
+  };
 
 
   useEffect(() => {
@@ -103,6 +142,49 @@ export default function HalamanResult() {
                  </div>
               </div>
            </div>
+
+            {/* Papan Peringkat Form Input */}
+            {hasil.nilai >= 70 && (
+              <div className="mb-8 border-2 border-dashed rounded-3xl p-5 bg-slate-50 border-slate-200">
+                {!sudahSimpan ? (
+                  <>
+                    <div className="flex items-center justify-center gap-2 mb-2 text-[#2E2856]">
+                      <Trophy className="text-yellow-500 fill-yellow-500" size={20} />
+                      <h3 className="font-extrabold text-sm sm:text-base">Masuk Papan Juara Cilik!</h3>
+                    </div>
+                    <p className="text-xs text-gray-500 mb-4">Skormu hebat! Ketik nama panggilanmu untuk dipajang di papan juara:</p>
+                    <div className="flex gap-2 max-w-md mx-auto">
+                      <input
+                        type="text"
+                        maxLength={12}
+                        value={namaSiswa}
+                        onChange={(e) => setNamaSiswa(e.target.value)}
+                        placeholder="Ketik nama panggilan..."
+                        className="flex-1 px-4 py-2 border-2 border-slate-200 rounded-xl focus:outline-none focus:border-blue-500 bg-white font-bold text-xs sm:text-sm text-gray-700 shadow-inner"
+                      />
+                      <button
+                        onClick={handleSimpanKeLeaderboard}
+                        disabled={!namaSiswa.trim()}
+                        className="bg-yellow-400 hover:bg-yellow-500 disabled:bg-gray-200 text-yellow-950 font-black px-5 py-2 rounded-xl transition cursor-pointer text-xs sm:text-sm"
+                      >
+                        Simpan
+                      </button>
+                    </div>
+                  </>
+                ) : (
+                  <div className="text-center">
+                    <div className="flex items-center justify-center gap-2 mb-1 text-green-700">
+                      <CheckCircle className="fill-green-100" size={20} />
+                      <h3 className="font-extrabold text-sm sm:text-base">Berhasil Disimpan!</h3>
+                    </div>
+                    <p className="text-xs text-gray-500">Namamu sudah tercatat. Ayo cek posisimu di papan peringkat juara!</p>
+                    <Link href="/leaderboard" className="inline-block mt-3 bg-blue-600 hover:bg-blue-700 text-white font-bold px-4 py-1.5 rounded-lg text-xs transition">
+                      Lihat Papan Juara ➔
+                    </Link>
+                  </div>
+                )}
+              </div>
+            )}
 
            {/* Tombol Aksi */}
            <div className="flex flex-col md:flex-row gap-3 justify-center">
